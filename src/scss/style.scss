@@ -1,0 +1,9 @@
+// Основное
+@import "./main/fonts"; // Шрифты
+@import "./main/variables"; // Переменные
+@import "./main/grid"; // Сетка
+@import "./main/reboot"; // Сброс стилей
+
+// Общий шаблон
+@import "./template/header"; // Шапка
+@import "./template/footer"; // Подвал
