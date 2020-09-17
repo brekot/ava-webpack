@@ -1,0 +1,23 @@
+.btn-menu {
+
+    @include media-breakpoint-up(md)
+    {
+        & {
+            display: none;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            width: 70px;
+            font-size: 24px;
+            order: 1;
+            color: var(--font-color);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

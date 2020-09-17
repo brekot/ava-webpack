@@ -29,4 +29,24 @@
     &__right {
         width: calc(100% - 380px);
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__right {
+            width: calc(100% - 300px);
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        &__right {
+            width: calc(100% - 200px);
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__right {
+            width: 50%;
+            text-align: right;
+        }
+    }
 }

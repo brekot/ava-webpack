@@ -1,0 +1,53 @@
+.tabs-block {
+
+    &__inner {
+        display: flex;
+        overflow-x: auto;
+    }
+    &__link {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--tabs-link);
+        margin: 0 36px 0 0;
+        text-decoration: none;
+        padding: 14px 0;
+        position: relative;
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--blue);
+            text-decoration: none;
+        }
+        &_active {
+            color: var(--blue);
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 5px;
+                background-color: var(--blue);
+                bottom: 0;
+                border-radius: 3px;
+            }
+        }
+    }
+    &__count {
+        height: 14px;
+        line-height: 12px;
+        position: absolute;
+        top: 10px;
+        background-color: var(--yellow);
+        color: var(--white);
+        font-size: 11px;
+        padding: 0 3px;
+        border-radius: 7px;
+        right: -4px;
+        transform: translate(100%);
+        min-width: 14px;
+        text-align: center;
+    }
+}

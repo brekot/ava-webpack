@@ -6,4 +6,17 @@
 
 // Общий шаблон
 @import "./template/header"; // Шапка
+@import "./template/btn.menu"; // Кнопка меню
+@import "./template/head.info"; // Информация в шапке
+@import "./template/user.info"; // Информация о пользователе
+@import "./template/alarm.block"; // Оповещения
 @import "./template/footer"; // Подвал
+@import "./template/nav.footer"; // Меню в подвале
+
+// Элементы
+@import "./elem/elem"; // Незначительные элементы
+@import "./elem/banner.full"; // Баннер
+@import "./elem/tabs.block"; // Вкладки
+@import "./elem/table.one"; // Таблица
+@import "./elem/status.label"; // Статусы
+@import "./elem/user.block"; // Пользователь

@@ -1,21 +1,11 @@
 @font-face {
-    font-family: 'Circe';
+    font-family: 'Material Design';
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: local('Circe Light'), local('Circe-Light'), url('./fonts/Circe-Light.woff2') format('woff2');
+    src: local('Material Design'), local('Material-Design'), url('./fonts/materialdesignicons.woff2') format('woff2');
 }
-@font-face {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Circe'), local('Circe-Regular'), url('./fonts/Circe-Regular.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local('Circe Bold'), local('Circe-Bold'), url('./fonts/Circe-Bold.woff2') format('woff2');
+
+.font-md {
+    font-family: 'Material Design';
 }

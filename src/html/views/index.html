@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">-->
 
     <title>Avancut</title>
 
@@ -14,6 +13,7 @@
     <header class="main-header">
         <div class="container">
             <div class="main-header__inner">
+                <a href="javascript:;" class="btn-menu font-md"></a>
                 <div class="main-header__left">
                     <a href="/" class="main-header__logo">
                         <img class="main-header__logo-pict" src="./local/img/logo.png" alt="">
@@ -41,15 +41,192 @@
 
                 </div>
                 <div class="main-header__right">
-                    <div class="user-info">
-                        <div class="user-info__ava">ЕГ</div>
+
+                    <a href="javascript:;" class="user-info">
+                        <div class="user-info__icon">ЕГ</div>
                         <div class="user-info__name">Елена Гайнуллова</div>
-                    </div>
+                        <div class="user-info__str font-md"></div>
+                    </a>
+
+                    <a href="javascript:;" class="alarm-block">
+                        <span class="alarm-block__icon font-md"></span>
+                        <span class="alarm-block__count">3</span>
+                    </a>
+
                 </div>
             </div>
         </div>
     </header>
-
+    <main class="main-main">
+        <div class="container">
+            <div class="banner-full d-none d-md-block">
+                <img class="banner-full__img" src="./local/uploads/banner.png" alt="">
+            </div>
+        </div>
+        <div class="tabs-block">
+            <div class="container">
+                <div class="tabs-block__inner">
+                    <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Все</a>
+                    <a href="javascript:;" class="tabs-block__link">
+                        Новые
+                        <span class="tabs-block__count">10</span>
+                    </a>
+                    <a href="javascript:;" class="tabs-block__link">
+                        Оценка
+                        <span class="tabs-block__count">2</span>
+                    </a>
+                    <a href="javascript:;" class="tabs-block__link">
+                        В работе
+                        <span class="tabs-block__count">3</span>
+                    </a>
+                    <a href="javascript:;" class="tabs-block__link">Требуется реакция</a>
+                    <a href="javascript:;" class="tabs-block__link">Архив</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-grey">
+            <div class="container">
+                <table class="table-one">
+                    <thead>
+                        <tr>
+                            <th>
+                                <a href="javascript:;" class="table-one__icon-gear font-md"></a>
+                            </th>
+                            <th>Номер</th>
+                            <th>Название</th>
+                            <th>Статус</th>
+                            <th>Дата создания</th>
+                            <th>Крайний срок</th>
+                            <th>Выделено/Затрачено</th>
+                            <th>Ответственный</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                            </td>
+                            <td>
+                                <span class="table-one__check font-md"></span>
+                                <a href="javascript:;" class="table-one__link table-one__link_blue">123</a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №4</a>
+                            </td>
+                            <td>
+                                <span class="status-label status-label_v1">Новая</span>
+                            </td>
+                            <td>18.05.2020</td>
+                            <td>20.05.2020</td>
+                            <td>46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span></td>
+                            <td>
+                                <a href="javascript:;" class="user-block">
+                                    <span class="user-block__icon">ПА</span>
+                                    <span class="user-block__name">Петров А.П.</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_blue">123</a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №4</a>
+                            </td>
+                            <td>
+                                <span class="status-label status-label_v2">В работе</span>
+                            </td>
+                            <td>18.05.2020</td>
+                            <td>20.05.2020</td>
+                            <td>46:00 <span class="status-label status-label_v4 status-label_medium status-label_margin">30:00</span></td>
+                            <td>
+                                <a href="javascript:;" class="user-block">
+                                    <span class="user-block__icon">ПА</span>
+                                    <span class="user-block__name">Петров А.П.</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_blue">123</a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №4</a>
+                            </td>
+                            <td>
+                                <span class="status-label status-label_v2">В работе</span>
+                            </td>
+                            <td>18.05.2020</td>
+                            <td>20.05.2020</td>
+                            <td>46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span></td>
+                            <td>
+                                <a href="javascript:;" class="user-block">
+                                    <span class="user-block__icon">ПА</span>
+                                    <span class="user-block__name">Петров А.П.</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_blue">123</a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №4</a>
+                            </td>
+                            <td>
+                                <span class="status-label status-label_v2">В работе</span>
+                            </td>
+                            <td>18.05.2020</td>
+                            <td>20.05.2020</td>
+                            <td>46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span></td>
+                            <td>
+                                <a href="javascript:;" class="user-block">
+                                    <span class="user-block__icon">ПА</span>
+                                    <span class="user-block__name">Петров А.П.</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_blue">123</a>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №4</a>
+                            </td>
+                            <td>
+                                <span class="status-label status-label_v2">В работе</span>
+                            </td>
+                            <td>18.05.2020</td>
+                            <td>20.05.2020</td>
+                            <td>46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span></td>
+                            <td>
+                                <a href="javascript:;" class="user-block">
+                                    <span class="user-block__icon">ПА</span>
+                                    <span class="user-block__name">Петров А.П.</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="banner-full">
+                    <img class="banner-full__img d-none d-md-block" src="./local/uploads/banner.png" alt="">
+                    <img class="banner-full__img d-md-none" src="./local/uploads/banner.small.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="main-footer">
         <div class="container">
             <div class="main-footer__inner">
@@ -63,7 +240,44 @@
                         <a href="tel:+78002001955" class="main-footer__info-link">8-800-200-19-55</a>
                     </div>
                 </div>
-                <div class="main-footer__right"></div>
+                <div class="main-footer__right">
+                    <div class="row">
+                        <div class="col-3 d-none d-md-block">
+                            <nav class="nav-footer">
+                                <a href="javascript:;" class="nav-footer__title">Задачи</a>
+                                <a href="javascript:;" class="nav-footer__link">Новые</a>
+                                <a href="javascript:;" class="nav-footer__link">Оценка</a>
+                                <a href="javascript:;" class="nav-footer__link">В работе</a>
+                                <a href="javascript:;" class="nav-footer__link">Архив</a>
+                                <a href="javascript:;" class="nav-footer__link">Создать задачу</a>
+                            </nav>
+                        </div>
+                        <div class="col-3 d-none d-md-block">
+                            <nav class="nav-footer">
+                                <a href="javascript:;" class="nav-footer__title">Личный кабинет</a>
+                                <a href="javascript:;" class="nav-footer__link">Настройки</a>
+                                <a href="javascript:;" class="nav-footer__link">Мои станки</a>
+                                <a href="javascript:;" class="nav-footer__link">Сменить пароль</a>
+                            </nav>
+                        </div>
+                        <div class="col-3 d-none d-md-block">
+                            <nav class="nav-footer">
+                                <a href="javascript:;" class="nav-footer__title">О проекте</a>
+                                <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
+                                <a href="javascript:;" class="nav-footer__link">Техподдержка</a>
+                                <a href="javascript:;" class="nav-footer__link">Написать нам</a>
+                            </nav>
+                        </div>
+                        <div class="col-md-3">
+                            <nav class="nav-footer">
+                                <a href="javascript:;" class="nav-footer__title">Помощь</a>
+                                <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
+                                <a href="javascript:;" class="nav-footer__link">Техподдержка</a>
+                                <a href="javascript:;" class="nav-footer__link">Написать нам</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

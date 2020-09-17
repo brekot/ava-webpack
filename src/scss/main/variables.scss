@@ -3,11 +3,24 @@
     --white: #FFF;
 
     --blue: #11609C;
+    --blue-bright: #0071C7;
+    --blue-light: #DCECF8;
 
     --yellow: #F39100;
     --yellow-light: #FFA726;
+    --yellow-label: #FFEED5;
+    --yellow-dark: #D36F00;
+    --yellow-check: #F16733;
 
+    --grey1: #F6F7F8;
+    --grey2: #E7E7E7;
+    --grey3: #E8ECEF;
+    
     --font-color: #4B536F;
+    --tabs-link: #808599;
+
+    --shadow: rgba(4, 50, 88, .05);
+    --grey-opacity: rgba(231, 231, 231, .2);
 }
 
 $grid-breakpoints: (

@@ -1,0 +1,28 @@
+.nav-footer {
+    font-size: 13px;
+
+    &__title {
+        font-weight: 700;
+        margin: 0 0 20px;
+        display: block;
+        color: var(--white);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--white);
+        }
+    }
+    &__link {
+        line-height: 24px;
+        color: var(--white);
+        opacity: .5;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--white);
+            opacity: 1;
+            text-decoration: none;
+        }
+    }
+}

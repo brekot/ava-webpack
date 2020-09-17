@@ -108,6 +108,10 @@ const config = {
             {
                 from: "./src/uploads",
                 to: "./local/uploads"
+            },
+            {
+                from: "./src/fonts",
+                to: "./local/fonts"
             }
         ])
     ].concat(htmlPlugins)

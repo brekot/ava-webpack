@@ -1,0 +1,29 @@
+.status-label {
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 11px;
+    display: inline-block;
+
+    &_v {
+
+        &1 {
+            background-color: var(--grey3);
+        }
+        &2 {
+            background-color: var(--yellow-label);
+        }
+        &3 {
+            background-color: var(--blue-light);
+        }
+        &4 {
+            background-color: var(--yellow-label);
+            color: var(--yellow-dark);
+        }
+    }
+    &_medium {
+        font-weight: 500;
+    }
+    &_margin {
+        margin: 0 0 0 5px;
+    }
+}

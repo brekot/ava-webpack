@@ -1,0 +1,25 @@
+.user-block {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--font-color);
+
+    &:hover {
+        text-decoration: none;
+    }
+    &__icon {
+        height: 32px;
+        width: 32px;
+        background-color: var(--yellow);
+        color: var(--white);
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        margin: 0 0 0 10px;
+    }
+}
