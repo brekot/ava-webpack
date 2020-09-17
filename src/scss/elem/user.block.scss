@@ -21,5 +21,7 @@
     }
     &__name {
         margin: 0 0 0 10px;
+        max-width: calc(100% - 42px);
+        white-space: nowrap;
     }
 }

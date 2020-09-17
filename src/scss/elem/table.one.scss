@@ -1,54 +1,14 @@
+@include media-breakpoint-up(md)
+{
+    .table-one-wrapper {
+        overflow-x: auto;
+    }
+}
+
 .table-one {
-    background-color: var(--white);
-    border-radius: 8px;
-    width: 100%;
-    margin: 0 0 25px;
-    box-shadow: 0 4px 10px var(--shadow);
 
-    thead {
-        border-radius: 8px;
-        box-shadow: 0 6px 8px var(--shadow);
-    }
-    tbody {
-
-        tr {
-            position: relative;
-
-            &:after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 20px;
-                right: 20px;
-                background-color: var(--grey2);
-                height: 1px;
-            }
-            &:last-child:after {
-                display: none;
-            }
-        }
-    }
-    th, td {
-        padding: 0 10px;
-
-        &:first-child {
-            padding: 0 20px;
-            text-align: center;
-            width: 55px;
-        }
-        &:last-child {
-            padding-right: 20px;
-        }
-    }
-    th {
-        height: 60px;
-        font-weight: 500;
-        font-size: 13px;
-        color: var(--tabs-link);
-    }
-    td {
-        height: 57px;
-        position: relative;
+    &__name {
+        min-width: 200px;
     }
     &__link {
         text-decoration: none;
@@ -83,5 +43,120 @@
         font-size: 18px;
         position: absolute;
         left: -10px;
+    }
+
+    @include media-breakpoint-up(md)
+    {
+        & {
+            background-color: var(--white);
+            border-radius: 8px;
+            min-width: 100%;
+            margin: 0 0 25px;
+            box-shadow: 0 4px 10px var(--shadow);
+
+            thead {
+                border-radius: 8px;
+                box-shadow: 0 6px 8px var(--shadow);
+            }
+            tbody {
+
+                tr {
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 20px;
+                        right: 20px;
+                        background-color: var(--grey2);
+                        height: 1px;
+                    }
+                    &:last-child:after {
+                        display: none;
+                    }
+                }
+            }
+            th, td {
+                padding: 12px 10px;
+
+                &:first-child {
+                    padding: 12px 20px;
+                    text-align: center;
+                    width: 55px;
+                }
+                &:last-child {
+                    padding-right: 20px;
+                }
+            }
+            th {
+                height: 60px;
+                font-weight: 500;
+                font-size: 13px;
+                color: var(--tabs-link);
+            }
+            td {
+                position: relative;
+            }
+            &__label {
+                display: none;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            display: block;
+
+            thead {
+                display: none;
+            }
+            tbody {
+                display: block;
+            }
+            tr {
+                display: flex;
+                background-color: var(--white);
+                margin: 0 0 10px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px var(--shadow);
+                flex-direction: column;
+                padding: 15px 25px;
+                position: relative;
+            }
+            &__td {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+                margin: 0 0 7px;
+                position: relative;
+            }
+            &__label {
+                font-size: 13px;
+                color: var(--tabs-link);
+            }
+            &__user {
+                margin: 15px 0 0;
+            }
+            &__check {
+                left: -20px;
+            }
+            &__menu {
+                position: absolute;
+                right: 0;
+                top: 15px;
+            }
+            &__status {
+                position: absolute;
+                right: 25px;
+                top: 15px;
+            }
+            &__name {
+                margin: -5px -25px 20px;
+                padding: 0 25px 20px;
+                border-bottom: 1px solid var(--grey2);
+            }
+        }
     }
 }
