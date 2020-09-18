@@ -8,10 +8,11 @@
 
         <title>Avancut</title>
 
-        <link href="./local/template_styles.css?7e6e985d32b150ca0189" rel="stylesheet" />
+        <link href="./local/template_styles.css?0b2f63626e05fd6c0ee1" rel="stylesheet" />
     </head>
 
     <body>
+        <!-- Шапка сайта -->
         <header class="main-header">
             <div class="container">
                 <div class="main-header__inner">
@@ -22,6 +23,7 @@
                         </a>
                     </div>
                     <div class="main-header__center">
+                        <!-- Информация в шапке -->
                         <div class="head-info">
                             <div class="head-info__item head-info__item_border">
                                 <div class="head-info__label">Тариф</div>
@@ -41,6 +43,7 @@
                         </div>
                     </div>
                     <div class="main-header__right">
+                        <!-- Информация о пользователе -->
                         <div class="position-relative">
                             <a href="javascript:;" class="user-info" data-jq-dropdown="#jq-dropdown-user" data-vertical-offset="10">
                                 <div class="user-info__icon">ЕГ</div>
@@ -48,13 +51,14 @@
                                 <div class="user-info__str font-md"></div>
                             </a>
 
-                            <div id="jq-dropdown-user" class="selector-block selector-block_nowrap selector-block_full-width jq-dropdown jq-dropdown-relative">
+                            <div id="jq-dropdown-user" class="selector-block selector-block_nowrap selector-block_full-width jq-dropdown jq-dropdown-relative jq-dropdown-anchor-sm-right">
                                 <a href="javascript:;" class="selector-block__item">Перейти в профиль</a>
                                 <a href="javascript:;" class="selector-block__item">Пополнить баланс</a>
                                 <a href="javascript:;" class="selector-block__item">Выйти из системы</a>
                             </div>
                         </div>
 
+                        <!-- Оповещения -->
                         <a href="javascript:;" class="alarm-block" data-jq-dropdown="#jq-dropdown-alarm" data-vertical-offset="10">
                             <span class="alarm-block__icon font-md"></span>
                             <span class="alarm-block__count">3</span>
@@ -81,12 +85,17 @@
                 </div>
             </div>
         </header>
+
+        <!-- Рабочая область -->
         <main class="main-main">
+            <!-- Верхний банер -->
             <div class="container">
                 <div class="banner-full d-none d-md-block">
                     <img class="banner-full__img" src="./local/uploads/banner.png" alt="" />
                 </div>
             </div>
+
+            <!-- Вкладки -->
             <div class="tabs-block">
                 <div class="container">
                     <div class="tabs-block__inner">
@@ -108,8 +117,11 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Серая область -->
             <div class="bg-grey">
                 <div class="container">
+                    <!-- Таблица -->
                     <div class="table-one-wrapper">
                         <table class="table-one">
                             <thead>
@@ -120,6 +132,7 @@
                                     <th>
                                         Номер
 
+                                        <!-- Сортировка в таблице -->
                                         <a href="javascript:;" class="table-sort font-md">
                                             <span class="table-sort__down"></span>
                                             <span class="table-sort__active"></span>
@@ -271,18 +284,21 @@
                         </table>
                     </div>
 
-                    <div id="jq-dropdown-table" class="selector-block selector-block_nowrap jq-dropdown">
+                    <!-- Меню строк -->
+                    <div id="jq-dropdown-table" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-sm-right">
                         <a href="javascript:;" class="selector-block__item">Действие первое</a>
                         <a href="javascript:;" class="selector-block__item">Действие второе</a>
                         <a href="javascript:;" class="selector-block__item">Действие еще одно</a>
                         <a href="javascript:;" class="selector-block__item">Действие последнее</a>
                     </div>
 
+                    <!-- Постраничной навигации и Показать по -->
                     <div class="page-navigation-counter">
                         <div class="page-navigation-counter__count">
                             Всего: 3
                         </div>
                         <div>
+                            <!-- Постраничной навигации -->
                             <div class="page-navigation">
                                 <a href="javascript:;" class="page-navigation__prev font-md"></a>
                                 <a href="javascript:;" class="page-navigation__link">1</a>
@@ -294,6 +310,7 @@
                             </div>
                         </div>
                         <div class="page-navigation-counter__last">
+                            <!-- Показать по -->
                             <div class="page-counter">
                                 <a href="javascript:;" class="page-counter__label" data-jq-dropdown="#jq-dropdown-counter" data-vertical-offset="5">
                                     Показывать по&nbsp;<span class="page-counter__label-count">10</span>&nbsp;<span class="page-counter__label-icon font-md"></span>
@@ -308,6 +325,7 @@
                         </div>
                     </div>
 
+                    <!-- Нижний банер -->
                     <div class="banner-full">
                         <img class="banner-full__img d-none d-md-block" src="./local/uploads/banner.png" alt="" />
                         <img class="banner-full__img d-md-none" src="./local/uploads/banner.small.png" alt="" />
@@ -315,6 +333,8 @@
                 </div>
             </div>
         </main>
+
+        <!-- Подвал сайта -->
         <footer class="main-footer">
             <div class="container">
                 <div class="main-footer__inner">
@@ -331,6 +351,7 @@
                     <div class="main-footer__right">
                         <div class="row">
                             <div class="col-3 d-none d-md-block">
+                                <!-- Нижнее меню -->
                                 <nav class="nav-footer">
                                     <a href="javascript:;" class="nav-footer__title">Задачи</a>
                                     <a href="javascript:;" class="nav-footer__link">Новые</a>
@@ -341,6 +362,7 @@
                                 </nav>
                             </div>
                             <div class="col-3 d-none d-md-block">
+                                <!-- Нижнее меню -->
                                 <nav class="nav-footer">
                                     <a href="javascript:;" class="nav-footer__title">Личный кабинет</a>
                                     <a href="javascript:;" class="nav-footer__link">Настройки</a>
@@ -349,6 +371,7 @@
                                 </nav>
                             </div>
                             <div class="col-3 d-none d-md-block">
+                                <!-- Нижнее меню -->
                                 <nav class="nav-footer">
                                     <a href="javascript:;" class="nav-footer__title">О проекте</a>
                                     <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
@@ -357,6 +380,7 @@
                                 </nav>
                             </div>
                             <div class="col-md-3">
+                                <!-- Нижнее меню -->
                                 <nav class="nav-footer">
                                     <a href="javascript:;" class="nav-footer__title">Помощь</a>
                                     <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
@@ -370,6 +394,7 @@
             </div>
         </footer>
 
+        <!-- Меню на мобильнике -->
         <nav class="nav-mobile">
             <a href="javascript:;" class="nav-mobile__close font-md"></a>
             <div class="nav-mobile__item">
@@ -400,6 +425,6 @@
             </div>
         </nav>
 
-        <script type="text/javascript" src="./local/js/script.js?7e6e985d32b150ca0189"></script>
+        <script type="text/javascript" src="./local/js/script.js?0b2f63626e05fd6c0ee1"></script>
     </body>
 </html>

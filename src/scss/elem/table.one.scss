@@ -4,6 +4,8 @@
     @include media-breakpoint-up(md)
     {
         & {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px var(--shadow);
             overflow-x: auto;
         }
     }
@@ -53,32 +55,11 @@
     {
         & {
             background-color: var(--white);
-            border-radius: 8px;
             min-width: 100%;
-            box-shadow: 0 4px 10px var(--shadow);
 
             thead {
                 border-radius: 8px;
                 box-shadow: 0 6px 8px var(--shadow);
-            }
-            tbody {
-
-                tr {
-                    position: relative;
-
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        left: 20px;
-                        right: 20px;
-                        background-color: var(--grey2);
-                        height: 1px;
-                    }
-                    &:last-child:after {
-                        display: none;
-                    }
-                }
             }
             th, td {
                 padding: 12px 10px;
@@ -101,6 +82,30 @@
             }
             td {
                 position: relative;
+                border-bottom: 1px solid var(--grey2);
+
+                &:first-child:after,
+                &:last-child:after {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    bottom: -1px;
+                    height: 1px;
+                    background-color: var(--white);
+                }
+                &:first-child:after {
+                    left: 0;
+                }
+                &:last-child:after {
+                    right: 0;
+                }
+            }
+            tr:last-child td {
+                border: none;
+
+                &:after {
+                    display: none;
+                }
             }
             &__label {
                 display: none;
