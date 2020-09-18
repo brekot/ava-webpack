@@ -1,0 +1,14 @@
+.search-line {
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px;
+    justify-content: space-between;
+
+    &__panel {
+        box-shadow: 0 2px 3px var(--shadow);
+        width: 65%;
+        background-color: var(--white);
+        border-radius: 8px;
+        height: 40px;
+    }
+}

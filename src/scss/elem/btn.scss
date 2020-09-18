@@ -1,0 +1,22 @@
+.btn-one {
+    background-color: var(--yellow);
+    height: 40px;
+    padding: 0 20px;
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: all .5s;
+
+    &:hover {
+        background-color: var(--yellow-light);
+        color: var(--white);
+        text-decoration: none;
+    }
+    &__icon {
+        font-size: 20px;
+        margin: 0 3px 0 0;
+    }
+}
