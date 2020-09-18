@@ -4,6 +4,19 @@
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
 
+// Элементы
+@import "./elem/elem"; // Незначительные элементы
+@import "./elem/banner.full"; // Баннер
+@import "./elem/tabs.block"; // Вкладки
+@import "./elem/table.one"; // Таблица
+@import "./elem/table.sort"; // Сортировка таблиц
+@import "./elem/status.label"; // Статусы
+@import "./elem/user.block"; // Пользователь
+@import "./elem/page.navigation.counter"; // Панель Постраничной навигации и Показать по
+@import "./elem/page.navigation"; // Постраничная навигация
+@import "./elem/page.counter"; // Показывать по
+@import "./elem/selector.block"; // Выпадающие меню
+
 // Общий шаблон
 @import "./template/header"; // Шапка
 @import "./template/btn.menu"; // Кнопка меню
@@ -12,11 +25,4 @@
 @import "./template/alarm.block"; // Оповещения
 @import "./template/footer"; // Подвал
 @import "./template/nav.footer"; // Меню в подвале
-
-// Элементы
-@import "./elem/elem"; // Незначительные элементы
-@import "./elem/banner.full"; // Баннер
-@import "./elem/tabs.block"; // Вкладки
-@import "./elem/table.one"; // Таблица
-@import "./elem/status.label"; // Статусы
-@import "./elem/user.block"; // Пользователь
+@import "./template/nav.mobile"; // Меню на мобильнике

@@ -1,0 +1,41 @@
+.page-navigation {
+    display: flex;
+    align-items: center;
+    margin: 0 -2px;
+
+    &__prev,
+    &__next,
+    &__link {
+        color: var(--tabs-link);
+        text-decoration: none;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2px;
+
+        &:hover {
+            color: var(--blue);
+            text-decoration: none;
+        }
+    }
+    &__prev,
+    &__next {
+        font-size: 24px;
+    }
+    &__next {
+        transform: rotate(180deg);
+    }
+    &__link {
+        border-radius: 8px;
+        box-shadow: 0 2px 3px var(--shadow);
+        background-color: var(--white);
+
+        &_active {
+            background-color: var(--blue);
+            color: var(--white);
+            font-weight: 500;
+        }
+    }
+}

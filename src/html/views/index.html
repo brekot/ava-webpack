@@ -42,16 +42,44 @@
                 </div>
                 <div class="main-header__right">
 
-                    <a href="javascript:;" class="user-info">
-                        <div class="user-info__icon">ЕГ</div>
-                        <div class="user-info__name">Елена Гайнуллова</div>
-                        <div class="user-info__str font-md"></div>
-                    </a>
+                    <div class="position-relative">
 
-                    <a href="javascript:;" class="alarm-block">
+                        <a href="javascript:;" class="user-info" data-jq-dropdown="#jq-dropdown-user" data-vertical-offset="10">
+                            <div class="user-info__icon">ЕГ</div>
+                            <div class="user-info__name">Елена Гайнуллова</div>
+                            <div class="user-info__str font-md"></div>
+                        </a>
+
+                        <div id="jq-dropdown-user" class="selector-block selector-block_nowrap selector-block_full-width jq-dropdown jq-dropdown-relative">
+                            <a href="javascript:;" class="selector-block__item">Перейти в профиль</a>
+                            <a href="javascript:;" class="selector-block__item">Пополнить баланс</a>
+                            <a href="javascript:;" class="selector-block__item">Выйти из системы</a>
+                        </div>
+
+                    </div>
+
+                    <a href="javascript:;" class="alarm-block" data-jq-dropdown="#jq-dropdown-alarm" data-vertical-offset="10">
                         <span class="alarm-block__icon font-md"></span>
                         <span class="alarm-block__count">3</span>
                     </a>
+
+                    <div id="jq-dropdown-alarm" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right">
+                        <a href="javascript:;" class="selector-block__item">
+                            Добавлена новая задача №135.<br>
+                            Ответственный - Гайнуллова Е...<br>
+                            <span class="alarm-time">сегодня, 18:10</span>
+                        </a>
+                        <a href="javascript:;" class="selector-block__item">
+                            Добавлена новая задача №135.<br>
+                            Ответственный - Гайнуллова Е...<br>
+                            <span class="alarm-time">сегодня, 18:10</span>
+                        </a>
+                        <a href="javascript:;" class="selector-block__item">
+                            Добавлена новая задача №135.<br>
+                            Ответственный - Гайнуллова Е...<br>
+                            <span class="alarm-time">сегодня, 18:10</span>
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -93,7 +121,15 @@
                                 <th>
                                     <a href="javascript:;" class="table-one__icon-gear font-md"></a>
                                 </th>
-                                <th>Номер</th>
+                                <th>
+                                    Номер
+
+                                    <a href="javascript:;" class="table-sort font-md">
+                                        <span class="table-sort__down"></span>
+                                        <span class="table-sort__active"></span>
+                                    </a>
+
+                                </th>
                                 <th class="table-one__name">Название</th>
                                 <th>Статус</th>
                                 <th>Дата создания</th>
@@ -105,7 +141,7 @@
                         <tbody>
                             <tr>
                                 <td class="table-one__menu">
-                                    <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                                    <a href="javascript:;" class="table-one__icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                 </td>
                                 <td class="table-one__td">
                                     <span class="table-one__check font-md"></span>
@@ -143,7 +179,7 @@
                             </tr>
                             <tr>
                                 <td class="table-one__menu">
-                                    <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                                    <a href="javascript:;" class="table-one__icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                 </td>
                                 <td class="table-one__td">
                                     <a href="javascript:;" class="table-one__link table-one__link_blue">
@@ -180,7 +216,7 @@
                             </tr>
                             <tr>
                                 <td class="table-one__menu">
-                                    <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                                    <a href="javascript:;" class="table-one__icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                 </td>
                                 <td class="table-one__td">
                                     <a href="javascript:;" class="table-one__link table-one__link_blue">
@@ -217,7 +253,7 @@
                             </tr>
                             <tr>
                                 <td class="table-one__menu">
-                                    <a href="javascript:;" class="table-one__icon-dotted font-md"></a>
+                                    <a href="javascript:;" class="table-one__icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                 </td>
                                 <td class="table-one__td">
                                     <a href="javascript:;" class="table-one__link table-one__link_blue">
@@ -255,6 +291,48 @@
                         </tbody>
                     </table>
                 </div>
+
+                <div id="jq-dropdown-table" class="selector-block selector-block_nowrap jq-dropdown">
+                    <a href="javascript:;" class="selector-block__item">Действие первое</a>
+                    <a href="javascript:;" class="selector-block__item">Действие второе</a>
+                    <a href="javascript:;" class="selector-block__item">Действие еще одно</a>
+                    <a href="javascript:;" class="selector-block__item">Действие последнее</a>
+                </div>
+
+                <div class="page-navigation-counter">
+                    <div class="page-navigation-counter__count">
+                        Всего: 3
+                    </div>
+                    <div>
+
+                        <div class="page-navigation">
+                            <a href="javascript:;" class="page-navigation__prev font-md"></a>
+                            <a href="javascript:;" class="page-navigation__link">1</a>
+                            <a href="javascript:;" class="page-navigation__link page-navigation__link_active">2</a>
+                            <a href="javascript:;" class="page-navigation__link">3</a>
+                            <a href="javascript:;" class="page-navigation__link">4</a>
+                            <a href="javascript:;" class="page-navigation__link">5</a>
+                            <a href="javascript:;" class="page-navigation__next font-md"></a>
+                        </div>
+
+                    </div>
+                    <div class="page-navigation-counter__last">
+
+                        <div class="page-counter">
+                            <a href="javascript:;" class="page-counter__label" data-jq-dropdown="#jq-dropdown-counter" data-vertical-offset="5">
+                                Показывать по&nbsp;<span class="page-counter__label-count">10</span>&nbsp;<span class="page-counter__label-icon font-md"></span>
+                            </a>
+                            <div id="jq-dropdown-counter" class="page-counter__selector selector-block selector-block_full-width jq-dropdown jq-dropdown-relative">
+                                <a href="javascript:;" class="selector-block__item" data-val="5">по 5</a>
+                                <a href="javascript:;" class="selector-block__item" data-val="10">по 10</a>
+                                <a href="javascript:;" class="selector-block__item" data-val="20">по 20</a>
+                                <a href="javascript:;" class="selector-block__item" data-val="50">по 50</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="banner-full">
                     <img class="banner-full__img d-none d-md-block" src="./local/uploads/banner.png" alt="">
                     <img class="banner-full__img d-md-none" src="./local/uploads/banner.small.png" alt="">
@@ -316,5 +394,36 @@
             </div>
         </div>
     </footer>
+
+    <nav class="nav-mobile">
+        <a href="javascript:;" class="nav-mobile__close font-md"></a>
+        <div class="nav-mobile__item">
+            <a href="javascript:;" class="nav-mobile__title">Задачи</a>
+            <a href="javascript:;" class="nav-mobile__link">Новые</a>
+            <a href="javascript:;" class="nav-mobile__link">Оценка</a>
+            <a href="javascript:;" class="nav-mobile__link">В работе</a>
+            <a href="javascript:;" class="nav-mobile__link">Архив</a>
+            <a href="javascript:;" class="nav-mobile__link">Создать задачу</a>
+        </div>
+        <div class="nav-mobile__item">
+            <a href="javascript:;" class="nav-mobile__title">Личный кабинет</a>
+            <a href="javascript:;" class="nav-mobile__link">Настройки</a>
+            <a href="javascript:;" class="nav-mobile__link">Мои станки</a>
+            <a href="javascript:;" class="nav-mobile__link">Сменить пароль</a>
+        </div>
+        <div class="nav-mobile__item">
+            <a href="javascript:;" class="nav-mobile__title">О проекте</a>
+            <a href="javascript:;" class="nav-mobile__link">Вопросы и ответы</a>
+            <a href="javascript:;" class="nav-mobile__link">Техподдержка</a>
+            <a href="javascript:;" class="nav-mobile__link">Написать нам</a>
+        </div>
+        <div class="nav-mobile__item">
+            <a href="javascript:;" class="nav-mobile__title">Помощь</a>
+            <a href="javascript:;" class="nav-mobile__link">Вопросы и ответы</a>
+            <a href="javascript:;" class="nav-mobile__link">Техподдержка</a>
+            <a href="javascript:;" class="nav-mobile__link">Написать нам</a>
+        </div>
+    </nav>
+
 </body>
 </html>
