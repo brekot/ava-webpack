@@ -1,5 +1,4 @@
-.btn-one {
-    background-color: var(--yellow);
+.btn {
     height: 40px;
     padding: 0 20px;
     color: var(--white);
@@ -9,14 +8,36 @@
     align-items: center;
     border-radius: 8px;
     transition: all .5s;
+    border: none;
 
     &:hover {
-        background-color: var(--yellow-light);
         color: var(--white);
         text-decoration: none;
     }
     &__icon {
         font-size: 20px;
         margin: 0 3px 0 0;
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 0 10px;
+        }
+    }
+
+    &-one {
+        background-color: var(--yellow);
+
+        &:hover {
+            background-color: var(--yellow-light);
+        }
+    }
+    &-two {
+        background-color: var(--blue);
+
+        &:hover {
+            background-color: var(--blue-bright);
+        }
     }
 }

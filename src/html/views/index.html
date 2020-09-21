@@ -64,7 +64,7 @@
                     <!-- Оповещения -->
                     <a href="javascript:;" class="alarm-block" data-jq-dropdown="#jq-dropdown-alarm" data-vertical-offset="10">
                         <span class="alarm-block__icon font-md"></span>
-                        <span class="alarm-block__count">3</span>
+                        <span class="alarm-block__count count-icon">3</span>
                     </a>
 
                     <div id="jq-dropdown-alarm" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right">
@@ -107,15 +107,15 @@
                     <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Все</a>
                     <a href="javascript:;" class="tabs-block__link">
                         Новые
-                        <span class="tabs-block__count">10</span>
+                        <span class="tabs-block__count count-icon">10</span>
                     </a>
                     <a href="javascript:;" class="tabs-block__link">
                         Оценка
-                        <span class="tabs-block__count">2</span>
+                        <span class="tabs-block__count count-icon">2</span>
                     </a>
                     <a href="javascript:;" class="tabs-block__link">
                         В работе
-                        <span class="tabs-block__count">3</span>
+                        <span class="tabs-block__count count-icon">3</span>
                     </a>
                     <a href="javascript:;" class="tabs-block__link">Требуется реакция</a>
                     <a href="javascript:;" class="tabs-block__link">Архив</a>
@@ -128,22 +128,123 @@
             <div class="container">
 
                 <!-- Строка поиска -->
-                <div class="search-line d-none d-md-block">
+                <div class="search-line">
                     <div class="h1">Мои задачи</div>
                     <div class="search-line__panel">
-                        <form>
-                            <div class="search-line__inner">
-                                <input class="search-line__input" type="text" value="" placeholder="Поиск">
-                                <button class="search-line__button font-md" type="submit"></button>
+
+                        <div class="search-line__inner">
+                            <input class="search-line__input" type="text" value="для станка" placeholder="Поиск">
+                            <a href="javascript:;" class="search-line__label">
+                                в работе <span class="search-line__label-icon font-md"></span>
+                            </a>
+                            <a href="javascript:;" class="search-line__label">
+                                новая <span class="search-line__label-icon font-md"></span>
+                            </a>
+                            <a href="javascript:;" class="search-line__label">
+                                Пертов А.П. <span class="search-line__label-icon font-md"></span>
+                            </a>
+                            <span class="search-line__count">+2</span>
+                            <a href="javascript:;" class="search-line__delete font-md"></a>
+                            <button class="search-line__button font-md" type="submit"></button>
+                        </div>
+
+                        <!-- Фильтр -->
+                        <div class="filter-block">
+                            <div class="filter-block__left">
+
+                                <div class="filter-status">
+                                    <a href="javascript:;" class="filter-status__link filter-status__link_active">
+                                        <span class="filter-status__link-icon font-md"></span>В работе
+                                    </a>
+                                    <a href="javascript:;" class="filter-status__link">
+                                        <span class="filter-status__link-icon font-md"></span>Завершены
+                                    </a>
+                                    <a href="javascript:;" class="filter-status__link">
+                                        <span class="filter-status__link-icon font-md"></span>Отложены
+                                    </a>
+                                    <a href="javascript:;" class="filter-status__link">
+                                        <span class="filter-status__link-icon font-md"></span>Просрочены
+                                    </a>
+                                    <a href="javascript:;" class="filter-status__link">
+                                        <span class="filter-status__link-icon font-md"></span>Почти просрочены
+                                    </a>
+                                </div>
+
+                                <div class="filter-save">
+                                    <a href="javascript:;" class="filter-save__link">
+                                        <span class="filter-save__link-icon font-md"></span>Сохранить
+                                    </a>
+                                    <a href="javascript:;" class="filter-save__setting font-md"></a>
+                                </div>
+
                             </div>
-                        </form>
+                            <div class="filter-block__right">
+
+                                <div class="position-relative">
+
+                                    <div class="filter-block__line filter-select" data-jq-dropdown="#jq-dropdown-filter1">
+                                        <div class="filter-block__label">Роль</div>
+                                        <span class="filter-select__str font-md"></span>
+                                    </div>
+
+                                    <div id="jq-dropdown-filter1" class="filter-select-dropdown jq-dropdown jq-dropdown-relative">
+                                        <label class="filter-select-dropdown__item">
+                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="Пункт №1">
+                                            <span class="filter-select-dropdown__name">Пункт №1</span>
+                                        </label>
+                                        <label class="filter-select-dropdown__item">
+                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="Пункт №2">
+                                            <span class="filter-select-dropdown__name">Пункт №2</span>
+                                        </label>
+                                        <label class="filter-select-dropdown__item">
+                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="Пункт №3">
+                                            <span class="filter-select-dropdown__name">Пункт №3</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="filter-block__line">
+                                    <input class="filter-block__input" type="text" value="">
+                                    <label class="filter-block__label">Ответственный</label>
+                                </div>
+
+                                <div class="filter-block__line">
+                                    <a href="javascript:;" class="search-line__label">
+                                        avancut.ru <span class="search-line__label-icon font-md"></span>
+                                    </a>
+                                    <input class="filter-block__input" type="text" value="">
+                                    <label class="filter-block__label">Проект (группа)</label>
+                                </div>
+
+                                <div class="filter-edit">
+                                    <a href="javascript:;" class="filter-edit__set">
+                                        <span class="filter-edit__set-icon font-md"></span>Добавить поле
+                                    </a>
+                                    <a href="javascript:;" class="filter-edit__reset">
+                                        <span class="filter-edit__reset-icon font-md"></span>Вернуть поля по умолчанию
+                                    </a>
+                                </div>
+
+                                <div class="filter-set">
+                                    <button class="btn btn-two" type="submit">Применить фильтр</button>
+                                    <a href="javascript:;" class="filter-set__reset">
+                                        <span class="filter-set__reset-icon font-md"></span>Сбросить
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
-                        <a href="javascript:;" class="btn-one">
-                            <span class="btn-one__icon font-md"></span>
-                            <span>Создать задачу</span>
-                        </a>
-                    </div>
+                    <a href="javascript:;" class="search-line__filter">
+                        <span class="search-line__filter-icon font-md"></span>
+                        <span class="search-line__filter-count count-icon">2</span>
+                    </a>
+                    <a href="javascript:;" class="btn btn-one">
+                        <span class="btn__icon font-md"></span>
+                        <span class="d-none d-sm-block">Создать задачу</span>
+                    </a>
                 </div>
 
                 <!-- Таблица -->
