@@ -1,0 +1,28 @@
+.filter-status {
+
+    &__link {
+        color: var(--font-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 13px;
+        margin: 0 0 10px;
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            font-size: 18px;
+            color: var(--tabs-link);
+            margin: 0 5px 0 0;
+            transition: all .5s;
+        }
+        &:hover,
+        &_active {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        &:hover &-icon,
+        &_active &-icon {
+            color: var(--yellow);
+        }
+    }
+}

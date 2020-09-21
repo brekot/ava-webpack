@@ -1,0 +1,39 @@
+.filter-edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 25px;
+
+    &__set {
+        color: var(--blue);
+        text-decoration: none;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        &-icon {
+            font-size: 18px;
+            margin: 0 5px 0 0;
+        }
+    }
+    &__reset {
+        color: var(--tabs-link);
+        text-decoration: none;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        &-icon {
+            font-size: 18px;
+            margin: 0 5px 0 0;
+        }
+    }
+}

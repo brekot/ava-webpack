@@ -27,8 +27,7 @@ $(function() {
         $('body').css({'overflow': 'auto'});
     });
 
-
-
+    // Показать / скрыть фильтр на ПК
     $('.search-line__inner').click(function(){
 
         $('.filter-block').toggleClass('filter-block_open');
@@ -43,13 +42,14 @@ $(function() {
 			$('.filter-block').removeClass('filter-block_open');
 		}
 	});
-    
+
+    //
     $('.filter-block__line').click(function(){
 
         $(this).children('input').focus();
     });
 
-    $(".filter-block__input").keyup(function() {
+    $('.filter-block__input').keyup(function() {
 
         if ($(this).val() !== '')
         {
@@ -61,13 +61,20 @@ $(function() {
         }
     });
 
+    // 
     $('.filter-select-dropdown__checkbox').on('change', function(){
 
-        $(this).parents('.jq-dropdown').prev().find('.search-line__label').remove();
-        
-        $(this).parents('.jq-dropdown').find('.filter-select-dropdown__checkbox:checked').each(function(){
+        var elemParent = $(this).parents('.jq-dropdown');
 
-            $(this).parents('.jq-dropdown').prev().prepend('<a href="javascript:;" class="search-line__label">' + $(this).val() + '<span class="search-line__label-icon font-md"></span></a>')
+        var elemParentPrev = elemParent.prev();
+
+        var elemAll = elemParent.find('.filter-select-dropdown__checkbox');
+
+        elemParentPrev.find('.filter-label').remove();
+
+        elemParent.find('.filter-select-dropdown__checkbox:checked').each(function(){
+
+            elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="filter-label">' + $(this).next('.filter-select-dropdown__name').text() + '<span class="filter-label__icon font-md"></span></a>')
         });
     });
 });

@@ -1,0 +1,22 @@
+.filter-set {
+    display: flex;
+    align-items: center;
+
+    &__reset {
+        color: var(--tabs-link);
+        text-decoration: none;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 10px;
+
+        &:hover {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        &-icon {
+            font-size: 18px;
+            margin: 0 5px 0 0;
+        }
+    }
+}

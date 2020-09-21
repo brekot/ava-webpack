@@ -21,6 +21,14 @@
 @import "./elem/btn"; // Кнопки
 @import "./elem/count.icon"; // Иконка количества
 
+// Фильтр и поиск
+@import "./filter/status"; // Фильтр по статусам
+@import "./filter/save"; // Сохранить (Кнопка + шестеренка)
+@import "./filter/label"; // 
+@import "./filter/select"; // Селект
+@import "./filter/edit"; // Добавить поле + Вернуть поля по умолчанию
+@import "./filter/set"; // Применить фильтр + Сбросить
+
 // Общий шаблон
 @import "./template/header"; // Шапка
 @import "./template/btn.menu"; // Кнопка меню
