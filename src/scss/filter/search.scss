@@ -1,0 +1,41 @@
+.filter-search {
+    position: relative;
+    margin: 0 0 10px;
+    display: flex;
+    background-color: var(--blue-hover);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all .5s;
+    padding: 0 0 0 15px;
+
+    &:hover {
+        border-color: var(--grey5);
+    }
+    &__input {
+        width: 1px;
+        height: 56px;
+        padding: 10px 0 0;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+    }
+    &__label {
+        color: var(--tabs-link);
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 15px;
+        pointer-events: none;
+        transition: all .5s;
+    }
+    .filter-label ~ &__label,
+    &__input:focus + &__label,
+    &__line_set &__label {
+        font-size: 12px;
+        top: 10px;
+    }
+    & .filter-label {
+        margin: 20px 5px 0 0;
+    }
+}

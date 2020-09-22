@@ -17,15 +17,17 @@
 @import "./elem/page.counter"; // Показывать по
 @import "./elem/selector.block"; // Выпадающие меню
 @import "./elem/search.line"; // Строка поиска
-@import "./elem/filter.block"; // Фильтр
 @import "./elem/btn"; // Кнопки
 @import "./elem/count.icon"; // Иконка количества
 
 // Фильтр и поиск
+@import "./filter/block"; // Основной блок фильтра
 @import "./filter/status"; // Фильтр по статусам
 @import "./filter/save"; // Сохранить (Кнопка + шестеренка)
 @import "./filter/label"; // 
 @import "./filter/select"; // Селект
+@import "./filter/input"; // 
+@import "./filter/search"; // 
 @import "./filter/edit"; // Добавить поле + Вернуть поля по умолчанию
 @import "./filter/set"; // Применить фильтр + Сбросить
 

@@ -43,25 +43,7 @@ $(function() {
 		}
 	});
 
-    //
-    $('.filter-block__line').click(function(){
-
-        $(this).children('input').focus();
-    });
-
-    $('.filter-block__input').keyup(function() {
-
-        if ($(this).val() !== '')
-        {
-            $(this).parent('.filter-block__line').addClass('filter-block__line_set');
-        }
-        else
-        {
-            $(this).parent('.filter-block__line').removeClass('filter-block__line_set');
-        }
-    });
-
-    // 
+    // Селект: установка меток
     $('.filter-select-dropdown__checkbox').on('change', function(){
 
         var elemParent = $(this).parents('.jq-dropdown');
@@ -74,7 +56,36 @@ $(function() {
 
         elemParent.find('.filter-select-dropdown__checkbox:checked').each(function(){
 
-            elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="filter-label">' + $(this).next('.filter-select-dropdown__name').text() + '<span class="filter-label__icon font-md"></span></a>')
+            elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="js-dropdown-remove filter-label">' + $(this).next('.filter-select-dropdown__name').text() + '<span class="filter-label__icon font-md"></span></a>')
         });
+    });
+
+    // Селект: удаление меток
+    $(document).on('click', '.js-dropdown-remove', function(){
+
+        var intNum = $(this).data('num');
+
+        $(this).parents('.filter-select').find('.filter-select-dropdown__checkbox').eq(intNum).prop('checked', false);
+
+        $(this).remove();
+    });
+
+    // Инпут подсказка при вводе
+    $('.filter-input__input, .filter-search__input').keyup(function() {
+
+        if ($(this).val() !== '')
+        {
+            $(this).parent('.filter-input').addClass('filter-input_set');
+        }
+        else
+        {
+            $(this).parent('.filter-input').removeClass('filter-input_set');
+        }
+    });
+
+    // Фокус на инпуте
+    $('.filter-search').click(function(){
+
+        $(this).children('input').focus();
     });
 });

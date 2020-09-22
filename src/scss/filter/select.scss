@@ -1,9 +1,17 @@
 .filter-select {
     position: relative;
 
+    &__clicker {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
     &__line {
         min-height: 56px;
-        cursor: pointer;
         flex-wrap: wrap;
         position: relative;
         margin: 0 0 10px;
@@ -28,6 +36,10 @@
         pointer-events: none;
         transition: all .5s;
     }
+    .filter-label ~ &__label {
+        font-size: 12px;
+        top: 10px;
+    }
     &__str {
         font-size: 20px;
         color: var(--font-color);
@@ -36,11 +48,6 @@
         top: 50%;
         transform: translate(0, -50%);
     }
-}
-
-.filter-label ~ .filter-block__label {
-    font-size: 12px;
-    top: 10px;
 }
 
 .filter-select-dropdown {

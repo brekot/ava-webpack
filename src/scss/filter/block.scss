@@ -1,0 +1,29 @@
+.filter-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 3px 15px var(--shadow-dark);
+    border-radius: 8px;
+    display: none;
+    z-index: 2;
+    bottom: 0;
+    transform: translate(0, 100%);
+    overflow: hidden;
+
+    &_open {
+        display: flex;
+    }
+    &__left {
+        width: 180px;
+        background-color: var(--blue-hover);
+        padding: 20px 15px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__right {
+        padding: 20px 30px 30px;
+        width: calc(100% - 180px);
+    }
+}
