@@ -1,6 +1,14 @@
-import dropdown from './jquery.dropdown.min';
+import dropdown from './jquery.dropdown';
+import mousewheel from './jquery.mousewheel';
+import jscrollpane from './jquery.jscrollpane.min';
 
 $(function() {
+
+    // Полоса прокрутки
+    $('.scroll-pane').jScrollPane({
+		showArrows: true,
+		autoReinitialise: true
+	});
 
     // Выпадающие плашки
     $('.jq-dropdown a').click(function(){

@@ -8,8 +8,9 @@ https://brekot.github.io/ava-webpack/index.html<br>
 
 <b>Подключены в JS:</b><br>
 <ul>
-    <li>jQuery</li>
+    <li>jQuery и jquery.mousewheel.js</li>
     <li>jQuery.dropdown - для всплывающих элементов (https://www.jqueryscript.net/demo/Bootstrap-style-jQuery-Drop-Down-Plugin-dropdown/)</li>
+    <li>jScrollPane - для полосы прокрутки (http://jscrollpane.kelvinluck.com/)</li>
 </ul>
 
 <hr>
