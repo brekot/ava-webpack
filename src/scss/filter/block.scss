@@ -14,6 +14,9 @@
     &_open {
         display: flex;
     }
+    &__head {
+        display: none;
+    }
     &__left {
         width: 180px;
         background-color: var(--blue-hover);
@@ -25,5 +28,69 @@
     &__right {
         padding: 20px 30px 30px;
         width: calc(100% - 180px);
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: none;
+            flex-wrap: wrap;
+            overflow-y: auto;
+
+            &__head {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 20px 20px 25px;
+                height: 65px;
+            }
+            &__close,
+            &__close:hover {
+                font-size: 24px;
+                text-decoration: none;
+                color: var(--font-color);
+            }
+            &__name {
+                font-size: 22px;
+                font-weight: bold;
+                margin: 0 0 0 35px;
+            }
+            &__left {
+                min-height: calc(100% - 65px);
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            flex-direction: column;
+
+            &__left {
+                width: 100%;
+                min-height: 0;
+                padding: 0 20px;
+                background-color: transparent;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    width: 70px;
+                    right: 0;
+                    top: 0;
+                    background-image: linear-gradient(to left, var(--white), var(--white), transparent);
+                }
+            }
+            &__right {
+                padding: 30px 20px 20px;
+                width: 100%;
+            }
+        }
     }
 }

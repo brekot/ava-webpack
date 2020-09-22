@@ -123,6 +123,9 @@
     @include media-breakpoint-down(md)
     {
         &__panel {
+            width: 0;
+        }
+        &__inner {
             display: none;
         }
     }

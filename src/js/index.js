@@ -88,4 +88,17 @@ $(function() {
 
         $(this).children('input').focus();
     });
+
+    // Показать/скрыть фильтр на мобильнике
+    $('.search-line__filter').click(function(){
+
+        $('.filter-block').addClass('filter-block_open');
+        $('body').css({'overflow': 'hidden'});
+    });
+
+    $('.filter-block__close').click(function(){
+
+        $('.filter-block').removeClass('filter-block_open');
+        $('body').css({'overflow': 'auto'});
+    });
 });

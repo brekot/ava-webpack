@@ -1,28 +1,69 @@
 .filter-status {
 
-    &__link {
-        color: var(--font-color);
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 13px;
-        margin: 0 0 10px;
-        display: flex;
-        align-items: center;
-
-        &-icon {
-            font-size: 18px;
-            color: var(--tabs-link);
-            margin: 0 5px 0 0;
-            transition: all .5s;
-        }
-        &:hover,
-        &_active {
-            color: var(--yellow);
+    @include media-breakpoint-up(sm)
+    {
+        &__link {
+            color: var(--font-color);
             text-decoration: none;
+            font-weight: 500;
+            font-size: 13px;
+            margin: 0 0 10px;
+            display: flex;
+            align-items: center;
+
+            &-icon {
+                font-size: 18px;
+                color: var(--tabs-link);
+                margin: 0 5px 0 0;
+                transition: all .5s;
+            }
+            &:hover,
+            &_active {
+                color: var(--yellow);
+                text-decoration: none;
+            }
+            &:hover &-icon,
+            &_active &-icon {
+                color: var(--yellow);
+            }
         }
-        &:hover &-icon,
-        &_active &-icon {
-            color: var(--yellow);
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+
+            &__link {
+                font-size: 13px;
+                font-weight: 700;
+                color: var(--tabs-link);
+                margin: 0 25px 0 0;
+                text-decoration: none;
+                white-space: nowrap;
+                text-transform: uppercase;
+                position: relative;
+                padding: 0 0 10px;
+
+                &_active {
+                    color: var(--blue);
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        height: 5px;
+                        background-color: var(--blue);
+                        bottom: 0;
+                        border-radius: 3px;
+                    }
+                }
+                &-icon {
+                    display: none;
+                }
+            }
         }
     }
 }

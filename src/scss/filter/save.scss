@@ -31,4 +31,29 @@
             text-decoration: none;
         }
     }
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            height: auto;
+            position: absolute;
+            right: 20px;
+            z-index: 2;
+
+            &__setting {
+                display: none;
+            }
+            &__link {
+
+                &-icon {
+                    font-size: 24px;
+                    margin: 0;
+                    color: var(--yellow);
+                }
+                &-name {
+                    display: none;
+                }
+            }
+        }
+    }
 }
