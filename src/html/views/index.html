@@ -139,17 +139,17 @@
 
                         <div class="search-line__inner">
                             <input class="search-line__input" type="text" value="для станка" placeholder="Поиск">
-                            <a href="javascript:;" class="search-line__label">
+                            <a href="javascript:;" class="js-label-remove search-line__label">
                                 в работе <span class="search-line__label-icon font-md"></span>
                             </a>
-                            <a href="javascript:;" class="search-line__label">
+                            <a href="javascript:;" class="js-label-remove search-line__label">
                                 новая <span class="search-line__label-icon font-md"></span>
                             </a>
-                            <a href="javascript:;" class="search-line__label">
+                            <a href="javascript:;" class="js-label-remove search-line__label">
                                 Пертов А.П. <span class="search-line__label-icon font-md"></span>
                             </a>
                             <span class="search-line__count">+2</span>
-                            <a href="javascript:;" class="search-line__delete font-md"></a>
+                            <a href="javascript:;" class="js-label-remove-all search-line__delete font-md"></a>
                             <button class="search-line__button font-md" type="submit"></button>
                         </div>
 
@@ -190,84 +190,88 @@
                             </div>
                             <div class="filter-block__right">
 
-                                <div class="filter-select">
-                                    <div class="filter-select__clicker" data-jq-dropdown="#jq-dropdown-filter1"></div>
-                                    <div class="filter-select__line">
-                                        <div class="filter-select__label">Роль</div>
-                                        <span class="filter-select__str font-md"></span>
+                                <form>
+
+                                    <div class="filter-select">
+                                        <div class="filter-select__clicker" data-jq-dropdown="#jq-dropdown-filter1"></div>
+                                        <div class="filter-select__line">
+                                            <div class="filter-select__label">Роль</div>
+                                            <span class="filter-select__str font-md"></span>
+                                        </div>
+                                        <div id="jq-dropdown-filter1" class="filter-select-dropdown jq-dropdown jq-dropdown-relative">
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Пункт №1</span>
+                                            </label>
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Пункт №2</span>
+                                            </label>
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Пункт №3</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div id="jq-dropdown-filter1" class="filter-select-dropdown jq-dropdown jq-dropdown-relative">
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Пункт №1</span>
-                                        </label>
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Пункт №2</span>
-                                        </label>
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Пункт №3</span>
-                                        </label>
+
+                                    <div class="filter-select">
+                                        <div class="filter-select__clicker" data-jq-dropdown="#jq-dropdown-filter2"></div>
+                                        <div class="filter-select__line">
+                                            <div class="filter-select__label">Статус</div>
+                                            <span class="filter-select__str font-md"></span>
+                                        </div>
+                                        <div id="jq-dropdown-filter2" class="filter-select-dropdown jq-dropdown jq-dropdown-relative">
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Ждет выполнения</span>
+                                            </label>
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Выполняется</span>
+                                            </label>
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Обсуждение</span>
+                                            </label>
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Завершено</span>
+                                            </label>
+                                            <label class="filter-select-dropdown__item">
+                                                <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
+                                                <span class="filter-select-dropdown__name">Забракован</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="filter-select">
-                                    <div class="filter-select__clicker" data-jq-dropdown="#jq-dropdown-filter2"></div>
-                                    <div class="filter-select__line">
-                                        <div class="filter-select__label">Статус</div>
-                                        <span class="filter-select__str font-md"></span>
+                                    <div class="filter-input">
+                                        <input class="filter-input__input" type="text" value="">
+                                        <label class="filter-input__label">Ответственный</label>
                                     </div>
-                                    <div id="jq-dropdown-filter2" class="filter-select-dropdown jq-dropdown jq-dropdown-relative">
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Ждет выполнения</span>
-                                        </label>
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Выполняется</span>
-                                        </label>
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Обсуждение</span>
-                                        </label>
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Завершено</span>
-                                        </label>
-                                        <label class="filter-select-dropdown__item">
-                                            <input class="filter-select-dropdown__checkbox" type="checkbox" value="">
-                                            <span class="filter-select-dropdown__name">Забракован</span>
-                                        </label>
+
+                                    <div class="filter-search">
+                                        <a href="javascript:;" class="js-dropdown-remove filter-label">avancut.ru <span class="filter-label__icon font-md"></span></a>
+                                        <input class="filter-search__input" type="text" value="">
+                                        <label class="filter-search__label">Проект (группа)</label>
                                     </div>
-                                </div>
 
-                                <div class="filter-input">
-                                    <input class="filter-input__input" type="text" value="">
-                                    <label class="filter-input__label">Ответственный</label>
-                                </div>
+                                    <div class="filter-edit">
+                                        <a href="javascript:;" class="filter-edit__set">
+                                            <span class="filter-edit__set-icon font-md"></span>Добавить поле
+                                        </a>
+                                        <a href="javascript:;" class="filter-edit__reset">
+                                            <span class="filter-edit__reset-icon font-md"></span>Вернуть поля по умолчанию
+                                        </a>
+                                    </div>
 
-                                <div class="filter-search">
-                                    <a href="javascript:;" class="js-dropdown-remove filter-label">avancut.ru <span class="filter-label__icon font-md"></span></a>
-                                    <input class="filter-search__input" type="text" value="">
-                                    <label class="filter-search__label">Проект (группа)</label>
-                                </div>
+                                    <div class="filter-set">
+                                        <button class="btn btn-two" type="submit">Применить фильтр</button>
+                                        <a href="javascript:;" class="js-filter-reset filter-set__reset">
+                                            <span class="filter-set__reset-icon font-md"></span>Сбросить
+                                        </a>
+                                    </div>
 
-                                <div class="filter-edit">
-                                    <a href="javascript:;" class="filter-edit__set">
-                                        <span class="filter-edit__set-icon font-md"></span>Добавить поле
-                                    </a>
-                                    <a href="javascript:;" class="filter-edit__reset">
-                                        <span class="filter-edit__reset-icon font-md"></span>Вернуть поля по умолчанию
-                                    </a>
-                                </div>
-
-                                <div class="filter-set">
-                                    <button class="btn btn-two" type="submit">Применить фильтр</button>
-                                    <a href="javascript:;" class="filter-set__reset">
-                                        <span class="filter-set__reset-icon font-md"></span>Сбросить
-                                    </a>
-                                </div>
+                                </form>
 
                             </div>
                         </div>

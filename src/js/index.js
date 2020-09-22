@@ -36,7 +36,7 @@ $(function() {
     });
 
     // Показать / скрыть фильтр на ПК
-    $('.search-line__inner').click(function(){
+    $('.search-line__input').click(function(){
 
         $('.filter-block').toggleClass('filter-block_open');
     });
@@ -66,6 +66,22 @@ $(function() {
 
             elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="js-dropdown-remove filter-label">' + $(this).next('.filter-select-dropdown__name').text() + '<span class="filter-label__icon font-md"></span></a>')
         });
+    });
+
+    // Главный поиск: удаление меток
+    $(document).on('click', '.js-label-remove', function(){
+
+        $(this).remove();
+    });
+
+    // Главный поиск: удаление всех меток
+    $(document).on('click', '.js-label-remove-all', function(){
+
+        $(this).prevAll('.search-line__label').remove();
+
+        $(this).prev('.search-line__count').remove();
+
+        $(this).remove();
     });
 
     // Селект: удаление меток
@@ -108,5 +124,13 @@ $(function() {
 
         $('.filter-block').removeClass('filter-block_open');
         $('body').css({'overflow': 'auto'});
+    });
+
+    // Сброс фильтра
+    $('.js-filter-reset').click(function(){
+
+        $(this).parents('form').find('.js-dropdown-remove').remove();
+        
+        $(this).parents('form')[0].reset();
     });
 });
