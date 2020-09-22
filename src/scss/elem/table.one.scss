@@ -28,6 +28,13 @@
         &_text {
             color: var(--font-color);
         }
+        &_head {
+            color: var(--tabs-link);
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     &__icon {
 
