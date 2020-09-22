@@ -81,6 +81,8 @@ $(function() {
 
         $(this).prev('.search-line__count').remove();
 
+        $(this).prevAll('.search-line__input').val('');
+
         $(this).remove();
     });
 
@@ -132,5 +134,7 @@ $(function() {
         $(this).parents('form').find('.js-dropdown-remove').remove();
         
         $(this).parents('form')[0].reset();
+
+        $('.js-label-remove-all').trigger('click');
     });
 });
