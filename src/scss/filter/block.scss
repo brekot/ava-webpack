@@ -84,7 +84,7 @@
                     width: 70px;
                     right: 0;
                     top: 0;
-                    background-image: linear-gradient(to left, var(--white), var(--white), transparent);
+                    background-image: linear-gradient(to left, var(--white) 0%, var(--white) 50%, rgba(255, 255, 255, 0) 100%);
                 }
             }
             &__right {
