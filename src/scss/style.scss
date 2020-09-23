@@ -3,6 +3,7 @@
 @import "./main/variables"; // Переменные
 @import "./main/grid"; // Сетка
 @import "./main/reboot"; // Сброс стилей
+@import "./main/margin"; // Отступы
 
 // Элементы
 @import "./elem/jquery.jscrollpane"; // Прокрутка
@@ -20,6 +21,9 @@
 @import "./elem/search.line"; // Строка поиска
 @import "./elem/btn"; // Кнопки
 @import "./elem/count.icon"; // Иконка количества
+@import "./elem/head.label"; // H1 с пометкой
+@import "./elem/breadcrumbs"; // Хлебные крошки
+@import "./elem/block.white"; // Белый блок
 
 // Фильтр и поиск
 @import "./filter/block"; // Основной блок фильтра

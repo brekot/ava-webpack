@@ -1,0 +1,15 @@
+.head-label {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+
+    &__label {
+        height: 22px;
+        line-height: 22px;
+        color: var(--white);
+        padding: 0 10px;
+        border-radius: 11px;
+        margin: 0 0 0 5px;
+        background-color: var(--yellow-check);
+    }
+}

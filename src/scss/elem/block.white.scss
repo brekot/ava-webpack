@@ -1,0 +1,19 @@
+.block-white {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow);
+    margin: 0 0 20px;
+
+    &__head {
+        border-radius: 8px;
+        box-shadow: 0 6px 8px var(--shadow);
+        padding: 20px 25px;
+
+        &_no-padding {
+            padding: 0 25px;
+        }
+    }
+    &__body {
+        padding: 20px 25px;
+    }
+}
