@@ -6,8 +6,11 @@
 @import "./main/margin"; // Отступы
 
 // Элементы
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
 @import "./elem/jquery.jscrollpane"; // Прокрутка
 @import "./elem/elem"; // Незначительные элементы
+@import "./elem/blockquote";
+@import "./elem/icon"; // Общие иконки
 @import "./elem/banner.full"; // Баннер
 @import "./elem/tabs.block"; // Вкладки
 @import "./elem/table.one"; // Таблица
@@ -20,21 +23,29 @@
 @import "./elem/selector.block"; // Выпадающие меню
 @import "./elem/search.line"; // Строка поиска
 @import "./elem/btn"; // Кнопки
+@import "./elem/sbtn"; // Кнопки (маленькие)
 @import "./elem/count.icon"; // Иконка количества
 @import "./elem/head.label"; // H1 с пометкой
 @import "./elem/breadcrumbs"; // Хлебные крошки
 @import "./elem/block.white"; // Белый блок
+@import "./elem/commens.list"; // Комментарии
+@import "./elem/window"; // Окна
+@import "./elem/checkbox"; // Стилизованный checkbox
 
 // Фильтр и поиск
 @import "./filter/block"; // Основной блок фильтра
 @import "./filter/status"; // Фильтр по статусам
 @import "./filter/save"; // Сохранить (Кнопка + шестеренка)
-@import "./filter/label"; // 
-@import "./filter/select"; // Селект
-@import "./filter/input"; // 
-@import "./filter/search"; // 
+@import "./filter/label";
+@import "./filter/search";
 @import "./filter/edit"; // Добавить поле + Вернуть поля по умолчанию
 @import "./filter/set"; // Применить фильтр + Сбросить
+
+// Формы
+@import "./form/textarea";
+@import "./form/input";
+@import "./form/file";
+@import "./form/select";
 
 // Общий шаблон
 @import "./template/header"; // Шапка
@@ -45,3 +56,8 @@
 @import "./template/footer"; // Подвал
 @import "./template/nav.footer"; // Меню в подвале
 @import "./template/nav.mobile"; // Меню на мобильнике
+
+// Task
+@import "./pages/task/head"; // Шапка
+@import "./pages/task/action"; // Кнопки
+@import "./pages/task/watcher"; // Наблюдатели

@@ -1,6 +1,5 @@
 .filter-search {
     position: relative;
-    margin: 0 0 10px;
     display: flex;
     background-color: var(--blue-hover);
     border-radius: 5px;
@@ -31,7 +30,7 @@
     }
     .filter-label ~ &__label,
     &__input:focus + &__label,
-    &__line_set &__label {
+    &_set &__label {
         font-size: 12px;
         top: 10px;
     }

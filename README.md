@@ -11,6 +11,7 @@ https://brekot.github.io/ava-webpack/index.html<br>
     <li>jQuery и jquery.mousewheel.js</li>
     <li>jQuery.dropdown - для всплывающих элементов (https://www.jqueryscript.net/demo/Bootstrap-style-jQuery-Drop-Down-Plugin-dropdown/)</li>
     <li>jScrollPane - для полосы прокрутки (http://jscrollpane.kelvinluck.com/)</li>
+    <li>fancybox - для окон (https://fancyapps.com/fancybox/3/)</li>
 </ul>
 
 <hr>

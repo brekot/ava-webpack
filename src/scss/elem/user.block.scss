@@ -7,6 +7,13 @@
     &:hover {
         text-decoration: none;
     }
+    &_blue {
+        color: var(--blue-bright);
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
     &__icon {
         height: 32px;
         width: 32px;
@@ -20,8 +27,8 @@
         align-items: center;
     }
     &__name {
-        margin: 0 0 0 10px;
-        max-width: calc(100% - 42px);
+        margin: 0 0 0 8px;
+        max-width: calc(100% - 40px);
         white-space: nowrap;
     }
 }

@@ -1,0 +1,34 @@
+.commens-list {
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px;
+    }
+    &__time {
+        margin: 0 auto 0 30px;
+        color: var(--tabs-link);
+    }
+    &__answer-link {
+        margin: 0 10px 0 0;
+    }
+    &__aside {
+        width: 40px;
+    }
+    &__body {
+        display: flex;
+    }
+    &__inner {
+        width: calc(100% - 40px);
+        margin: 0 0 0 auto;
+    }
+    &__foot {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-item {
+            margin: 0 0 0 10px;
+        }
+    }
+}

@@ -24,9 +24,10 @@ body {
 }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
+	background-color: var(--grey2);
+	height: 1px;
+	border: none;
+    margin: 25px 0;
 }
 
 h2, h3, h4, h5, h6,
@@ -44,6 +45,10 @@ h1, .h1 {
 
 p {
 	margin: 0 0 1rem;
+
+    &:last-child {
+        margin: 0;
+    }
 }
 
 ol,
@@ -59,9 +64,12 @@ ul ol {
 	margin: 0;
 }
 
-b,
-strong {
+b {
 	font-weight: bold;
+}
+
+strong {
+	font-weight: 500;
 }
 
 small {

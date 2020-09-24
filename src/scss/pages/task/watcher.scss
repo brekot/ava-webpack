@@ -1,0 +1,22 @@
+.task-watcher {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__item {
+        height: 22px;
+        margin: 0 0 0 10px;
+        color: var(--font-color);
+        text-decoration: none;
+        border-radius: 11px;
+        background-color: var(--grey3);
+        padding: 0 10px;
+        line-height: 22px;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--white);
+            background-color: var(--blue);
+        }
+    }
+}

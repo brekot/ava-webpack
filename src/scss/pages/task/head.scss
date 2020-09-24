@@ -1,0 +1,26 @@
+.task-head {
+    display: flex;
+    align-items: center;
+    color: var(--tabs-link);
+
+    &__item {
+        border-right: 1px solid var(--grey3);
+        margin: 0 30px 0 0;
+        padding: 0 30px 0 0;
+
+        &_last-left {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        &_last-right {
+            border: none;
+            margin: 0 0 0 auto;
+            padding: 0;
+        }
+    }
+    &__count {
+        color: var(--font-color);
+        font-weight: bold;
+    }
+}

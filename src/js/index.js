@@ -1,8 +1,27 @@
 import dropdown from './jquery.dropdown';
 import mousewheel from './jquery.mousewheel';
 import jscrollpane from './jquery.jscrollpane.min';
+import filedrag from './filedrag';
+
+require('@fancyapps/fancybox');
 
 $(function() {
+
+    /* - - - Подключение fancybox - - - */
+    $('[data-fancybox]').fancybox({
+        buttons: [
+            "zoom",
+            //"share",
+            "slideShow",
+            "fullScreen",
+            //"download",
+            //"thumbs",
+            "close"
+        ],
+        touch: {
+            vertical: false
+        },
+    });
 
     // Полоса прокрутки
     $('.scroll-pane').jScrollPane({
@@ -51,23 +70,6 @@ $(function() {
 		}
 	});
 
-    // Селект: установка меток
-    $('.filter-select-dropdown__checkbox').on('change', function(){
-
-        var elemParent = $(this).parents('.jq-dropdown');
-
-        var elemParentPrev = elemParent.prev();
-
-        var elemAll = elemParent.find('.filter-select-dropdown__checkbox');
-
-        elemParentPrev.find('.filter-label').remove();
-
-        elemParent.find('.filter-select-dropdown__checkbox:checked').each(function(){
-
-            elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="js-dropdown-remove filter-label">' + $(this).next('.filter-select-dropdown__name').text() + '<span class="filter-label__icon font-md"></span></a>')
-        });
-    });
-
     // Главный поиск: удаление меток
     $(document).on('click', '.js-label-remove', function(){
 
@@ -86,26 +88,16 @@ $(function() {
         $(this).remove();
     });
 
-    // Селект: удаление меток
-    $(document).on('click', '.js-dropdown-remove', function(){
-
-        var intNum = $(this).data('num');
-
-        $(this).parents('.filter-select').find('.filter-select-dropdown__checkbox').eq(intNum).prop('checked', false);
-
-        $(this).remove();
-    });
-
-    // Инпут подсказка при вводе
-    $('.filter-input__input, .filter-search__input').keyup(function() {
+    // Подсказка при вводе
+    $('.filter-search__input').keyup(function() {
 
         if ($(this).val() !== '')
         {
-            $(this).parent('.filter-input').addClass('filter-input_set');
+            $(this).parent('.filter-search').addClass('filter-search_set');
         }
         else
         {
-            $(this).parent('.filter-input').removeClass('filter-input_set');
+            $(this).parent('.filter-search').removeClass('filter-search_set');
         }
     });
 
@@ -137,4 +129,8 @@ $(function() {
 
         $('.js-label-remove-all').trigger('click');
     });
+
+    require('./form/input');
+
+    require('./form/select');
 });

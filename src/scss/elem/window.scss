@@ -1,0 +1,22 @@
+.window-one {
+    display: none;
+    padding: 35px 40px 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 760px;
+    overflow: visible;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 25px;
+    }
+}
+
+.fancybox-bg {
+    background-color: var(--window-bg);
+}
+.fancybox-is-open .fancybox-bg {
+    opacity: .8;
+}
