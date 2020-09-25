@@ -1,0 +1,66 @@
+.date-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px;
+
+    &__left {
+        width: calc(100% - 180px);
+    }
+    &__date {
+        width: 170px;
+    }
+}
+
+.form-date {
+    background-color: var(--blue-hover);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    min-height: 56px;
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+
+    &:hover {
+        border-color: var(--grey5);
+    }
+    &__input {
+        width: 100%;
+        height: 56px;
+        padding: 10px 15px 0 15px;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+    &__label {
+        color: var(--tabs-link);
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+        pointer-events: none;
+        transition: all .5s;
+    }
+    &__input:focus + &__label,
+    &_set &__label {
+        font-size: 12px;
+        top: 10px;
+    }
+    &__icon {
+        font-size: 24px;
+        color: var(--font-color);
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        opacity: .6;
+        transition: all .5s;
+        transform: translate(0, -50%);
+    }
+    &:hover &__icon {
+        opacity: 1;
+    }
+}

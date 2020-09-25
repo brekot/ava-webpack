@@ -20,10 +20,9 @@
         border: 2px solid transparent;
         transition: all .5s;
         padding: 20px 15px 2px;
-
-        &:hover {
-            border-color: var(--grey5);
-        }
+    }
+    &:hover &__line {
+        border-color: var(--grey5);
     }
     &__label {
         color: var(--tabs-link);
@@ -35,7 +34,7 @@
         pointer-events: none;
         transition: all .5s;
     }
-    .filter-label ~ &__label {
+    .form-label ~ &__label {
         font-size: 12px;
         top: 10px;
     }

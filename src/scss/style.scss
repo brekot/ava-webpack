@@ -5,9 +5,12 @@
 @import "./main/reboot"; // Сброс стилей
 @import "./main/margin"; // Отступы
 
-// Элементы
+// Библиотеки
 @import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'; // Fancybox
-@import "./elem/jquery.jscrollpane"; // Прокрутка
+@import "./lib/jquery.jscrollpane"; // Прокрутка
+@import "./lib/datepicker"; // Прокрутка
+
+// Элементы
 @import "./elem/elem"; // Незначительные элементы
 @import "./elem/blockquote";
 @import "./elem/icon"; // Общие иконки
@@ -36,16 +39,17 @@
 @import "./filter/block"; // Основной блок фильтра
 @import "./filter/status"; // Фильтр по статусам
 @import "./filter/save"; // Сохранить (Кнопка + шестеренка)
-@import "./filter/label";
-@import "./filter/search";
 @import "./filter/edit"; // Добавить поле + Вернуть поля по умолчанию
 @import "./filter/set"; // Применить фильтр + Сбросить
 
 // Формы
+@import "./form/label";
 @import "./form/textarea";
 @import "./form/input";
 @import "./form/file";
 @import "./form/select";
+@import "./form/search";
+@import "./form/date";
 
 // Общий шаблон
 @import "./template/header"; // Шапка

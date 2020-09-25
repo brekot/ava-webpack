@@ -1,4 +1,4 @@
-.filter-search {
+.form-search {
     position: relative;
     display: flex;
     background-color: var(--blue-hover);
@@ -12,7 +12,7 @@
     }
     &__input {
         width: 1px;
-        height: 56px;
+        height: 52px;
         padding: 10px 0 0;
         background-color: transparent;
         box-shadow: none;
@@ -28,13 +28,13 @@
         pointer-events: none;
         transition: all .5s;
     }
-    .filter-label ~ &__label,
+    .form-label ~ &__label,
     &__input:focus + &__label,
     &_set &__label {
         font-size: 12px;
         top: 10px;
     }
-    & .filter-label {
+    & .form-label {
         margin: 20px 5px 0 0;
     }
 }

@@ -8,7 +8,7 @@
 
         <title>Avancut | Client</title>
 
-        <link href="./local/template_styles.css?81c58e1acb2346cbdd86" rel="stylesheet" />
+        <link href="./local/template_styles.css?734f79a2a9860b808f84" rel="stylesheet" />
     </head>
 
     <body>
@@ -222,10 +222,10 @@
                                             <label class="form-input__label">Ответственный</label>
                                         </div>
 
-                                        <div class="filter-search mb-10">
-                                            <a href="javascript:;" class="js-dropdown-remove filter-label">avancut.ru <span class="filter-label__icon font-md"></span></a>
-                                            <input class="filter-search__input" type="text" value="" />
-                                            <label class="filter-search__label">Проект (группа)</label>
+                                        <div class="form-search mb-10">
+                                            <a href="javascript:;" class="js-dropdown-remove form-label">avancut.ru <span class="form-label__icon font-md"></span></a>
+                                            <input class="form-search__input" type="text" value="" />
+                                            <label class="form-search__label">Проект (группа)</label>
                                         </div>
 
                                         <div class="filter-edit">
@@ -443,7 +443,7 @@
                             <!-- Постраничной навигации -->
                             <div class="page-navigation">
                                 <a href="javascript:;" class="page-navigation__prev font-md"></a>
-                                <a href="javascript:;" class="page-navigation__link">1</a>
+                                <a href="javascript:;" class="page-navigation__link" data-fancybox data-src="#new-equipment">1</a>
                                 <a href="javascript:;" class="page-navigation__link page-navigation__link_active">2</a>
                                 <a href="javascript:;" class="page-navigation__link">3</a>
                                 <a href="javascript:;" class="page-navigation__link">4</a>
@@ -572,6 +572,182 @@
                             </label>
                         </div>
                     </div>
+
+                    <div class="date-line">
+                        <div class="date-line__left">
+                            <div class="form-select">
+                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select2"></div>
+                                <div class="form-select__line">
+                                    <div class="form-select__label">Ответственный</div>
+                                    <span class="form-select__str font-md"></span>
+                                </div>
+                                <div id="jq-dropdown-select2" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                        <span class="form-select-dropdown__name">Пункт №1</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                        <span class="form-select-dropdown__name">Пункт №2</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                        <span class="form-select-dropdown__name">Пункт №3</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-line__date">
+                            <div class="form-date">
+                                <input type="text" value="" class="form-date__input datepicker-here" data-position="right top" />
+                                <label class="form-date__label">Крайний срок</label>
+                                <span class="form-date__icon font-md"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-one__foot">
+                    <div class="window-one__foot-item">
+                        <a href="javascript:;" class="btn btn_lg btn-one">
+                            Поставить задачу
+                        </a>
+                    </div>
+                    <div class="window-one__foot-item">
+                        <a href="javascript:;" class="btn btn_lg btn-three" data-fancybox-close>
+                            Отмена
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="window-one" id="new-equipment">
+                <div class="window-one__head">
+                    <div class="h1 mb-0">Новое оборудование</div>
+                    <div>
+                        <label class="checkbox-one">
+                            <div class="checkbox-one__label">Сделать по-умолчанию</div>
+                            <div class="checkbox-one__box checkbox-one__box_right">
+                                <input class="checkbox-one__input" type="checkbox" value="" />
+                                <span class="checkbox-one__circle"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="window-one__body">
+                    <div class="form-input mb-15">
+                        <input class="form-input__input" type="text" value="" />
+                        <label class="form-input__label">Название оборудования</label>
+                    </div>
+
+                    <div class="form-textarea mb-15">
+                        <div class="form-textarea__panel font-md">
+                            <div class="form-textarea__panel-item">
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                            </div>
+                            <div class="form-textarea__panel-item">
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                            </div>
+                            <div class="form-textarea__panel-item">
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                            </div>
+                            <div class="form-textarea__panel-item">
+                                <a href="javascript:;" class="form-textarea__panel-link"></a>
+                            </div>
+                            <div class="form-textarea__panel-item">
+                                <a href="javascript:;">
+                                    <svg class="form-textarea__panel-icon form-textarea__panel-icon_q">
+                                        <use xlink:href="./local/img/sprite.svg#q"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <textarea class="form-textarea__input" placeholder="Описание оборудования"></textarea>
+                    </div>
+
+                    <div class="form-file mb-20" id="js-file-drag">
+                        <svg class="form-file__icon">
+                            <use xlink:href="./local/img/sprite.svg#f"></use>
+                        </svg>
+                        <div class="form-file__info" id="js-file-messages">
+                            <a href="javascript:;" class="form-file__link blue-link">
+                                Загрузите
+                                <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple" />
+                            </a>
+                            или перетащите файл
+                        </div>
+                    </div>
+
+                    <div class="form-select mb-10">
+                        <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select3"></div>
+                        <div class="form-select__line">
+                            <div class="form-select__label">Параметр 1</div>
+                            <span class="form-select__str font-md"></span>
+                        </div>
+                        <div id="jq-dropdown-select3" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                            <label class="form-select-dropdown__item">
+                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                <span class="form-select-dropdown__name">Пункт №1</span>
+                            </label>
+                            <label class="form-select-dropdown__item">
+                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                <span class="form-select-dropdown__name">Пункт №2</span>
+                            </label>
+                            <label class="form-select-dropdown__item">
+                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                <span class="form-select-dropdown__name">Пункт №3</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="date-line">
+                        <div class="date-line__left">
+                            <div class="form-select">
+                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select4"></div>
+                                <div class="form-select__line">
+                                    <div class="form-select__label">Параметр 2</div>
+                                    <span class="form-select__str font-md"></span>
+                                </div>
+                                <div id="jq-dropdown-select4" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                        <span class="form-select-dropdown__name">Пункт №1</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                        <span class="form-select-dropdown__name">Пункт №2</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                        <span class="form-select-dropdown__name">Пункт №3</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-line__date">
+                            <div class="form-date">
+                                <input type="text" value="" class="form-date__input datepicker-here" data-position="right top" />
+                                <label class="form-date__label">Дата выпуска</label>
+                                <span class="form-date__icon font-md"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-one__foot">
+                    <div class="window-one__foot-item">
+                        <a href="javascript:;" class="btn btn_lg btn-one">
+                            Добавить оборудование
+                        </a>
+                    </div>
+                    <div class="window-one__foot-item">
+                        <a href="javascript:;" class="btn btn_lg btn-three" data-fancybox-close>
+                            Отмена
+                        </a>
+                    </div>
                 </div>
             </div>
         </main>
@@ -667,6 +843,6 @@
             </div>
         </nav>
 
-        <script type="text/javascript" src="./local/js/script.js?81c58e1acb2346cbdd86"></script>
+        <script type="text/javascript" src="./local/js/script.js?734f79a2a9860b808f84"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-$('.form-input__input').keyup(function() {
+$(document).on('keyup', '.form-input__input', function() {
 
     if ($(this).val() !== '')
     {

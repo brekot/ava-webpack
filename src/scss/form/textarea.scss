@@ -2,7 +2,12 @@
     background-color: var(--blue-hover);
     border-radius: 5px;
     overflow: hidden;
+    transition: all .5s;
+    border: 2px solid transparent;
 
+    &:hover {
+        border-color: var(--grey5);
+    }
     &__panel {
         display: flex;
         align-items: center;

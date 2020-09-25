@@ -7,11 +7,11 @@ $('.form-select-dropdown__checkbox').on('change', function(){
 
     var elemAll = elemParent.find('.form-select-dropdown__checkbox');
 
-    elemParentPrev.find('.filter-label').remove();
+    elemParentPrev.find('.form-label').remove();
 
     elemParent.find('.form-select-dropdown__checkbox:checked').each(function(){
 
-        elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="js-dropdown-remove filter-label">' + $(this).next('.form-select-dropdown__name').text() + '<span class="filter-label__icon font-md"></span></a>')
+        elemParentPrev.prepend('<a href="javascript:;" data-num="' + elemAll.index(this) + '" class="js-dropdown-remove form-label">' + $(this).next('.form-select-dropdown__name').text() + '<span class="form-label__icon font-md"></span></a>')
     });
 });
 
