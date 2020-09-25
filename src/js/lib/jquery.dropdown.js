@@ -124,7 +124,8 @@ if (jQuery) (function ($) {
 
         if (jqDropdown.length === 0 || !trigger) return;
 
-        if (wWidth < 768 && jqDropdown.hasClass('jq-dropdown-anchor-sm-right')) smRight = true;
+        if (wWidth < 768 && jqDropdown.hasClass('jq-down-sm-right')) smRight = true;
+        if (wWidth > 575 && jqDropdown.hasClass('jq-up-sm-right')) smRight = true;
 
         // Position the jq-dropdown relative-to-parent...
         if (jqDropdown.hasClass('jq-dropdown-relative')) {

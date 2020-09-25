@@ -53,4 +53,35 @@
         color: var(--tabs-link);
         min-height: 115px;
     }
+
+    @include media-breakpoint-only(sm)
+    {
+        &__panel {
+
+            &-item {
+                margin: 0 15px 0 0;
+            }
+            &-link {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__panel {
+            padding: 10px;
+            justify-content: space-between;
+
+            &-item {
+                margin: 0;
+            }
+            &-link {
+                font-size: 18px;
+                margin: 0 5px 0 0;
+            }
+        }
+        &__input {
+            padding: 10px 15px;
+        }
+    }
 }

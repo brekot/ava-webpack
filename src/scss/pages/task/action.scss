@@ -2,11 +2,33 @@
     display: flex;
     align-items: center;
 
-    &__item {
-        margin: 0 10px 0 0;
+    @include media-breakpoint-up(md)
+    {
+        &__item {
+            margin: 0 10px 0 0;
 
-        &_last {
-            margin: 0 0 0 auto;
+            &_last {
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            flex-wrap: wrap;
+            position: relative;
+
+            &__item {
+                margin: 0 0 10px;
+                width: 100%;
+
+                &_menu {
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    width: auto;
+                }
+            }
         }
     }
 }

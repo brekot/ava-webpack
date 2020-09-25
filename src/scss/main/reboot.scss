@@ -28,6 +28,13 @@ hr {
 	height: 1px;
 	border: none;
     margin: 25px 0;
+
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 20px 0;
+        }
+    }
 }
 
 h2, h3, h4, h5, h6,

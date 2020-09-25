@@ -16,4 +16,22 @@
     &__body {
         padding: 20px 25px;
     }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 10px;
+
+            &__head {
+                padding: 15px 20px;
+
+                &_no-padding {
+                    padding: 0 20px;
+                }
+            }
+            &__body {
+                padding: 15px 20px;
+            }
+        }
+    }
 }

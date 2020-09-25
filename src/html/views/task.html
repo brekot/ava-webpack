@@ -27,24 +27,24 @@
             <div class="block-white__head">
 
                 <div class="task-head">
-                    <div class="task-head__item">
-                        Трудозатраты: <span class="task-head__count">100:00</span>
+                    <div class="task-head__item task-head__item_border">
+                        Трудозатраты: <span class="task-head__value">100:00</span>
+                    </div>
+                    <div class="task-head__item task-head__item_border">
+                        Крайний срок: <span class="task-head__value">28.05.2020</span>
                     </div>
                     <div class="task-head__item">
-                        Крайний срок: <span class="task-head__count">28.05.2020</span>
+                        Ответственный: <span class="task-head__value">Иванов И.И.</span>
                     </div>
-                    <div class="task-head__item task-head__item_last-left">
-                        Ответственный: <span class="task-head__count">Иванов И.И.</span>
-                    </div>
-                    <div class="task-head__item task-head__item_last-right">
-                        Статус: <span class="task-head__count">Оценка</span>
+                    <div class="task-head__item task-head__item_right">
+                        Статус: <span class="task-head__value">Оценка</span>
                     </div>
                 </div>
             
             </div>
             <div class="block-white__body">
                 <div class="mb-20">
-                    Описание задачи длинное и полное, с подробными характеристиками.Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками.
+                    Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками. Описание задачи длинное и полное, с подробными характеристиками.
                 </div>
 
                 <div class="task-action">
@@ -58,13 +58,13 @@
                             Приостановить
                         </a>
                     </div>
-                    <div class="task-action__item">
+                    <div class="task-action__item task-action__item_menu">
                         <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-task" data-vertical-offset="10">
                             
                         </a>
 
                         <!-- Меню строк -->
-                        <div id="jq-dropdown-task" class="selector-block selector-block_nowrap jq-dropdown">
+                        <div id="jq-dropdown-task" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-relative jq-down-sm-right">
                             <a href="javascript:;" class="selector-block__item">Действие первое</a>
                             <a href="javascript:;" class="selector-block__item">Действие второе</a>
                             <a href="javascript:;" class="selector-block__item">Действие еще одно</a>
@@ -82,7 +82,7 @@
                 <hr>
 
                 <div class="task-watcher">
-                    <div>Наблюдатели:</div>
+                    <div class="task-watcher__label">Наблюдатели:</div>
                     <a href="javascript:;" class="task-watcher__item">Анастасия Рязнова</a>
                     <a href="javascript:;" class="task-watcher__item">Иван Иванов</a>
                     <a href="javascript:;" class="task-watcher__item">Владимир Лукьянов</a>
@@ -91,7 +91,7 @@
             </div>
         </div>
 
-        <div class="block-white">
+        <div class="block-white mb-30">
             <div class="block-white__head block-white__head_no-padding">
 
                 <div class="tabs-block">
@@ -117,8 +117,8 @@
                             <div class="commens-list__time">
                                 вчера 18:54:12
                             </div>
-                            <a href="javascript:;" class="commens-list__answer-link blue-link">Ответить</a>
-                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-commens" data-vertical-offset="10">
+                            <a href="javascript:;" class="d-none d-sm-block commens-list__answer-link blue-link">Ответить</a>
+                            <a href="javascript:;" class="d-none d-sm-block icon-dotted font-md" data-jq-dropdown="#jq-dropdown-commens" data-vertical-offset="10">
                                 
                             </a>
                         </div>
@@ -136,6 +136,12 @@
                                 </blockquote>
                             </div>
                         </div>
+                        <div class="commens-list__foot d-sm-none">
+                            <a href="javascript:;" class="commens-list__answer-link blue-link">Ответить</a>
+                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-commens" data-vertical-offset="10">
+                                
+                            </a>
+                        </div>
                     </div>
                     <hr>
                     <div class="commens-list__item">
@@ -149,8 +155,8 @@
                             <div class="commens-list__time">
                                 вчера 18:54:12
                             </div>
-                            <a href="javascript:;" class="commens-list__answer-link blue-link">Ответить</a>
-                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-commens" data-vertical-offset="10">
+                            <a href="javascript:;" class="d-none d-sm-block commens-list__answer-link blue-link">Ответить</a>
+                            <a href="javascript:;" class="d-none d-sm-block icon-dotted font-md" data-jq-dropdown="#jq-dropdown-commens" data-vertical-offset="10">
                                 
                             </a>
                         </div>
@@ -159,20 +165,27 @@
                                 <p><strong>Елена Гайнуллова</strong>, я вам уже отвечал ранее.</p>
                             </div>
                         </div>
+                        <div class="commens-list__foot d-sm-none">
+                            <a href="javascript:;" class="commens-list__answer-link blue-link">Ответить</a>
+                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-commens" data-vertical-offset="10">
+                                
+                            </a>
+                        </div>
                     </div>
                     <hr>
                     <div class="commens-list__item">
                         <div class="commens-list__body">
                             <div class="commens-list__aside">
 
-                                <a href="javascript:;" class="user-block">
+                                <a href="javascript:;" class="user-block user-block_blue">
                                     <span class="user-block__icon">ПА</span>
+                                    <span class="user-block__name d-sm-none">Петров А.П.</span>
                                 </a>
 
                             </div>
                             <div class="commens-list__inner">
 
-                                <div class="form-textarea mb-10">
+                                <div class="form-textarea">
                                     <div class="form-textarea__panel font-md">
                                         <div class="form-textarea__panel-item">
                                             <a href="javascript:;" class="form-textarea__panel-link"></a>
@@ -204,7 +217,7 @@
 
                             </div>
                         </div>
-                        <div class="commens-list__foot">
+                        <div class="commens-list__foot commens-list__foot_end">
                             <div class="commens-list__foot-item">
                                 <a href="javascript:;" class="sbtn sbtn-two">Отменить</a>
                             </div>
@@ -216,7 +229,7 @@
                 </div>
 
                 <!-- Меню строк -->
-                <div id="jq-dropdown-commens" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right">
+                <div id="jq-dropdown-commens" class="selector-block selector-block_nowrap jq-dropdown jq-up-sm-right">
                     <a href="javascript:;" class="selector-block__item">Действие первое</a>
                     <a href="javascript:;" class="selector-block__item">Действие второе</a>
                     <a href="javascript:;" class="selector-block__item">Действие еще одно</a>

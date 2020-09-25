@@ -12,11 +12,11 @@
     &__answer-link {
         margin: 0 10px 0 0;
     }
-    &__aside {
-        width: 40px;
-    }
     &__body {
         display: flex;
+    }
+    &__aside {
+        width: 40px;
     }
     &__inner {
         width: calc(100% - 40px);
@@ -25,10 +25,37 @@
     &__foot {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        margin: 10px 0 0;
 
+        &_end {
+            justify-content: flex-end;
+        }
         &-item {
             margin: 0 0 0 10px;
+        }
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        &__head {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 0 15px;
+        }
+        &__time {
+            margin: -5px 0 0 40px;
+            font-size: 13px;
+        }
+        &__body {
+            display: block;
+        }
+        &__aside {
+            width: 100%;
+            margin: 0 0 15px;
+        }
+        &__inner {
+            width: 100%;
+            margin: 0;
         }
     }
 }

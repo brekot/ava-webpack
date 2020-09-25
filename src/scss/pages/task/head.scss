@@ -3,24 +3,52 @@
     align-items: center;
     color: var(--tabs-link);
 
-    &__item {
-        border-right: 1px solid var(--grey3);
-        margin: 0 30px 0 0;
-        padding: 0 30px 0 0;
-
-        &_last-left {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-        &_last-right {
-            border: none;
-            margin: 0 0 0 auto;
-            padding: 0;
-        }
-    }
-    &__count {
+    &__value {
         color: var(--font-color);
         font-weight: bold;
+    }
+
+    @include media-breakpoint-up(md)
+    {
+        &__item {
+
+            &_border {
+                border-right: 1px solid var(--grey3);
+                margin: 0 30px 0 0;
+                padding: 0 30px 0 0;
+            }
+            &_right {
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        &__item {
+
+            &_border {
+                margin: 0 20px 0 0;
+                padding: 0 20px 0 0;
+            }
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        &__value {
+            display: block;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            flex-direction: column;
+
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 0 0 5px;
+            }
+        }
     }
 }
