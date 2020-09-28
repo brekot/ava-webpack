@@ -1,11 +1,6 @@
 .form-file {
-    height: 95px;
-    border: 2px dashed var(--grey5);
-    border-radius: 5px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
 
     &__icon {
         width: 32px;
@@ -14,7 +9,6 @@
         transition: all .5s;
     }
     &__info {
-        margin: 5px 0 0;
         color: var(--tabs-link);
     }
     &__link {
@@ -29,5 +23,26 @@
         opacity: 0;
         bottom: 0;
         cursor: pointer;
+    }
+
+    @include media-breakpoint-up(sm)
+    {
+        & {
+            height: 95px;
+            border: 2px dashed var(--grey5);
+            border-radius: 5px;
+            flex-direction: column;
+            justify-content: center;
+
+            &__info {
+                margin: 5px 0 0;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__info {
+            margin: 0 0 0 10px;
+        }
     }
 }

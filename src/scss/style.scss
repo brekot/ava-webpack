@@ -11,6 +11,7 @@
 @import "./lib/datepicker"; // Прокрутка
 
 // Элементы
+@import "./elem/fancybox.add"; // Перекрываем стили Fancybox
 @import "./elem/elem"; // Незначительные элементы
 @import "./elem/blockquote";
 @import "./elem/icon"; // Общие иконки

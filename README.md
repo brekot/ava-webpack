@@ -25,4 +25,6 @@ https://brekot.github.io/ava-webpack/task.html<br>
     <li>.col-*</li>
     <li>.d-*-none</li>
     <li>.d-*-block</li>
+    <li>.d-*-inline</li>
+    <li>.d-*-inline-block</li>
 </ul>

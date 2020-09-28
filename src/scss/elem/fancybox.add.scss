@@ -1,0 +1,22 @@
+.fancybox {
+
+    &-container {
+        z-index: 992;
+    }
+    &-bg {
+        background-color: var(--window-bg);
+    }
+    &-is-open &-bg {
+        opacity: .8;
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        &-slide--html {
+            padding: 0;
+        }
+        &-close-small {
+            display: none;
+        }
+    }
+}

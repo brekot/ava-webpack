@@ -1,14 +1,30 @@
 .date-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 30px;
 
-    &__left {
-        width: calc(100% - 180px);
+    @include media-breakpoint-up(sm)
+    {
+        & {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 30px;
+
+            &__left {
+                width: calc(100% - 180px);
+            }
+            &__date {
+                width: 170px;
+            }
+        }
     }
-    &__date {
-        width: 170px;
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 0 0 25px;
+
+            &__left {
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 

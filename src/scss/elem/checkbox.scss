@@ -35,4 +35,15 @@
         left: -2px;
         background-color: var(--yellow);
     }
+
+    @include media-breakpoint-only(xs)
+    {
+        &_xs-revers &__label {
+            order: 2;
+        }
+        &_xs-revers &__box {
+            order: 1;
+            margin: 0 10px 0 0;
+        }
+    }
 }
