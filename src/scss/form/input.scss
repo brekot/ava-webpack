@@ -27,10 +27,18 @@
         left: 15px;
         pointer-events: none;
         transition: all .5s;
+
+        &-star {
+            color: var(--yellow-check);
+        }
     }
     &__input:focus + &__label,
     &_set &__label {
         font-size: 12px;
         top: 10px;
+    }
+
+    &.is-invalid {
+        border-color: var(--yellow-check);
     }
 }

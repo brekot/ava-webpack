@@ -1,0 +1,12 @@
+.profile-page {
+    display: flex;
+    padding: 40px 85px 50px 95px;
+    justify-content: space-between;
+
+    &__left {
+        width: 285px;
+    }
+    &__right {
+        width: calc(100% - 350px);
+    }
+}

@@ -1,0 +1,42 @@
+.profile-ava {
+
+    &__pict {
+        width: 285px;
+        height: 285px;
+        margin: 0 0 35px;
+        position: relative;
+    }
+    &__img {
+        height: 100%;
+        widows: 100%;
+        display: block;
+    }
+    &__delete {
+        color: var(--grey8);
+        font-size: 24px;
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        background-color: var(--grey9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--blue);
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__link {
+        text-decoration: none;
+    }
+}

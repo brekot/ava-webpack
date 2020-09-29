@@ -1,0 +1,73 @@
+<% var data = {
+    title: "Task",
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="mb-15"></div>
+
+<!-- Серая область -->
+<div class="bg-grey">
+    <div class="container">
+
+        <h1>Мой профиль</h1>
+
+        <div class="block-white mb-30">
+
+            <div class="profile-page">
+                <div class="profile-page__left">
+
+                    <div class="profile-ava">
+                        <div class="profile-ava__pict">
+                            <img class="profile-ava__img" src="./local/uploads/profile.ava.png" alt="">
+                            <a href="javascript:;" class="profile-ava__delete font-md"></a>
+                        </div>
+                        <div class="profile-ava__links">
+                            <a href="javascript:;" class="profile-ava__link">Загрузить</a>
+                            <a href="javascript:;" class="profile-ava__link">Сделать фото</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-page__right">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-input mb-20">
+                                <input class="form-input__input" type="text" value="" required>
+                                <label class="form-input__label">
+                                    Имя <span class="form-input__label-star">*</span>
+                                </label>
+                            </div>
+                            <div class="form-input mb-20">
+                                <input class="form-input__input" type="text" value="" required>
+                                <label class="form-input__label">
+                                    Фамилия <span class="form-input__label-star">*</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-input mb-20">
+                                <input class="form-input__input" type="tel" value="" required>
+                                <label class="form-input__label">
+                                    Телефон <span class="form-input__label-star">*</span>
+                                </label>
+                            </div>
+                            <div class="form-input mb-20 is-invalid">
+                                <input class="form-input__input" type="email" value="" required>
+                                <label class="form-input__label">
+                                    E-mail <span class="form-input__label-star">*</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+        <%= _.template(require('./../includes/banner.bottom.html'))() %>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>
