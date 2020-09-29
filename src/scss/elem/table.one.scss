@@ -38,9 +38,12 @@
     }
     &__icon {
 
-        &-gear {
+        &-gear,
+        &-file {
             display: block;
             font-size: 24px;
+        }
+        &-gear {
             color: var(--tabs-link);
             text-decoration: none;
 
@@ -48,6 +51,10 @@
                 color: var(--blue);
                 text-decoration: none;
             }
+        }
+        &-file {
+            color: var(--yellow-check);
+            margin: 0 2px 0 0;
         }
     }
     &__check {
@@ -77,6 +84,12 @@
                 }
                 &:last-child {
                     padding-right: 20px;
+                }
+            }
+            &_wide {
+
+                th, td {
+                    padding: 18px 10px;
                 }
             }
             th {
@@ -144,14 +157,14 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
-                margin: 0 0 7px;
+                margin: 0 0 5px;
                 position: relative;
             }
             &__label {
                 font-size: 13px;
                 color: var(--tabs-link);
             }
-            &__user {
+            &__mobile-margin {
                 margin: 15px 0 0;
             }
             &__check {
@@ -161,6 +174,7 @@
                 position: absolute;
                 right: 0;
                 top: 15px;
+                z-index: 2;
             }
             &__status {
                 position: absolute;
@@ -168,7 +182,7 @@
                 top: 15px;
             }
             &__name {
-                margin: -5px -25px 20px;
+                margin: 0 -25px 20px;
                 padding: 0 25px 20px;
                 border-bottom: 1px solid var(--grey2);
             }

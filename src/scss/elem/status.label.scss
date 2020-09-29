@@ -4,6 +4,8 @@
     border-radius: 11px;
     display: inline-block;
     white-space: nowrap;
+    text-decoration: none;
+    color: var(--font-color);
 
     &_v {
 
@@ -20,6 +22,9 @@
             background-color: var(--yellow-label);
             color: var(--yellow-dark);
         }
+    }
+    &:hover {
+        text-decoration: none;
     }
     &_medium {
         font-weight: 500;

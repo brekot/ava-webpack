@@ -38,4 +38,12 @@
             font-weight: 500;
         }
     }
+
+    @include media-breakpoint-only(xs)
+    {
+        &__prev,
+        &__next {
+            width: 35px;
+        }
+    }
 }

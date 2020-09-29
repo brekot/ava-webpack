@@ -1,0 +1,552 @@
+<% var data = {
+    title: "Equipment",
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Вкладки -->
+<div class="tabs-block">
+    <div class="container">
+        <div class="tabs-block__inner">
+            <a href="javascript:;" class="tabs-block__link">Мой профиль</a>
+            <a href="javascript:;" class="tabs-block__link">Мой тариф</a>
+            <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Мое оборудование</a>
+        </div>
+    </div>
+</div>
+
+<!-- Серая область -->
+<div class="bg-grey">
+    <div class="container">
+
+        <h1 class="d-none d-lg-block">Мое оборудование</h1>
+
+        <!-- Строка поиска -->
+        <div class="search-line">
+            <div class="h1 mb-0 d-lg-none">Мое оборудование</div>
+            <div class="search-line__panel search-line__panel_full d-none d-lg-block">
+
+                <div class="search-line__inner">
+                    <input class="search-line__input" type="text" value="" placeholder="Поиск">
+                    <button class="search-line__button font-md" type="submit"></button>
+                </div>
+
+                <!-- Фильтр -->
+                <div class="filter-block">
+                    <div class="filter-block__head">
+                        <a href="javascript:;" class="filter-block__close font-md"></a>
+                        <div class="filter-block__name">Фильтры</div>
+                    </div>
+                    <div class="filter-block__left">
+
+                        <div class="filter-status">
+                            <a href="javascript:;" class="filter-status__link filter-status__link_active">
+                                <span class="filter-status__link-icon font-md"></span>В работе
+                            </a>
+                            <a href="javascript:;" class="filter-status__link">
+                                <span class="filter-status__link-icon font-md"></span>Завершены
+                            </a>
+                            <a href="javascript:;" class="filter-status__link">
+                                <span class="filter-status__link-icon font-md"></span>Отложены
+                            </a>
+                            <a href="javascript:;" class="filter-status__link">
+                                <span class="filter-status__link-icon font-md"></span>Просрочены
+                            </a>
+                            <a href="javascript:;" class="filter-status__link">
+                                <span class="filter-status__link-icon font-md"></span>Почти просрочены
+                            </a>
+                        </div>
+
+                        <div class="filter-save">
+                            <a href="javascript:;" class="filter-save__link">
+                                <span class="filter-save__link-icon font-md"></span>
+                                <span class="filter-save__link-name">Сохранить</span>
+                            </a>
+                            <a href="javascript:;" class="filter-save__setting font-md"></a>
+                        </div>
+
+                    </div>
+                    <div class="filter-block__right">
+
+                        <form>
+
+                            <div class="form-select mb-10">
+                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-filter1"></div>
+                                <div class="form-select__line">
+                                    <div class="form-select__label">Роль</div>
+                                    <span class="form-select__str font-md"></span>
+                                </div>
+                                <div id="jq-dropdown-filter1" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Пункт №1</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Пункт №2</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Пункт №3</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-select mb-10">
+                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-filter2"></div>
+                                <div class="form-select__line">
+                                    <div class="form-select__label">Статус</div>
+                                    <span class="form-select__str font-md"></span>
+                                </div>
+                                <div id="jq-dropdown-filter2" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Ждет выполнения</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Выполняется</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Обсуждение</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Завершено</span>
+                                    </label>
+                                    <label class="form-select-dropdown__item">
+                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                        <span class="form-select-dropdown__name">Забракован</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-input mb-10">
+                                <input class="form-input__input" type="text" value="">
+                                <label class="form-input__label">Ответственный</label>
+                            </div>
+
+                            <div class="form-search mb-10">
+                                <a href="javascript:;" class="js-dropdown-remove form-label">avancut.ru <span class="form-label__icon font-md"></span></a>
+                                <input class="form-search__input" type="text" value="">
+                                <label class="form-search__label">Проект (группа)</label>
+                            </div>
+
+                            <div class="filter-edit">
+                                <a href="javascript:;" class="filter-edit__set">
+                                    <span class="filter-edit__set-icon font-md"></span>Добавить поле
+                                </a>
+                                <a href="javascript:;" class="filter-edit__reset">
+                                    <span class="filter-edit__reset-icon font-md"></span>Вернуть поля по умолчанию
+                                </a>
+                            </div>
+
+                            <div class="filter-set">
+                                <button class="btn btn-two" type="submit">Применить фильтр</button>
+                                <a href="javascript:;" class="js-filter-reset filter-set__reset">
+                                    <span class="filter-set__reset-icon font-md"></span>Сбросить
+                                </a>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+            <a href="javascript:;" class="search-line__filter">
+                <span class="search-line__filter-icon font-md"></span>
+                <span class="search-line__filter-count count-icon">2</span>
+            </a>
+            <a href="javascript:;" class="btn btn-one" data-fancybox data-src="#new-equipment">
+                <span class="btn__icon font-md"></span>
+                <span class="d-none d-sm-block">Добавить</span>
+            </a>
+        </div>
+
+        <!-- Таблица -->
+        <div class="table-one-wrapper">
+            <table class="table-one table-one_wide">
+                <thead>
+                    <tr>
+                        <th>
+                            <a href="javascript:;" class="table-one__icon-gear font-md"></a>
+                        </th>
+                        <th class="table-one__name">
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Название</a>
+
+                            <!-- Сортировка в таблице -->
+                            <a href="javascript:;" class="table-sort font-md">
+                                <span class="table-sort__down"></span>
+                                <span class="table-sort__active"></span>
+                            </a>
+
+                        </th>
+                        <th>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Версия</a>
+                        </th>
+                        <th>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Параметр 1</a>
+                        </th>
+                        <th>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Дата добавления</a>
+                        </th>
+                        <th>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Файлы</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-one__menu">
+                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
+                        </td>
+                        <td class="table-one__td table-one__name">
+                            <a href="javascript:;" class="table-one__link">Станок универсальный СТ-506</a>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Версия</span>
+                            2.56
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Параметр 1</span>
+                            &lt;параметр&gt;
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Дата добавления</span>
+                            18.05.2020
+                        </td>
+                        <td class="table-one__td table-one__mobile-margin">
+                            <div class="file-link-block">
+                                <a href="javascript:;" class="file-link">
+                                    <span class="file-link__icon font-md"></span>
+                                    <span class="file-link__name">Описание.pdf</span>
+                                </a>
+                                <div class="d-none d-md-block">
+                                    <a href="javascript:;" class="status-label status-label_v1" data-jq-dropdown="#jq-dropdown-file1" data-vertical-offset="10">+ 3 файла</a>
+                                </div>
+                                <div class="d-md-none">
+                                    <a href="javascript:;" class="file-link">
+                                        <span class="file-link__icon font-md"></span>
+                                        <span class="file-link__name">Пример новой программы для станка.pdf</span>
+                                    </a>
+                                    <a href="javascript:;" class="file-link">
+                                        <span class="file-link__icon font-md"></span>
+                                        <span class="file-link__name">Описание.pdf</span>
+                                    </a>
+                                    <a href="javascript:;" class="file-link">
+                                        <span class="file-link__icon font-md"></span>
+                                        <span class="file-link__name">Инструкция для станка.pdf</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-one__menu">
+                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
+                        </td>
+                        <td class="table-one__td table-one__name">
+                            <a href="javascript:;" class="table-one__link">Станок универсальный СТ-507</a>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Версия</span>
+                            2.10
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Параметр 1</span>
+                            &lt;параметр&gt;
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Дата добавления</span>
+                            18.05.2020
+                        </td>
+                        <td class="table-one__td table-one__mobile-margin">
+                            <div class="file-link-block">
+                                <a href="javascript:;" class="file-link">
+                                    <span class="file-link__icon font-md"></span>
+                                    <span class="file-link__name">Инструкция для станка СТ-507_2020.pdf</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-one__menu">
+                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
+                        </td>
+                        <td class="table-one__td table-one__name">
+                            <a href="javascript:;" class="table-one__link">Станок универсальный СТ-508</a>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Версия</span>
+                            1.32
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Параметр 1</span>
+                            &lt;параметр&gt;
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Дата добавления</span>
+                            18.05.2020
+                        </td>
+                        <td class="table-one__td table-one__mobile-margin">
+                            <div class="file-link-block">
+                                <a href="javascript:;" class="file-link">
+                                    <span class="file-link__icon font-md"></span>
+                                    <span class="file-link__name">Пример новой программы для станка универсального СТ-508.pdf</span>
+                                </a>
+                                <div class="d-none d-md-block">
+                                    <a href="javascript:;" class="status-label status-label_v1" data-jq-dropdown="#jq-dropdown-file2" data-vertical-offset="10">+ 2 файла</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-one__menu">
+                            <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
+                        </td>
+                        <td class="table-one__td table-one__name">
+                            <a href="javascript:;" class="table-one__link">Станок универсальный СТ-402</a>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Версия</span>
+                            2.56
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Параметр 1</span>
+                            &lt;параметр&gt;
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Дата добавления</span>
+                            20.05.2020
+                        </td>
+                        <td class="table-one__td table-one__mobile-margin">
+                            <div class="file-link-block">
+                                <a href="javascript:;" class="file-link">
+                                    <span class="file-link__icon font-md"></span>
+                                    <span class="file-link__name">Описание.pdf</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Меню строк -->
+        <div id="jq-dropdown-table" class="selector-block selector-block_nowrap jq-dropdown jq-down-sm-right">
+            <a href="javascript:;" class="selector-block__item">Действие первое</a>
+            <a href="javascript:;" class="selector-block__item">Действие второе</a>
+            <a href="javascript:;" class="selector-block__item">Действие еще одно</a>
+            <a href="javascript:;" class="selector-block__item">Действие последнее</a>
+        </div>
+
+        <!-- Список файлов №1 -->
+        <div id="jq-dropdown-file1" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right">
+            <a href="javascript:;" class="selector-block__item file-link">
+                <span class="file-link__icon font-md"></span>
+                <span class="file-link__name">Пример новой программы для станка.pdf</span>
+            </a>
+            <a href="javascript:;" class="selector-block__item file-link">
+                <span class="file-link__icon font-md"></span>
+                <span class="file-link__name">Описание.pdf</span>
+            </a>
+            <a href="javascript:;" class="selector-block__item file-link">
+                <span class="file-link__icon font-md"></span>
+                <span class="file-link__name">Инструкция для станка.pdf</span>
+            </a>
+        </div>
+
+        <!-- Список файлов №2 -->
+        <div id="jq-dropdown-file2" class="selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right">
+            <a href="javascript:;" class="selector-block__item file-link">
+                <span class="file-link__icon font-md"></span>
+                <span class="file-link__name">Пример новой программы для станка.pdf</span>
+            </a>
+            <a href="javascript:;" class="selector-block__item file-link">
+                <span class="file-link__icon font-md"></span>
+                <span class="file-link__name">Инструкция для станка.pdf</span>
+            </a>
+        </div>
+
+        <!-- Постраничной навигации и Показать по -->
+        <div class="page-navigation-counter">
+            <div class="page-navigation-counter__count">
+                Всего: 104
+            </div>
+            <div>
+
+                <!-- Постраничной навигации -->
+                <div class="page-navigation">
+                    <a href="javascript:;" class="page-navigation__prev font-md"></a>
+                    <a href="javascript:;" class="page-navigation__link">1</a>
+                    <a href="javascript:;" class="page-navigation__link page-navigation__link_active">2</a>
+                    <a href="javascript:;" class="page-navigation__link">3</a>
+                    <a href="javascript:;" class="page-navigation__link">4</a>
+                    <a href="javascript:;" class="page-navigation__link d-none d-sm-flex">5</a>
+                    <a href="javascript:;" class="page-navigation__next font-md"></a>
+                </div>
+
+            </div>
+            <div class="page-navigation-counter__last">
+
+                <!-- Показать по -->
+                <div class="page-counter">
+                    <a href="javascript:;" class="page-counter__label" data-jq-dropdown="#jq-dropdown-counter" data-vertical-offset="5">
+                        Показывать по&nbsp;<span class="page-counter__label-count">10</span>&nbsp;<span class="page-counter__label-icon font-md"></span>
+                    </a>
+                    <div id="jq-dropdown-counter" class="page-counter__selector selector-block selector-block_full-width jq-dropdown jq-dropdown-relative">
+                        <a href="javascript:;" class="selector-block__item" data-val="5">по 5</a>
+                        <a href="javascript:;" class="selector-block__item" data-val="10">по 10</a>
+                        <a href="javascript:;" class="selector-block__item" data-val="20">по 20</a>
+                        <a href="javascript:;" class="selector-block__item" data-val="50">по 50</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <%= _.template(require('./../includes/banner.bottom.html'))() %>
+
+    </div>
+</div>
+
+<div class="window-one" id="new-equipment">
+    <div class="window-one__head">
+        <a href="javascript:;" class="window-one__head-back font-md" data-fancybox-close></a>
+        <div class="h1 mb-0">Новое оборудование</div>
+        <div class="window-one__xs-full">
+
+            <label class="checkbox-one checkbox-one_xs-revers">
+                <div class="checkbox-one__label">Сделать по-умолчанию</div>
+                <div class="checkbox-one__box checkbox-one__box_right">
+                    <input class="checkbox-one__input" type="checkbox" value="">
+                    <span class="checkbox-one__circle"></span>
+                </div>
+            </label>
+
+        </div>
+    </div>
+    <div class="window-one__body">
+
+        <div class="form-input mb-15">
+            <input class="form-input__input" type="text" value="">
+            <label class="form-input__label">Название оборудования</label>
+        </div>
+
+        <div class="form-textarea mb-15">
+            <div class="form-textarea__panel font-md">
+                <div class="form-textarea__panel-item">
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                </div>
+                <div class="form-textarea__panel-item">
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                </div>
+                <div class="form-textarea__panel-item">
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                </div>
+                <div class="form-textarea__panel-item">
+                    <a href="javascript:;" class="form-textarea__panel-link"></a>
+                </div>
+                <div class="form-textarea__panel-item">
+                    <a href="javascript:;">
+                        <svg class="form-textarea__panel-icon form-textarea__panel-icon_q">
+                            <use xlink:href="./local/img/sprite.svg#q"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <textarea class="form-textarea__input" placeholder="Описание оборудования"></textarea>
+        </div>
+
+        <div class="form-file mb-20" id="js-file-drag">
+            <svg class="form-file__icon">
+                <use xlink:href="./local/img/sprite.svg#f"></use>
+            </svg>
+            <div class="form-file__info" id="js-file-messages">
+                <a href="javascript:;" class="form-file__link blue-link">
+                    Загрузите <span class="d-sm-none">файл</span>
+                    <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple">
+                </a> <span class="d-none d-sm-inline">или перетащите файл</span>
+            </div>
+        </div>
+
+        <div class="form-select mb-10">
+            <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select3"></div>
+            <div class="form-select__line">
+                <div class="form-select__label">Параметр 1</div>
+                <span class="form-select__str font-md"></span>
+            </div>
+            <div id="jq-dropdown-select3" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                <label class="form-select-dropdown__item">
+                    <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                    <span class="form-select-dropdown__name">Пункт №1</span>
+                </label>
+                <label class="form-select-dropdown__item">
+                    <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                    <span class="form-select-dropdown__name">Пункт №2</span>
+                </label>
+                <label class="form-select-dropdown__item">
+                    <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                    <span class="form-select-dropdown__name">Пункт №3</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="date-line">
+            <div class="date-line__left">
+
+                <div class="form-select">
+                    <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select4"></div>
+                    <div class="form-select__line">
+                        <div class="form-select__label">Параметр 2</div>
+                        <span class="form-select__str font-md"></span>
+                    </div>
+                    <div id="jq-dropdown-select4" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                        <label class="form-select-dropdown__item">
+                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                            <span class="form-select-dropdown__name">Пункт №1</span>
+                        </label>
+                        <label class="form-select-dropdown__item">
+                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                            <span class="form-select-dropdown__name">Пункт №2</span>
+                        </label>
+                        <label class="form-select-dropdown__item">
+                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                            <span class="form-select-dropdown__name">Пункт №3</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="date-line__date">
+                <div class="form-date">
+                    <input type="text" value="" class="form-date__input datepicker-here" data-position="right top">
+                    <label class="form-date__label">Дата выпуска</label>
+                    <span class="form-date__icon font-md"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="window-one__foot">
+        <div class="window-one__foot-left">
+            <a href="javascript:;" class="btn btn-lg btn-one btn_xs-full-width">
+                Добавить оборудование
+            </a>
+        </div>
+        <div class="window-one__foot-right">
+            <a href="javascript:;" class="btn btn-lg btn-three btn_xs-full-width" data-fancybox-close>
+                Отмена
+            </a>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

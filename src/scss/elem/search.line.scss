@@ -8,6 +8,10 @@
         width: 790px;
         margin: 0 10px 0 auto;
         position: relative;
+
+        &_full {
+            width: 100%;
+        }
     }
     &__inner {
         display: flex;
@@ -118,6 +122,10 @@
     {
         &__panel {
             width: 590px;
+
+            &_full {
+                width: 100%;
+            }
         }
     }
     @include media-breakpoint-down(md)

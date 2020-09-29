@@ -1,5 +1,6 @@
-https://brekot.github.io/ava-webpack/index.html<br>
-https://brekot.github.io/ava-webpack/task.html<br>
+<a href="./docs/tasks.html">Список задач</a><br>
+<a href="./docs/task.html">Карточка задачи</a><br>
+<a href="./docs/equipment.html">Оборудование</a><br>
 
 <hr>
 
@@ -24,6 +25,7 @@ https://brekot.github.io/ava-webpack/task.html<br>
     <li>.row</li>
     <li>.col-*</li>
     <li>.d-*-none</li>
+	<li>.d-*-flex</li>
     <li>.d-*-block</li>
     <li>.d-*-inline</li>
     <li>.d-*-inline-block</li>

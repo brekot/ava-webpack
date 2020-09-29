@@ -1,0 +1,52 @@
+.file-link-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            display: block;
+        }
+    }
+}
+
+.file-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--blue-bright);
+    max-width: 100%;
+
+    &:hover {
+        text-decoration: none;
+    }
+    &__icon {
+        color: var(--yellow-check);
+        margin: 0 2px 0 0;
+        display: block;
+        font-size: 24px;
+
+        &:hover {
+            color: var(--blue);
+            text-decoration: none;
+        }
+    }
+    &__name {
+        max-width: 285px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover &-name {
+        text-decoration: underline;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 5px;
+        }
+    }
+}
