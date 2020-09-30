@@ -25,3 +25,11 @@
 .text-light {
     color: var(--tabs-link);
 }
+
+@include media-breakpoint-down(md)
+{
+    .mobile-re-order {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

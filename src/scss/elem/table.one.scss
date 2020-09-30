@@ -173,6 +173,9 @@
                 overflow: hidden;
                 display: block;
             }
+            &__mobile-medium {
+                font-weight: 500;
+            }
             &__check {
                 left: -20px;
             }
@@ -191,6 +194,7 @@
                 margin: 0 -25px 20px;
                 padding: 0 25px 20px;
                 border-bottom: 1px solid var(--grey2);
+                display: block;
             }
             &__link_right {
                 float: right;
