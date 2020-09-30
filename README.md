@@ -1,6 +1,7 @@
 <a href="./docs/tasks.html">Список задач</a><br>
 <a href="./docs/task.html">Карточка задачи</a><br>
 <a href="./docs/equipment.html">Оборудование</a><br>
+<a href="./docs/profile.html">Профиль</a><br>
 
 <hr>
 

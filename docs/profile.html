@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <title>Avancut | Task</title>
+
+        <link href="./local/template_styles.css?591e812be90a7dd85143" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Шапка сайта -->
+        <header class="main-header">
+            <div class="container">
+                <div class="main-header__inner">
+                    <a href="javascript:;" class="btn-menu font-md"></a>
+                    <div class="main-header__left">
+                        <a href="/" class="main-header__logo">
+                            <img class="main-header__logo-pict" src="./local/img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="main-header__center">
+                        <!-- Информация в шапке -->
+                        <div class="head-info">
+                            <div class="head-info__item head-info__item_border">
+                                <div class="head-info__label">Тариф</div>
+                                <div class="head-info__value">Стартовый</div>
+                            </div>
+                            <div class="head-info__item head-info__item_border">
+                                <div class="head-info__label">Осталось</div>
+                                <div class="head-info__value">100 ч</div>
+                            </div>
+                            <div class="head-info__item">
+                                <div class="head-info__label">На счету</div>
+                                <div class="head-info__value">
+                                    0 руб.
+                                    <a class="head-info__link" href="javascript:;">Пополнить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-header__right">
+                        <!-- Информация о пользователе -->
+                        <div class="position-relative">
+                            <a href="javascript:;" class="user-info" data-jq-dropdown="#jq-dropdown-user" data-vertical-offset="10">
+                                <div class="user-info__icon">ЕГ</div>
+                                <div class="user-info__name">Елена Гайнуллова</div>
+                                <div class="user-info__str font-md"></div>
+                            </a>
+
+                            <div id="jq-dropdown-user" class="selector-block selector-block_nowrap selector-block_full-width jq-dropdown jq-dropdown-relative jq-down-sm-right">
+                                <a href="javascript:;" class="selector-block__item">Перейти в профиль</a>
+                                <a href="javascript:;" class="selector-block__item">Пополнить баланс</a>
+                                <a href="javascript:;" class="selector-block__item">Выйти из системы</a>
+                            </div>
+                        </div>
+
+                        <!-- Оповещения -->
+                        <a href="javascript:;" class="alarm-block" data-jq-dropdown="#jq-dropdown-alarm" data-vertical-offset="10">
+                            <span class="alarm-block__icon font-md"></span>
+                            <span class="alarm-block__count count-icon">3</span>
+                        </a>
+
+                        <div id="jq-dropdown-alarm" class="alarm-window selector-block selector-block_nowrap jq-dropdown jq-dropdown-anchor-right scroll-pane">
+                            <a href="javascript:;" class="selector-block__item">
+                                <div class="alarm-window__line">Добавлена новая задача №135.</div>
+                                <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
+                                <div class="alarm-window__time">сегодня, 18:10</div>
+                            </a>
+                            <a href="javascript:;" class="selector-block__item">
+                                <div class="alarm-window__line">Добавлена новая задача №135.</div>
+                                <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
+                                <div class="alarm-window__time">сегодня, 18:10</div>
+                            </a>
+                            <a href="javascript:;" class="selector-block__item">
+                                <div class="alarm-window__line">Добавлена новая задача №135.</div>
+                                <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
+                                <div class="alarm-window__time">сегодня, 18:10</div>
+                            </a>
+                            <a href="javascript:;" class="selector-block__item">
+                                <div class="alarm-window__line">Добавлена новая задача №135.</div>
+                                <div class="alarm-window__line">Ответственный - Гайнуллова Е.В.</div>
+                                <div class="alarm-window__time">сегодня, 18:10</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Рабочая область -->
+        <main class="main-main">
+            <!-- Верхний банер -->
+            <div class="container">
+                <div class="banner-full d-none d-md-block">
+                    <img class="banner-full__img" src="./local/uploads/banner.png" alt="" />
+                </div>
+            </div>
+
+            <div class="mb-15"></div>
+
+            <!-- Серая область -->
+            <div class="bg-grey">
+                <div class="container">
+                    <h1>Мой профиль</h1>
+
+                    <div class="block-white mb-30">
+                        <div class="profile-page">
+                            <div class="profile-page__left">
+                                <div class="profile-ava">
+                                    <div class="profile-ava__pict">
+                                        <img class="profile-ava__img" src="./local/uploads/profile.ava.png" alt="" />
+                                        <a href="javascript:;" class="profile-ava__delete font-md"></a>
+                                    </div>
+                                    <div class="profile-ava__links">
+                                        <a href="javascript:;" class="profile-ava__link">Загрузить</a>
+                                        <a href="javascript:;" class="profile-ava__link">Сделать фото</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-page__right">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-input mb-20">
+                                            <input class="form-input__input" type="text" value="Елена" />
+                                            <label class="form-input__label"> Имя <span class="form-input__label-star">*</span> </label>
+                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                                        </div>
+                                        <div class="form-input mb-20">
+                                            <input class="form-input__input" type="text" value="Гайнуллова" />
+                                            <label class="form-input__label"> Фамилия <span class="form-input__label-star">*</span> </label>
+                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input mb-20">
+                                            <input class="form-input__input" type="tel" value="+ 7 900 222 30 30" />
+                                            <label class="form-input__label"> Телефон <span class="form-input__label-star">*</span> </label>
+                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                                        </div>
+                                        <div class="form-input mb-20 is-invalid">
+                                            <input class="form-input__input" type="email" value="" />
+                                            <label class="form-input__label"> E-mail <span class="form-input__label-star">*</span> </label>
+                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-25"></div>
+                                <div class="form-input mb-30">
+                                    <input class="form-input__input" type="text" value='ООО "Ромашка"' />
+                                    <label class="form-input__label">
+                                        Компания
+                                    </label>
+                                </div>
+                                <div class="h3">Смена пароля</div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-input mb-20">
+                                            <input class="form-input__input" type="password" value="" />
+                                            <label class="form-input__label">
+                                                Старый пароль
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input mb-20">
+                                            <input class="form-input__input" type="password" value="" />
+                                            <label class="form-input__label">
+                                                Новый пароль
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-15"></div>
+                                <div class="profile-page__btns">
+                                    <div class="profile-page__btn">
+                                        <a href="javascript:;" class="btn btn-lg btn-one btn_xs-full-width">
+                                            Сохранить
+                                        </a>
+                                    </div>
+                                    <div class="profile-page__btn">
+                                        <a href="javascript:;" class="btn btn-lg btn-three btn_xs-full-width">
+                                            Отмена
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Нижний банер -->
+                    <div class="banner-full">
+                        <img class="banner-full__img d-none d-md-block" src="./local/uploads/banner.png" alt="" />
+                        <img class="banner-full__img d-md-none" src="./local/uploads/banner.small.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="main-footer__inner">
+                    <div class="main-footer__left">
+                        <div class="main-footer__copy">
+                            © 2020 Avancut technology
+                        </div>
+                        <div class="main-footer__info">
+                            ООО "Ромашка"<br />
+                            г.Москва, ул.Ленина 10<br />
+                            <a href="tel:+78002001955" class="main-footer__info-link">8-800-200-19-55</a>
+                        </div>
+                    </div>
+                    <div class="main-footer__right">
+                        <div class="row">
+                            <div class="col-3 d-none d-md-block">
+                                <!-- Нижнее меню -->
+                                <nav class="nav-footer">
+                                    <a href="javascript:;" class="nav-footer__title">Задачи</a>
+                                    <a href="javascript:;" class="nav-footer__link">Новые</a>
+                                    <a href="javascript:;" class="nav-footer__link">Оценка</a>
+                                    <a href="javascript:;" class="nav-footer__link">В работе</a>
+                                    <a href="javascript:;" class="nav-footer__link">Архив</a>
+                                    <a href="javascript:;" class="nav-footer__link">Создать задачу</a>
+                                </nav>
+                            </div>
+                            <div class="col-3 d-none d-md-block">
+                                <!-- Нижнее меню -->
+                                <nav class="nav-footer">
+                                    <a href="javascript:;" class="nav-footer__title">Личный кабинет</a>
+                                    <a href="javascript:;" class="nav-footer__link">Настройки</a>
+                                    <a href="javascript:;" class="nav-footer__link">Мои станки</a>
+                                    <a href="javascript:;" class="nav-footer__link">Сменить пароль</a>
+                                </nav>
+                            </div>
+                            <div class="col-3 d-none d-md-block">
+                                <!-- Нижнее меню -->
+                                <nav class="nav-footer">
+                                    <a href="javascript:;" class="nav-footer__title">О проекте</a>
+                                    <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
+                                    <a href="javascript:;" class="nav-footer__link">Техподдержка</a>
+                                    <a href="javascript:;" class="nav-footer__link">Написать нам</a>
+                                </nav>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Нижнее меню -->
+                                <nav class="nav-footer">
+                                    <a href="javascript:;" class="nav-footer__title">Помощь</a>
+                                    <a href="javascript:;" class="nav-footer__link">Вопросы и ответы</a>
+                                    <a href="javascript:;" class="nav-footer__link">Техподдержка</a>
+                                    <a href="javascript:;" class="nav-footer__link">Написать нам</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Меню на мобильнике -->
+        <nav class="nav-mobile">
+            <a href="javascript:;" class="nav-mobile__close font-md"></a>
+            <div class="nav-mobile__item">
+                <a href="javascript:;" class="nav-mobile__title">Задачи</a>
+                <a href="javascript:;" class="nav-mobile__link">Новые</a>
+                <a href="javascript:;" class="nav-mobile__link">Оценка</a>
+                <a href="javascript:;" class="nav-mobile__link">В работе</a>
+                <a href="javascript:;" class="nav-mobile__link">Архив</a>
+                <a href="javascript:;" class="nav-mobile__link">Создать задачу</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="javascript:;" class="nav-mobile__title">Личный кабинет</a>
+                <a href="javascript:;" class="nav-mobile__link">Настройки</a>
+                <a href="javascript:;" class="nav-mobile__link">Мои станки</a>
+                <a href="javascript:;" class="nav-mobile__link">Сменить пароль</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="javascript:;" class="nav-mobile__title">О проекте</a>
+                <a href="javascript:;" class="nav-mobile__link">Вопросы и ответы</a>
+                <a href="javascript:;" class="nav-mobile__link">Техподдержка</a>
+                <a href="javascript:;" class="nav-mobile__link">Написать нам</a>
+            </div>
+            <div class="nav-mobile__item">
+                <a href="javascript:;" class="nav-mobile__title">Помощь</a>
+                <a href="javascript:;" class="nav-mobile__link">Вопросы и ответы</a>
+                <a href="javascript:;" class="nav-mobile__link">Техподдержка</a>
+                <a href="javascript:;" class="nav-mobile__link">Написать нам</a>
+            </div>
+        </nav>
+
+        <script type="text/javascript" src="./local/js/script.js?591e812be90a7dd85143"></script>
+    </body>
+</html>

@@ -38,7 +38,20 @@
         top: 10px;
     }
 
+    &__required-text {
+        display: none;
+        font-size: 12px;
+        color: var(--yellow-check);
+        position: absolute;
+        left: 15px;
+        bottom: -14px;
+        line-height: 1;
+        white-space: nowrap;
+    }
     &.is-invalid {
         border-color: var(--yellow-check);
+    }
+    &.is-invalid &__required-text {
+        display: block;
     }
 }

@@ -39,4 +39,22 @@
     &__link {
         text-decoration: none;
     }
+
+    @include media-breakpoint-down(md)
+    {
+        & {
+            margin: 0 0 40px;
+
+            &__pict {
+                margin: 0 auto 15px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__pict {
+            width: 200px;
+            height: 200px;
+        }
+    }
 }
