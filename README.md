@@ -2,6 +2,9 @@
 <a href="./docs/task.html">Карточка задачи</a><br>
 <a href="./docs/equipment.html">Оборудование</a><br>
 <a href="./docs/profile.html">Профиль</a><br>
+<a href="./docs/tariff-income.html">Пополнения</a><br>
+<a href="./docs/tariff-payment.html">Списания</a><br>
+<a href="./docs/tariff-hours.html">Часы</a><br>
 
 <hr>
 

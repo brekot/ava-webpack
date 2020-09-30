@@ -6,7 +6,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-        <title>Avancut | Tasks</title>
+        <title>Avancut | Tariff Hours</title>
 
         <link href="./local/template_styles.css?a571c35712fc8596d81d" rel="stylesheet" />
     </head>
@@ -104,21 +104,9 @@
             <div class="tabs-block">
                 <div class="container">
                     <div class="tabs-block__inner">
-                        <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Все</a>
-                        <a href="javascript:;" class="tabs-block__link">
-                            Новые
-                            <span class="tabs-block__count count-icon">10</span>
-                        </a>
-                        <a href="javascript:;" class="tabs-block__link">
-                            Оценка
-                            <span class="tabs-block__count count-icon">2</span>
-                        </a>
-                        <a href="javascript:;" class="tabs-block__link">
-                            В работе
-                            <span class="tabs-block__count count-icon">3</span>
-                        </a>
-                        <a href="javascript:;" class="tabs-block__link">Требуется реакция</a>
-                        <a href="javascript:;" class="tabs-block__link">Архив</a>
+                        <a href="javascript:;" class="tabs-block__link">Мой профиль</a>
+                        <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Мой тариф</a>
+                        <a href="javascript:;" class="tabs-block__link">Мое оборудование</a>
                     </div>
                 </div>
             </div>
@@ -126,16 +114,96 @@
             <!-- Серая область -->
             <div class="bg-grey">
                 <div class="container">
+                    <h1 class="d-none d-lg-block">Мой тариф</h1>
+
+                    <!-- Информация о тарифе -->
+                    <div class="tariff-info">
+                        <div class="tariff-info__block tariff-info__block_border">
+                            <svg class="tariff-info__icon tariff-info__icon1">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon1"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">Текущий тариф:</div>
+                                    <div class="tariff-info__value">Стартовый</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Изменить</a>
+                            </div>
+                        </div>
+                        <div class="tariff-info__block tariff-info__block_border">
+                            <svg class="tariff-info__icon tariff-info__icon2">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon2"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">Остаток часов:</div>
+                                    <div class="tariff-info__value">100 ч</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Купить</a>
+                            </div>
+                        </div>
+                        <div class="tariff-info__block">
+                            <svg class="tariff-info__icon tariff-info__icon3">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon3"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">На счету:</div>
+                                    <div class="tariff-info__value">0 руб.</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Пополнить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладки -->
+                    <div class="tabs-panel">
+                        <a href="javascript:;" class="tabs-panel__link">Тарифы</a>
+                        <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Часы</a>
+                        <a href="javascript:;" class="tabs-panel__link">Пополнить счет</a>
+                        <a href="javascript:;" class="tabs-panel__link">
+                            <span class="d-none d-md-block">История (пополнения)</span>
+                            <span class="d-md-none">Пополнения</span>
+                        </a>
+                        <a href="javascript:;" class="tabs-panel__link">
+                            <span class="d-none d-md-block">История (списания)</span>
+                            <span class="d-md-none">Списания</span>
+                        </a>
+                    </div>
+
+                    <div class="block-white">
+                        <div class="tariff-calc">
+                            <div class="tariff-calc__left">
+                                <div class="tariff-calc__item tariff-calc__item_input">
+                                    <div class="form-input form-input_border-fix form-input_big-text">
+                                        <input class="form-input__input" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="tariff-calc__item tariff-calc__item_center">
+                                    <span class="tariff-calc__font-middle tariff-calc__font-bold">*</span>
+                                    <span class="tariff-calc__font-medium">1 000</span>
+                                    <span class="tariff-calc__font-medium tariff-calc__font-sub">руб.</span>
+                                    <span class="tariff-calc__font-middle tariff-calc__font-bold">=</span>
+                                </div>
+                                <div class="tariff-calc__item tariff-calc__item_right">
+                                    <span class="tariff-calc__font-bold">45 000</span>
+                                    <span class="tariff-calc__font-bold tariff-calc__font-sub">руб.</span>
+                                </div>
+                            </div>
+                            <div class="tariff-calc__right"></div>
+                        </div>
+                    </div>
+
+                    <div class="h1 d-none d-lg-block">Статистика использования часов</div>
+
                     <!-- Строка поиска -->
                     <div class="search-line">
-                        <h1 class="mb-0">Мои задачи</h1>
-                        <div class="search-line__panel">
+                        <div class="h1 mb-0 d-lg-none">Статистика использования часов</div>
+                        <div class="search-line__panel search-line__panel_full">
                             <div class="search-line__inner">
-                                <input class="search-line__input" type="text" value="для станка" placeholder="Поиск" />
-                                <a href="javascript:;" class="js-label-remove search-line__label"> в работе <span class="search-line__label-icon font-md"></span> </a>
-                                <a href="javascript:;" class="js-label-remove search-line__label"> новая <span class="search-line__label-icon font-md"></span> </a>
-                                <a href="javascript:;" class="js-label-remove search-line__label"> Пертов А.П. <span class="search-line__label-icon font-md"></span> </a>
-                                <span class="search-line__count">+2</span>
+                                <input class="search-line__input" type="text" value="35" placeholder="Поиск" />
+                                <a href="javascript:;" class="js-label-remove search-line__label"> акция <span class="search-line__label-icon font-md"></span> </a>
+                                <a href="javascript:;" class="js-label-remove search-line__label"> личный счет <span class="search-line__label-icon font-md"></span> </a>
                                 <a href="javascript:;" class="js-label-remove-all search-line__delete font-md"></a>
                                 <button class="search-line__button font-md" type="submit"></button>
                             </div>
@@ -241,16 +309,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="search-line__btns">
-                            <a href="javascript:;" class="search-line__filter">
-                                <span class="search-line__filter-icon font-md"></span>
-                                <span class="search-line__filter-count count-icon">2</span>
-                            </a>
-                            <a href="javascript:;" class="btn btn-one" data-fancybox data-src="#new-task">
-                                <span class="btn__icon font-md"></span>
-                                <span class="d-none d-sm-block">Создать задачу</span>
-                            </a>
-                        </div>
+                        <a href="javascript:;" class="search-line__filter">
+                            <span class="search-line__filter-icon font-md"></span>
+                            <span class="search-line__filter-count count-icon">2</span>
+                        </a>
                     </div>
 
                     <!-- Таблица -->
@@ -262,7 +324,7 @@
                                         <a href="javascript:;" class="table-one__icon-gear font-md"></a>
                                     </th>
                                     <th>
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Номер</a>
+                                        <a href="javascript:;" class="table-one__link table-one__link_head">Количество часов</a>
 
                                         <!-- Сортировка в таблице -->
                                         <a href="javascript:;" class="table-sort font-md">
@@ -270,23 +332,17 @@
                                             <span class="table-sort__active"></span>
                                         </a>
                                     </th>
-                                    <th class="table-one__name">
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Название</a>
+                                    <th>
+                                        <a href="javascript:;" class="table-one__link table-one__link_head">Пополнение/списание</a>
                                     </th>
                                     <th>
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Статус</a>
+                                        <a href="javascript:;" class="table-one__link table-one__link_head">Задача</a>
                                     </th>
                                     <th>
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Дата создания</a>
+                                        <a href="javascript:;" class="table-one__link table-one__link_head">Дата</a>
                                     </th>
                                     <th>
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Крайний срок</a>
-                                    </th>
-                                    <th>
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Выделено/Затрачено</a>
-                                    </th>
-                                    <th>
-                                        <a href="javascript:;" class="table-one__link table-one__link_head">Ответственный</a>
+                                        <a href="javascript:;" class="table-one__link table-one__link_head">Источник</a>
                                     </th>
                                 </tr>
                             </thead>
@@ -295,133 +351,84 @@
                                     <td class="table-one__menu">
                                         <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                     </td>
-                                    <td class="table-one__td mb-0">
-                                        <span class="table-one__check font-md"></span>
-                                        <a href="javascript:;" class="table-one__link"> <span class="d-md-none">№</span>123 </a>
-                                    </td>
-                                    <td class="table-one__td table-one__name">
-                                        <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №1</a>
-                                    </td>
+                                    <td class="table-one__td table-one__name table-one__mobile-medium">100 <span class="d-md-none">часов</span></td>
                                     <td class="table-one__status">
-                                        <span class="status-label status-label_v1">Новая</span>
+                                        <span class="status-label status-label_v1">Списание</span>
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Дата создания</span>
+                                        <span class="table-one__label">Задача</span>
+                                        <a href="javascript:;" class="table-one__link"> <span class="d-none d-md-inline">Задача</span> №357 </a>
+                                    </td>
+                                    <td class="table-one__td">
+                                        <span class="table-one__label">Дата</span>
                                         18.05.2020
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Крайний срок</span>
-                                        20.05.2020
-                                    </td>
-                                    <td class="table-one__td">
-                                        <span class="table-one__label">Выделено/Затрачено</span>
-                                        <span> 46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span> </span>
-                                    </td>
-                                    <td class="table-one__td table-one__mobile-margin">
-                                        <span class="table-one__label">Ответственный</span>
-                                        <a href="javascript:;" class="user-block">
-                                            <span class="user-block__icon">ПА</span>
-                                            <span class="user-block__name">Петров А.П.</span>
-                                        </a>
+                                        <span class="table-one__label">Источник</span>
+                                        Личный счет
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-one__menu">
                                         <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                     </td>
-                                    <td class="table-one__td mb-0">
-                                        <a href="javascript:;" class="table-one__link"> <span class="d-md-none">№</span>123 </a>
-                                    </td>
-                                    <td class="table-one__td table-one__name">
-                                        <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №2</a>
-                                    </td>
+                                    <td class="table-one__td table-one__name table-one__mobile-medium">5 <span class="d-md-none">часов</span></td>
                                     <td class="table-one__status">
-                                        <span class="status-label status-label_v2">В работе</span>
+                                        <span class="status-label status-label_v2">Пополнение</span>
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Дата создания</span>
+                                        <span class="table-one__label">Задача</span>
+                                        <a href="javascript:;" class="table-one__link"> <span class="d-none d-md-inline">Задача</span> №359 </a>
+                                    </td>
+                                    <td class="table-one__td">
+                                        <span class="table-one__label">Дата</span>
                                         18.05.2020
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Крайний срок</span>
-                                        20.05.2020
-                                    </td>
-                                    <td class="table-one__td">
-                                        <span class="table-one__label">Выделено/Затрачено</span>
-                                        <span> 25:00 <span class="status-label status-label_v4 status-label_medium status-label_margin">30:00</span> </span>
-                                    </td>
-                                    <td class="table-one__td table-one__mobile-margin">
-                                        <span class="table-one__label">Ответственный</span>
-                                        <a href="javascript:;" class="user-block">
-                                            <span class="user-block__icon">ПА</span>
-                                            <span class="user-block__name">Петров А.П.</span>
-                                        </a>
+                                        <span class="table-one__label">Источник</span>
+                                        Личный счет
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-one__menu">
                                         <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                     </td>
-                                    <td class="table-one__td mb-0">
-                                        <a href="javascript:;" class="table-one__link"> <span class="d-md-none">№</span>123 </a>
-                                    </td>
-                                    <td class="table-one__td table-one__name">
-                                        <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №3</a>
-                                    </td>
+                                    <td class="table-one__td table-one__name table-one__mobile-medium">4 <span class="d-md-none">часа</span></td>
                                     <td class="table-one__status">
-                                        <span class="status-label status-label_v2">В работе</span>
+                                        <span class="status-label status-label_v2">Пополнение</span>
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Дата создания</span>
+                                        <span class="table-one__label">Задача</span>
+                                        <a href="javascript:;" class="table-one__link"> <span class="d-none d-md-inline">Задача</span> №347 </a>
+                                    </td>
+                                    <td class="table-one__td">
+                                        <span class="table-one__label">Дата</span>
                                         18.05.2020
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Крайний срок</span>
-                                        20.05.2020
-                                    </td>
-                                    <td class="table-one__td">
-                                        <span class="table-one__label">Выделено/Затрачено</span>
-                                        <span> 46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span> </span>
-                                    </td>
-                                    <td class="table-one__td table-one__mobile-margin">
-                                        <span class="table-one__label">Ответственный</span>
-                                        <a href="javascript:;" class="user-block">
-                                            <span class="user-block__icon">ПА</span>
-                                            <span class="user-block__name">Петров А.П.</span>
-                                        </a>
+                                        <span class="table-one__label">Источник</span>
+                                        Акция
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-one__menu">
                                         <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                                     </td>
-                                    <td class="table-one__td mb-0">
-                                        <a href="javascript:;" class="table-one__link"> <span class="d-md-none">№</span>123 </a>
-                                    </td>
-                                    <td class="table-one__td table-one__name">
-                                        <a href="javascript:;" class="table-one__link table-one__link_text">Задача для станка №4</a>
-                                    </td>
+                                    <td class="table-one__td table-one__name table-one__mobile-medium">3 <span class="d-md-none">часа</span></td>
                                     <td class="table-one__status">
-                                        <span class="status-label status-label_v2">В работе</span>
+                                        <span class="status-label status-label_v2">Пополнение</span>
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Дата создания</span>
+                                        <span class="table-one__label">Задача</span>
+                                        <a href="javascript:;" class="table-one__link"> <span class="d-none d-md-inline">Задача</span> №257 </a>
+                                    </td>
+                                    <td class="table-one__td">
+                                        <span class="table-one__label">Дата</span>
                                         18.05.2020
                                     </td>
                                     <td class="table-one__td">
-                                        <span class="table-one__label">Крайний срок</span>
-                                        20.05.2020
-                                    </td>
-                                    <td class="table-one__td">
-                                        <span class="table-one__label">Выделено/Затрачено</span>
-                                        <span> 46:00 <span class="status-label status-label_v3 status-label_medium status-label_margin">12:00</span> </span>
-                                    </td>
-                                    <td class="table-one__td table-one__mobile-margin">
-                                        <span class="table-one__label">Ответственный</span>
-                                        <a href="javascript:;" class="user-block">
-                                            <span class="user-block__icon">ПА</span>
-                                            <span class="user-block__name">Петров А.П.</span>
-                                        </a>
+                                        <span class="table-one__label">Источник</span>
+                                        Акция
                                     </td>
                                 </tr>
                             </tbody>
@@ -473,152 +480,6 @@
                     <div class="banner-full">
                         <img class="banner-full__img d-none d-md-block" src="./local/uploads/banner.png" alt="" />
                         <img class="banner-full__img d-md-none" src="./local/uploads/banner.small.png" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="window-one" id="new-task">
-                <div class="window-one__head">
-                    <a href="javascript:;" class="window-one__head-back font-md" data-fancybox-close></a>
-                    <div class="h1 mb-0">Новая задача</div>
-                    <div class="window-one__xs-full">
-                        <label class="checkbox-one checkbox-one_xs-revers">
-                            <div class="checkbox-one__label">Важная</div>
-                            <div class="checkbox-one__box checkbox-one__box_right">
-                                <input class="checkbox-one__input" type="checkbox" value="" checked="checked" />
-                                <span class="checkbox-one__circle"></span>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-                <div class="window-one__body">
-                    <div class="form-input mb-15">
-                        <input class="form-input__input" type="text" value="" />
-                        <label class="form-input__label">Название задачи</label>
-                    </div>
-
-                    <div class="form-textarea mb-15">
-                        <div class="form-textarea__panel font-md">
-                            <div class="form-textarea__panel-item">
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                            </div>
-                            <div class="form-textarea__panel-item">
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                            </div>
-                            <div class="form-textarea__panel-item">
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                            </div>
-                            <div class="form-textarea__panel-item">
-                                <a href="javascript:;" class="form-textarea__panel-link"></a>
-                            </div>
-                            <div class="form-textarea__panel-item">
-                                <a href="javascript:;">
-                                    <svg class="form-textarea__panel-icon form-textarea__panel-icon_q">
-                                        <use xlink:href="./local/img/sprite.svg#q"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <textarea class="form-textarea__input" placeholder="Введите текст комментария"></textarea>
-                    </div>
-
-                    <div class="mb-15">
-                        <label class="checkbox-one">
-                            <div class="checkbox-one__box checkbox-one__box_left">
-                                <input class="checkbox-one__input" type="checkbox" value="" checked="checked" />
-                                <span class="checkbox-one__circle"></span>
-                            </div>
-                            <div class="checkbox-one__label">Ручная раскладка</div>
-                        </label>
-                    </div>
-
-                    <div class="mb-20 text-small text-light">
-                        Ручная раскладка выполняется технологом вручную, без использования автоматических средств. Это дает более качественный результат, но процесс усложняется и стоимость раскладки существенно возрастет.
-                    </div>
-
-                    <div class="form-file mb-20" id="js-file-drag">
-                        <svg class="form-file__icon">
-                            <use xlink:href="./local/img/sprite.svg#f"></use>
-                        </svg>
-                        <div class="form-file__info" id="js-file-messages">
-                            <a href="javascript:;" class="form-file__link blue-link">
-                                Загрузите <span class="d-sm-none">файл</span>
-                                <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple" />
-                            </a>
-                            <span class="d-none d-sm-inline">или перетащите файл</span>
-                        </div>
-                    </div>
-
-                    <div class="form-select mb-10">
-                        <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select1"></div>
-                        <div class="form-select__line">
-                            <div class="form-select__label">Оборудование</div>
-                            <span class="form-select__str font-md"></span>
-                        </div>
-                        <div id="jq-dropdown-select1" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
-                            <label class="form-select-dropdown__item">
-                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
-                                <span class="form-select-dropdown__name">Пункт №1</span>
-                            </label>
-                            <label class="form-select-dropdown__item">
-                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
-                                <span class="form-select-dropdown__name">Пункт №2</span>
-                            </label>
-                            <label class="form-select-dropdown__item">
-                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
-                                <span class="form-select-dropdown__name">Пункт №3</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="date-line">
-                        <div class="date-line__left">
-                            <div class="form-select">
-                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select2"></div>
-                                <div class="form-select__line">
-                                    <div class="form-select__label">Ответственный</div>
-                                    <span class="form-select__str font-md"></span>
-                                </div>
-                                <div id="jq-dropdown-select2" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
-                                        <span class="form-select-dropdown__name">Пункт №1</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
-                                        <span class="form-select-dropdown__name">Пункт №2</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
-                                        <span class="form-select-dropdown__name">Пункт №3</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="date-line__date">
-                            <div class="form-date">
-                                <input type="text" value="" class="form-date__input datepicker-here" data-position="right top" />
-                                <label class="form-date__label">Крайний срок</label>
-                                <span class="form-date__icon font-md"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="window-one__foot">
-                    <div class="window-one__foot-left">
-                        <a href="javascript:;" class="btn btn-lg btn-one btn_xs-full-width">
-                            Поставить задачу
-                        </a>
-                    </div>
-                    <div class="window-one__foot-right">
-                        <a href="javascript:;" class="btn btn-lg btn-three btn_xs-full-width" data-fancybox-close>
-                            Отмена
-                        </a>
                     </div>
                 </div>
             </div>

@@ -80,143 +80,143 @@
 
             <!-- Строка поиска -->
             <div class="search-line">
-            <div class="h1 mb-0 d-lg-none">Мой тариф</div>
-            <div class="search-line__panel search-line__panel_full">
+                <div class="h1 mb-0 d-lg-none">Мой тариф</div>
+                <div class="search-line__panel search-line__panel_full">
 
-                <div class="search-line__inner">
-                    <input class="search-line__input" type="text" value="" placeholder="Поиск">
-                    <button class="search-line__button font-md" type="submit"></button>
-                </div>
-
-                <!-- Фильтр -->
-                <div class="filter-block">
-                    <div class="filter-block__head">
-                        <a href="javascript:;" class="filter-block__close font-md"></a>
-                        <div class="filter-block__name">Фильтры</div>
+                    <div class="search-line__inner">
+                        <input class="search-line__input" type="text" value="" placeholder="Поиск">
+                        <button class="search-line__button font-md" type="submit"></button>
                     </div>
-                    <div class="filter-block__left">
 
-                        <div class="filter-status">
-                            <a href="javascript:;" class="filter-status__link filter-status__link_active">
-                                <span class="filter-status__link-icon font-md"></span>В работе
-                            </a>
-                            <a href="javascript:;" class="filter-status__link">
-                                <span class="filter-status__link-icon font-md"></span>Завершены
-                            </a>
-                            <a href="javascript:;" class="filter-status__link">
-                                <span class="filter-status__link-icon font-md"></span>Отложены
-                            </a>
-                            <a href="javascript:;" class="filter-status__link">
-                                <span class="filter-status__link-icon font-md"></span>Просрочены
-                            </a>
-                            <a href="javascript:;" class="filter-status__link">
-                                <span class="filter-status__link-icon font-md"></span>Почти просрочены
-                            </a>
+                    <!-- Фильтр -->
+                    <div class="filter-block">
+                        <div class="filter-block__head">
+                            <a href="javascript:;" class="filter-block__close font-md"></a>
+                            <div class="filter-block__name">Фильтры</div>
                         </div>
+                        <div class="filter-block__left">
 
-                        <div class="filter-save">
-                            <a href="javascript:;" class="filter-save__link">
-                                <span class="filter-save__link-icon font-md"></span>
-                                <span class="filter-save__link-name">Сохранить</span>
-                            </a>
-                            <a href="javascript:;" class="filter-save__setting font-md"></a>
+                            <div class="filter-status">
+                                <a href="javascript:;" class="filter-status__link filter-status__link_active">
+                                    <span class="filter-status__link-icon font-md"></span>В работе
+                                </a>
+                                <a href="javascript:;" class="filter-status__link">
+                                    <span class="filter-status__link-icon font-md"></span>Завершены
+                                </a>
+                                <a href="javascript:;" class="filter-status__link">
+                                    <span class="filter-status__link-icon font-md"></span>Отложены
+                                </a>
+                                <a href="javascript:;" class="filter-status__link">
+                                    <span class="filter-status__link-icon font-md"></span>Просрочены
+                                </a>
+                                <a href="javascript:;" class="filter-status__link">
+                                    <span class="filter-status__link-icon font-md"></span>Почти просрочены
+                                </a>
+                            </div>
+
+                            <div class="filter-save">
+                                <a href="javascript:;" class="filter-save__link">
+                                    <span class="filter-save__link-icon font-md"></span>
+                                    <span class="filter-save__link-name">Сохранить</span>
+                                </a>
+                                <a href="javascript:;" class="filter-save__setting font-md"></a>
+                            </div>
+
                         </div>
+                        <div class="filter-block__right">
 
+                            <form>
+
+                                <div class="form-select mb-10">
+                                    <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-filter1"></div>
+                                    <div class="form-select__line">
+                                        <div class="form-select__label">Роль</div>
+                                        <span class="form-select__str font-md"></span>
+                                    </div>
+                                    <div id="jq-dropdown-filter1" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Пункт №1</span>
+                                        </label>
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Пункт №2</span>
+                                        </label>
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Пункт №3</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-select mb-10">
+                                    <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-filter2"></div>
+                                    <div class="form-select__line">
+                                        <div class="form-select__label">Статус</div>
+                                        <span class="form-select__str font-md"></span>
+                                    </div>
+                                    <div id="jq-dropdown-filter2" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Ждет выполнения</span>
+                                        </label>
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Выполняется</span>
+                                        </label>
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Обсуждение</span>
+                                        </label>
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Завершено</span>
+                                        </label>
+                                        <label class="form-select-dropdown__item">
+                                            <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                            <span class="form-select-dropdown__name">Забракован</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-input mb-10">
+                                    <input class="form-input__input" type="text" value="">
+                                    <label class="form-input__label">Ответственный</label>
+                                </div>
+
+                                <div class="form-search mb-10">
+                                    <a href="javascript:;" class="js-dropdown-remove form-label">avancut.ru <span class="form-label__icon font-md"></span></a>
+                                    <input class="form-search__input" type="text" value="">
+                                    <label class="form-search__label">Проект (группа)</label>
+                                </div>
+
+                                <div class="filter-edit">
+                                    <a href="javascript:;" class="filter-edit__set">
+                                        <span class="filter-edit__set-icon font-md"></span>Добавить поле
+                                    </a>
+                                    <a href="javascript:;" class="filter-edit__reset">
+                                        <span class="filter-edit__reset-icon font-md"></span>Вернуть поля по умолчанию
+                                    </a>
+                                </div>
+
+                                <div class="filter-set">
+                                    <button class="btn btn-two" type="submit">Применить фильтр</button>
+                                    <a href="javascript:;" class="js-filter-reset filter-set__reset">
+                                        <span class="filter-set__reset-icon font-md"></span>Сбросить
+                                    </a>
+                                </div>
+
+                            </form>
+
+                        </div>
                     </div>
-                    <div class="filter-block__right">
 
-                        <form>
-
-                            <div class="form-select mb-10">
-                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-filter1"></div>
-                                <div class="form-select__line">
-                                    <div class="form-select__label">Роль</div>
-                                    <span class="form-select__str font-md"></span>
-                                </div>
-                                <div id="jq-dropdown-filter1" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Пункт №1</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Пункт №2</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Пункт №3</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form-select mb-10">
-                                <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-filter2"></div>
-                                <div class="form-select__line">
-                                    <div class="form-select__label">Статус</div>
-                                    <span class="form-select__str font-md"></span>
-                                </div>
-                                <div id="jq-dropdown-filter2" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Ждет выполнения</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Выполняется</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Обсуждение</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Завершено</span>
-                                    </label>
-                                    <label class="form-select-dropdown__item">
-                                        <input class="form-select-dropdown__checkbox" type="checkbox" value="">
-                                        <span class="form-select-dropdown__name">Забракован</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form-input mb-10">
-                                <input class="form-input__input" type="text" value="">
-                                <label class="form-input__label">Ответственный</label>
-                            </div>
-
-                            <div class="form-search mb-10">
-                                <a href="javascript:;" class="js-dropdown-remove form-label">avancut.ru <span class="form-label__icon font-md"></span></a>
-                                <input class="form-search__input" type="text" value="">
-                                <label class="form-search__label">Проект (группа)</label>
-                            </div>
-
-                            <div class="filter-edit">
-                                <a href="javascript:;" class="filter-edit__set">
-                                    <span class="filter-edit__set-icon font-md"></span>Добавить поле
-                                </a>
-                                <a href="javascript:;" class="filter-edit__reset">
-                                    <span class="filter-edit__reset-icon font-md"></span>Вернуть поля по умолчанию
-                                </a>
-                            </div>
-
-                            <div class="filter-set">
-                                <button class="btn btn-two" type="submit">Применить фильтр</button>
-                                <a href="javascript:;" class="js-filter-reset filter-set__reset">
-                                    <span class="filter-set__reset-icon font-md"></span>Сбросить
-                                </a>
-                            </div>
-
-                        </form>
-
-                    </div>
                 </div>
-
+                <a href="javascript:;" class="search-line__filter">
+                    <span class="search-line__filter-icon font-md"></span>
+                    <span class="search-line__filter-count count-icon">2</span>
+                </a>
             </div>
-            <a href="javascript:;" class="search-line__filter">
-                <span class="search-line__filter-icon font-md"></span>
-                <span class="search-line__filter-count count-icon">2</span>
-            </a>
-        </div>
 
         </div>
 

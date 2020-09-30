@@ -1,0 +1,37 @@
+.tariff-calc {
+    padding: 40px 45px;
+    display: flex;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        font-size: 42px;
+    }
+    &__item {
+
+        &_input {
+            width: 200px;
+        }
+        &_center {
+            color: var(--tabs-link);
+            margin: 0 15px;
+        }
+    }
+    &__font {
+
+        &-middle {
+            font-size: 32px;
+        }
+        &-bold {
+            font-weight: bold;
+        }
+        &-medium {
+            font-weight: 500;
+        }
+        &-sub {
+            font-size: 24px;
+        }
+    }
+    &__right {
+    }
+}

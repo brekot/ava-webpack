@@ -1,5 +1,5 @@
 <% var data = {
-    title: "Tariff Income",
+    title: "Tariff Hours",
 }; %>
 
 <%= _.template(require('./../includes/header.html'))(data) %>
@@ -61,40 +61,59 @@
             </div>
         </div>
 
-        <div class="mobile-re-order">
+        <!-- Вкладки -->
+        <div class="tabs-panel">
+            <a href="javascript:;" class="tabs-panel__link">Тарифы</a>
+            <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Часы</a>
+            <a href="javascript:;" class="tabs-panel__link">Пополнить счет</a>
+            <a href="javascript:;" class="tabs-panel__link">
+                <span class="d-none d-md-block">История (пополнения)</span>
+                <span class="d-md-none">Пополнения</span>
+            </a>
+            <a href="javascript:;" class="tabs-panel__link">
+                <span class="d-none d-md-block">История (списания)</span>
+                <span class="d-md-none">Списания</span>
+            </a>
+        </div>
 
-            <!-- Вкладки -->
-            <div class="tabs-panel">
-                <a href="javascript:;" class="tabs-panel__link">Тарифы</a>
-                <a href="javascript:;" class="tabs-panel__link">Часы</a>
-                <a href="javascript:;" class="tabs-panel__link">Пополнить счет</a>
-                <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">
-                    <span class="d-none d-md-block">История (пополнения)</span>
-                    <span class="d-md-none">Пополнения</span>
-                </a>
-                <a href="javascript:;" class="tabs-panel__link">
-                    <span class="d-none d-md-block">История (списания)</span>
-                    <span class="d-md-none">Списания</span>
-                </a>
+        <div class="block-white">
+            <div class="tariff-calc">
+                <div class="tariff-calc__left">
+                    <div class="tariff-calc__item tariff-calc__item_input">
+                        <div class="form-input form-input_border-fix  form-input_big-text">
+                            <input class="form-input__input" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="tariff-calc__item tariff-calc__item_center">
+                        <span class="tariff-calc__font-middle tariff-calc__font-bold">*</span>
+                        <span class="tariff-calc__font-medium">1 000</span>
+                        <span class="tariff-calc__font-medium tariff-calc__font-sub">руб.</span>
+                        <span class="tariff-calc__font-middle tariff-calc__font-bold">=</span>
+                    </div>
+                    <div class="tariff-calc__item tariff-calc__item_right">
+                        <span class="tariff-calc__font-bold">45 000</span>
+                        <span class="tariff-calc__font-bold tariff-calc__font-sub">руб.</span>
+                    </div>
+                </div>
+                <div class="tariff-calc__right"></div>
             </div>
+        </div>
 
-            <!-- Строка поиска -->
-            <div class="search-line">
-                <div class="h1 mb-0 d-lg-none">Мой тариф</div>
+        <div class="h1 d-none d-lg-block">Статистика использования часов</div>
+
+        <!-- Строка поиска -->
+        <div class="search-line">
+                <div class="h1 mb-0 d-lg-none">Статистика использования часов</div>
                 <div class="search-line__panel search-line__panel_full">
 
                     <div class="search-line__inner">
-                        <input class="search-line__input" type="text" value="" placeholder="Поиск">
+                        <input class="search-line__input" type="text" value="35" placeholder="Поиск">
                         <a href="javascript:;" class="js-label-remove search-line__label">
-                            в работе <span class="search-line__label-icon font-md"></span>
+                            акция <span class="search-line__label-icon font-md"></span>
                         </a>
                         <a href="javascript:;" class="js-label-remove search-line__label">
-                            новая <span class="search-line__label-icon font-md"></span>
+                            личный счет <span class="search-line__label-icon font-md"></span>
                         </a>
-                        <a href="javascript:;" class="js-label-remove search-line__label">
-                            Пертов А.П. <span class="search-line__label-icon font-md"></span>
-                        </a>
-                        <span class="search-line__count">+2</span>
                         <a href="javascript:;" class="js-label-remove-all search-line__delete font-md"></a>
                         <button class="search-line__button font-md" type="submit"></button>
                     </div>
@@ -229,8 +248,6 @@
                 </a>
             </div>
 
-        </div>
-
         <!-- Таблица -->
         <div class="table-one-wrapper">
             <table class="table-one">
@@ -240,7 +257,7 @@
                             <a href="javascript:;" class="table-one__icon-gear font-md"></a>
                         </th>
                         <th>
-                            <a href="javascript:;" class="table-one__link table-one__link_head">Номер</a>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Количество часов</a>
 
                             <!-- Сортировка в таблице -->
                             <a href="javascript:;" class="table-sort font-md">
@@ -249,19 +266,17 @@
                             </a>
 
                         </th>
-                        <th class="table-one__name">
-                            <a href="javascript:;" class="table-one__link table-one__link_head">Тип</a>
+                        <th>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Пополнение/списание</a>
                         </th>
                         <th>
-                            <a href="javascript:;" class="table-one__link table-one__link_head">Статус</a>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Задача</a>
                         </th>
                         <th>
                             <a href="javascript:;" class="table-one__link table-one__link_head">Дата</a>
                         </th>
-                        <th class="table-one__desktop-right">
-                            <a href="javascript:;" class="table-one__link table-one__link_head">Сумма</a>
-                        </th>
                         <th>
+                            <a href="javascript:;" class="table-one__link table-one__link_head">Источник</a>
                         </th>
                     </tr>
                 </thead>
@@ -270,107 +285,100 @@
                         <td class="table-one__menu">
                             <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                         </td>
-                        <td class="table-one__td table-one__name">
-                            <a href="javascript:;" class="table-one__link table-one__link_blue">
-                                <span class="d-md-none">№</span>123
+                        <td class="table-one__td table-one__name table-one__mobile-medium">
+                            100 <span class="d-md-none">часов</span>
+                        </td>
+                        <td class="table-one__status">
+                            <span class="status-label status-label_v1">Списание</span>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Задача</span>
+                            <a href="javascript:;" class="table-one__link">
+                                <span class="d-none d-md-inline">Задача</span> №357
                             </a>
                         </td>
                         <td class="table-one__td">
-                            <span class="table-one__label">Тип</span>
-                            Счет
-                        </td>
-                        <td class="table-one__status">
-                            <span class="status-label status-label_v1">Не оплачен</span>
-                        </td>
-                        <td class="table-one__td">
                             <span class="table-one__label">Дата</span>
                             18.05.2020
                         </td>
-                        <td class="table-one__td table-one__desktop-right table-one__nowrap">
-                            <span class="table-one__label">Сумма</span>
-                            18 500 руб.
-                        </td>
-                        <td class="table-one__td table-one__desktop-right table-one__mobile-margin table-one__nowrap">
-                            <a href="javascript:;" class="table-one__link table-one__link_left">Скачать акт</a>
-                            <a href="javascript:;" class="table-one__link table-one__link_right">Скачать счет</a>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Источник</span>
+                            Личный счет
                         </td>
                     </tr>
                     <tr>
                         <td class="table-one__menu">
                             <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                         </td>
-                        <td class="table-one__td table-one__name">
-                            <div class="table-one__comment d-md-none">без номера</div>
-                        </td>
-                        <td class="table-one__td">
-                            <span class="table-one__label">Тип</span>
-                            Банковская карта
+                        <td class="table-one__td table-one__name table-one__mobile-medium">
+                            5 <span class="d-md-none">часов</span>
                         </td>
                         <td class="table-one__status">
-                            <span class="status-label status-label_v5">Оплачен</span>
+                            <span class="status-label status-label_v2">Пополнение</span>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Задача</span>
+                            <a href="javascript:;" class="table-one__link">
+                                <span class="d-none d-md-inline">Задача</span> №359
+                            </a>
                         </td>
                         <td class="table-one__td">
                             <span class="table-one__label">Дата</span>
                             18.05.2020
                         </td>
-                        <td class="table-one__td table-one__desktop-right table-one__nowrap">
-                            <span class="table-one__label">Сумма</span>
-                            142 500 руб.
-                        </td>
-                        <td class="table-one__td table-one__desktop-right table-one__mobile-margin table-one__nowrap">
-                            <a href="javascript:;" class="table-one__link table-one__link_right">Скачать чек</a>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Источник</span>
+                            Личный счет
                         </td>
                     </tr>
                     <tr>
                         <td class="table-one__menu">
                             <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                         </td>
-                        <td class="table-one__td table-one__name">
-                            <div class="table-one__comment d-md-none">без номера</div>
-                        </td>
-                        <td class="table-one__td">
-                            <span class="table-one__label">Тип</span>
-                            Банковская карта
+                        <td class="table-one__td table-one__name table-one__mobile-medium">
+                            4 <span class="d-md-none">часа</span>
                         </td>
                         <td class="table-one__status">
-                            <span class="status-label status-label_v5">Оплачен</span>
+                            <span class="status-label status-label_v2">Пополнение</span>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Задача</span>
+                            <a href="javascript:;" class="table-one__link">
+                                <span class="d-none d-md-inline">Задача</span> №347
+                            </a>
                         </td>
                         <td class="table-one__td">
                             <span class="table-one__label">Дата</span>
                             18.05.2020
                         </td>
-                        <td class="table-one__td table-one__desktop-right table-one__nowrap">
-                            <span class="table-one__label">Сумма</span>
-                            5 000 руб.
-                        </td>
-                         <td class="table-one__td table-one__desktop-right table-one__mobile-margin table-one__nowrap">
-                            <a href="javascript:;" class="table-one__link table-one__link_right">Скачать чек</a>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Источник</span>
+                            Акция
                         </td>
                     </tr>
                     <tr>
                         <td class="table-one__menu">
                             <a href="javascript:;" class="icon-dotted font-md" data-jq-dropdown="#jq-dropdown-table" data-vertical-offset="10"></a>
                         </td>
-                        <td class="table-one__td table-one__name">
-                            <div class="table-one__comment d-md-none">без номера</div>
-                        </td>
-                        <td class="table-one__td">
-                            <span class="table-one__label">Тип</span>
-                            Банковская карта
+                        <td class="table-one__td table-one__name table-one__mobile-medium">
+                            3 <span class="d-md-none">часа</span>
                         </td>
                         <td class="table-one__status">
-                            <span class="status-label status-label_v5">Оплачен</span>
+                            <span class="status-label status-label_v2">Пополнение</span>
+                        </td>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Задача</span>
+                            <a href="javascript:;" class="table-one__link">
+                                <span class="d-none d-md-inline">Задача</span> №257
+                            </a>
                         </td>
                         <td class="table-one__td">
                             <span class="table-one__label">Дата</span>
                             18.05.2020
                         </td>
-                        <td class="table-one__td table-one__desktop-right table-one__nowrap">
-                            <span class="table-one__label">Сумма</span>
-                            7 500 руб.
-                        </td>
-                         <td class="table-one__td table-one__desktop-right table-one__mobile-margin table-one__nowrap">
-                            <a href="javascript:;" class="table-one__link table-one__link_right">Скачать чек</a>
+                        <td class="table-one__td">
+                            <span class="table-one__label">Источник</span>
+                            Акция
                         </td>
                     </tr>
                 </tbody>

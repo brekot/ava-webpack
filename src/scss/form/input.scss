@@ -7,7 +7,8 @@
     transition: all .5s;
     padding: 0 0 0 15px;
 
-    &:hover {
+    &:hover,
+    &_border-fix {
         border-color: var(--grey5);
     }
     &__input {
@@ -17,6 +18,15 @@
         background-color: transparent;
         box-shadow: none;
         border: none;
+    }
+    &_big-text {
+        padding: 0;
+    }
+    &_big-text &__input {
+        padding: 0 15px;
+        font-size: 42px;
+        font-weight: 500;
+        text-align: center;
     }
     &__label {
         color: var(--tabs-link);
