@@ -6,7 +6,7 @@
 
     &__panel {
         width: 790px;
-        margin: 0 10px 0 auto;
+        margin: 0 0 0 auto;
         position: relative;
 
         &_full {
@@ -110,6 +110,11 @@
             top: -5px;
             right: -5px;
         }
+    }
+    &__btns {
+        margin: 0 0 0 10px;
+        display: flex;
+        align-items: center;
     }
 
     @include media-breakpoint-up(lg)

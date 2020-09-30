@@ -8,7 +8,7 @@
 
         <title>Avancut | Equipment</title>
 
-        <link href="./local/template_styles.css?591e812be90a7dd85143" rel="stylesheet" />
+        <link href="./local/template_styles.css?d6a649d868007d611d8b" rel="stylesheet" />
     </head>
 
     <body>
@@ -119,7 +119,7 @@
                     <!-- Строка поиска -->
                     <div class="search-line">
                         <div class="h1 mb-0 d-lg-none">Мое оборудование</div>
-                        <div class="search-line__panel search-line__panel_full d-none d-lg-block">
+                        <div class="search-line__panel search-line__panel_full">
                             <div class="search-line__inner">
                                 <input class="search-line__input" type="text" value="" placeholder="Поиск" />
                                 <button class="search-line__button font-md" type="submit"></button>
@@ -226,19 +226,21 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="javascript:;" class="search-line__filter">
-                            <span class="search-line__filter-icon font-md"></span>
-                            <span class="search-line__filter-count count-icon">2</span>
-                        </a>
-                        <a href="javascript:;" class="btn btn-one" data-fancybox data-src="#new-equipment">
-                            <span class="btn__icon font-md"></span>
-                            <span class="d-none d-sm-block">Добавить</span>
-                        </a>
+                        <div class="search-line__btns">
+                            <a href="javascript:;" class="search-line__filter">
+                                <span class="search-line__filter-icon font-md"></span>
+                                <span class="search-line__filter-count count-icon">2</span>
+                            </a>
+                            <a href="javascript:;" class="btn btn-one" data-fancybox data-src="#new-equipment">
+                                <span class="btn__icon font-md"></span>
+                                <span class="d-none d-sm-block">Добавить</span>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Таблица -->
                     <div class="table-one-wrapper">
-                        <table class="table-one table-one_wide">
+                        <table class="table-one">
                             <thead>
                                 <tr>
                                     <th>
@@ -705,6 +707,6 @@
             </div>
         </nav>
 
-        <script type="text/javascript" src="./local/js/script.js?591e812be90a7dd85143"></script>
+        <script type="text/javascript" src="./local/js/script.js?d6a649d868007d611d8b"></script>
     </body>
 </html>

@@ -13,9 +13,6 @@
 
 .table-one {
 
-    &__name {
-        min-width: 200px;
-    }
     &__link {
         text-decoration: none;
 
@@ -34,6 +31,9 @@
             &:hover {
                 text-decoration: none;
             }
+        }
+        &_left {
+            margin: 0 10px 0 0;
         }
     }
     &__icon {
@@ -63,6 +63,13 @@
         position: absolute;
         left: -10px;
     }
+    &__nowrap {
+        white-space: nowrap;
+    }
+    &__comment {
+        font-style: italic;
+        color: var(--grey5);
+    }
 
     @include media-breakpoint-up(md)
     {
@@ -75,7 +82,7 @@
                 box-shadow: 0 6px 8px var(--shadow);
             }
             th, td {
-                padding: 12px 10px;
+                padding: 17px 10px;
 
                 &:first-child {
                     padding: 12px 20px;
@@ -84,12 +91,6 @@
                 }
                 &:last-child {
                     padding-right: 20px;
-                }
-            }
-            &_wide {
-
-                th, td {
-                    padding: 18px 10px;
                 }
             }
             th {
@@ -129,6 +130,9 @@
             &__label {
                 display: none;
             }
+            &__desktop-right {
+                text-align: right;
+            }
         }
     }
     @include media-breakpoint-down(sm)
@@ -166,6 +170,8 @@
             }
             &__mobile-margin {
                 margin: 15px 0 0;
+                overflow: hidden;
+                display: block;
             }
             &__check {
                 left: -20px;
@@ -185,6 +191,9 @@
                 margin: 0 -25px 20px;
                 padding: 0 25px 20px;
                 border-bottom: 1px solid var(--grey2);
+            }
+            &__link_right {
+                float: right;
             }
         }
     }
