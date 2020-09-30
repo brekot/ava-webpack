@@ -1,0 +1,124 @@
+.tariff-info {
+    display: flex;
+    border-radius: 8px;
+    background-color: var(--blue);
+    margin: 0 0 25px;
+    padding: 25px 35px;
+
+    &__block {
+        color: var(--white);
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        fill: var(--white);
+        opacity: .5;
+        margin: 0 15px 0 0;
+
+        &1 {
+            width: 48px;
+            height: 58px;
+        }
+        &2 {
+            width: 57px;
+            height: 57px;
+        }
+        &3 {
+            width: 57px;
+            height: 57px;
+        }
+    }
+    &__line {
+        margin: 0 0 10px;
+    }
+    &__label {
+        display: inline;
+        opacity: .5;
+    }
+    &__value {
+        font-weight: bold;
+        display: inline;
+    }
+    &__btn {
+        background-color: var(--yellow);
+        font-size: 13px;
+        font-weight: 500;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--white);
+        border-radius: 13px;
+        line-height: 26px;
+        padding: 0 15px;
+
+        &:hover {
+            background-color: var(--yellow-light);
+            text-decoration: none;
+            color: var(--white);
+        }
+    }
+
+    @include media-breakpoint-up(md)
+    {
+        &__block {
+            font-size: 17px;
+
+            &_border {
+                padding: 0 55px 0 0;
+                margin: 0 30px 0 0;
+                border-right: 1px solid var(--grey-opacity);
+            }
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        &__block_border {
+            padding: 0 20px 0 0;
+            margin: 0 20px 0 0;
+        }
+    }
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 20px;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        & {
+            padding: 15px;
+
+            &__icon {
+                display: none;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            flex-direction: column;
+
+            &__block_border {
+                margin: 0 0 10px;
+            }
+            &__inner {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            &__line {
+                margin: 0;
+                width: calc(100% - 85px);
+                display: flex;
+            }
+            &__value {
+                margin: 0 0 0 auto;
+            }
+            &__btn {
+                padding: 0;
+                text-align: center;
+                width: 80px;
+                margin: 0 0 0 5px;
+            }
+        }
+    }
+}

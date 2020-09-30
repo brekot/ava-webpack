@@ -16,7 +16,8 @@
 @import "./elem/blockquote";
 @import "./elem/icon"; // Общие иконки
 @import "./elem/banner.full"; // Баннер
-@import "./elem/tabs.block"; // Вкладки
+@import "./elem/tabs.block"; // Вкладки #1
+@import "./elem/tabs.panel"; // Вкладки #2
 @import "./elem/table.one"; // Таблица
 @import "./elem/table.sort"; // Сортировка таблиц
 @import "./elem/status.label"; // Статусы
@@ -73,3 +74,6 @@
 // Profile
 @import "./pages/profile/page"; // Общий блок
 @import "./pages/profile/ava"; // Аватарка
+
+// Tariff
+@import "./pages/tariff/info"; // Информационный блок

@@ -1,5 +1,5 @@
 <% var data = {
-    title: "Tasks",
+    title: "Tariff Income",
 }; %>
 
 <%= _.template(require('./../includes/header.html'))(data) %>
@@ -20,6 +20,59 @@
     <div class="container">
 
         <h1 class="d-none d-lg-block">Мой тариф</h1>
+
+        <div class="tariff-info">
+            <div class="tariff-info__block tariff-info__block_border">
+                <svg class="tariff-info__icon tariff-info__icon1">
+                    <use xlink:href="./local/img/icon.tariff.svg#icon1"></use>
+                </svg>
+                <div class="tariff-info__inner">
+                    <div class="tariff-info__line">
+                        <div class="tariff-info__label">Текущий тариф:</div>
+                        <div class="tariff-info__value">Стартовый</div>
+                    </div>
+                    <a href="javascript:;" class="tariff-info__btn">Изменить</a>
+                </div>
+            </div>
+            <div class="tariff-info__block tariff-info__block_border">
+                <svg class="tariff-info__icon tariff-info__icon2">
+                    <use xlink:href="./local/img/icon.tariff.svg#icon2"></use>
+                </svg>
+                <div class="tariff-info__inner">
+                    <div class="tariff-info__line">
+                        <div class="tariff-info__label">Остаток часов:</div>
+                        <div class="tariff-info__value">100 ч</div>
+                    </div>
+                    <a href="javascript:;" class="tariff-info__btn">Купить</a>
+                </div>
+            </div>
+            <div class="tariff-info__block">
+                <svg class="tariff-info__icon tariff-info__icon3">
+                    <use xlink:href="./local/img/icon.tariff.svg#icon3"></use>
+                </svg>
+                <div class="tariff-info__inner">
+                    <div class="tariff-info__line">
+                        <div class="tariff-info__label">На счету:</div>
+                        <div class="tariff-info__value">0 руб.</div>
+                    </div>
+                    <a href="javascript:;" class="tariff-info__btn">Пополнить</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-panel">
+            <a href="javascript:;" class="tabs-panel__link">Тарифы</a>
+            <a href="javascript:;" class="tabs-panel__link">Часы</a>
+            <a href="javascript:;" class="tabs-panel__link">Пополнить счет</a>
+            <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">
+                <span class="d-none d-md-block">История (пополнения)</span>
+                <span class="d-md-none">Пополнения</span>
+            </a>
+            <a href="javascript:;" class="tabs-panel__link">
+                <span class="d-none d-md-block">История (списания)</span>
+                <span class="d-md-none">Списания</span>
+            </a>
+        </div>
 
         <!-- Строка поиска -->
         <div class="search-line">
