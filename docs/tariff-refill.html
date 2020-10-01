@@ -6,7 +6,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-        <title>Avancut | Profile</title>
+        <title>Avancut | Tariff Refill</title>
 
         <link href="./local/template_styles.css?456ea67abcf7095be10d" rel="stylesheet" />
     </head>
@@ -100,95 +100,132 @@
                 </div>
             </div>
 
-            <div class="mb-15"></div>
+            <!-- Вкладки -->
+            <div class="tabs-block">
+                <div class="container">
+                    <div class="tabs-block__inner">
+                        <a href="javascript:;" class="tabs-block__link">Мой профиль</a>
+                        <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Мой тариф</a>
+                        <a href="javascript:;" class="tabs-block__link">Мое оборудование</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Серая область -->
             <div class="bg-grey">
                 <div class="container">
-                    <h1>Мой профиль</h1>
+                    <h1 class="d-none d-lg-block">Мой тариф</h1>
 
-                    <div class="block-white mb-30">
-                        <div class="profile-page">
-                            <div class="profile-page__left">
-                                <div class="profile-ava">
-                                    <div class="profile-ava__pict">
-                                        <img class="profile-ava__img" src="./local/uploads/profile.ava.png" alt="" />
-                                        <a href="javascript:;" class="profile-ava__delete font-md"></a>
-                                    </div>
-                                    <div class="profile-ava__links">
-                                        <a href="javascript:;" class="profile-ava__link">Загрузить</a>
-                                        <a href="javascript:;" class="profile-ava__link">Сделать фото</a>
-                                    </div>
+                    <!-- Информация о тарифе -->
+                    <div class="tariff-info">
+                        <div class="tariff-info__block tariff-info__block_border">
+                            <svg class="tariff-info__icon tariff-info__icon1">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon1"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">Текущий тариф:</div>
+                                    <div class="tariff-info__value">Стартовый</div>
                                 </div>
-                            </div>
-                            <div class="profile-page__right">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-input form-input_border-fix mb-20">
-                                            <input class="form-input__input" type="text" value="Елена" />
-                                            <label class="form-input__label"> Имя <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                        <div class="form-input form-input_border-fix mb-20">
-                                            <input class="form-input__input" type="text" value="Гайнуллова" />
-                                            <label class="form-input__label"> Фамилия <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-input form-input_border-fix mb-20">
-                                            <input class="form-input__input" type="tel" value="+ 7 900 222 30 30" />
-                                            <label class="form-input__label"> Телефон <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                        <div class="form-input form-input_border-fix mb-20 is-invalid">
-                                            <input class="form-input__input" type="email" value="" />
-                                            <label class="form-input__label"> E-mail <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-25"></div>
-                                <div class="form-input form-input_border-fix mb-30">
-                                    <input class="form-input__input" type="text" value='ООО "Ромашка"' />
-                                    <label class="form-input__label">
-                                        Компания
-                                    </label>
-                                </div>
-                                <div class="h3">Смена пароля</div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-input mb-20">
-                                            <input class="form-input__input" type="password" value="" />
-                                            <label class="form-input__label">
-                                                Старый пароль
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-input mb-20">
-                                            <input class="form-input__input" type="password" value="" />
-                                            <label class="form-input__label">
-                                                Новый пароль
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-15"></div>
-                                <div class="profile-page__btns">
-                                    <div class="profile-page__btn">
-                                        <a href="javascript:;" class="btn btn-lg btn-one btn_xs-full-width">
-                                            Сохранить
-                                        </a>
-                                    </div>
-                                    <div class="profile-page__btn">
-                                        <a href="javascript:;" class="btn btn-lg btn-three btn_xs-full-width">
-                                            Отмена
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Изменить</a>
                             </div>
                         </div>
+                        <div class="tariff-info__block tariff-info__block_border">
+                            <svg class="tariff-info__icon tariff-info__icon2">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon2"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">Остаток часов:</div>
+                                    <div class="tariff-info__value">100 ч</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Купить</a>
+                            </div>
+                        </div>
+                        <div class="tariff-info__block">
+                            <svg class="tariff-info__icon tariff-info__icon3">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon3"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">На счету:</div>
+                                    <div class="tariff-info__value">0 руб.</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Пополнить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h1 d-lg-none">Мой тариф</div>
+
+                    <!-- Вкладки -->
+                    <div class="tabs-panel">
+                        <a href="javascript:;" class="tabs-panel__link">Тарифы</a>
+                        <a href="javascript:;" class="tabs-panel__link">Часы</a>
+                        <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Пополнить счет</a>
+                        <a href="javascript:;" class="tabs-panel__link">
+                            <span class="d-none d-md-block">История (пополнения)</span>
+                            <span class="d-md-none">Пополнения</span>
+                        </a>
+                        <a href="javascript:;" class="tabs-panel__link">
+                            <span class="d-none d-md-block">История (списания)</span>
+                            <span class="d-md-none">Списания</span>
+                        </a>
+                    </div>
+
+                    <!-- Пополнить счет -->
+                    <div class="tariff-refill block-white">
+                        <form class="js-refill-block">
+                            <div class="tariff-refill__inner">
+                                <div class="tariff-refill__left">
+                                    <div class="h3">Выберите удобный способ оплаты</div>
+                                    <div class="tariff-refill__items">
+                                        <label class="tariff-refill__item">
+                                            <input class="tariff-refill__input" type="radio" value="" name="radio" checked="checked" />
+                                            <div class="tariff-refill__bg">
+                                                <div class="tariff-refill__pict">
+                                                    <svg class="tariff-refill__icon tariff-refill__icon1">
+                                                        <use xlink:href="./local/img/icon.tariff.svg#icon4"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="tariff-refill__name">Банковской картой</div>
+                                            </div>
+                                        </label>
+                                        <label class="tariff-refill__item">
+                                            <input class="tariff-refill__input" type="radio" value="" name="radio" />
+                                            <div class="tariff-refill__bg">
+                                                <div class="tariff-refill__pict">
+                                                    <svg class="tariff-refill__icon tariff-refill__icon2">
+                                                        <use xlink:href="./local/img/icon.tariff.svg#icon5"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="tariff-refill__name">Выставить счет</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="tariff-refill__right">
+                                    <div class="h3 d-none d-md-block">Заполните данные</div>
+                                    <div class="form-input mb-10">
+                                        <input class="form-input__input" type="text" value="" />
+                                        <label class="form-input__label">Введите ИНН</label>
+                                    </div>
+                                    <div class="form-input mb-20">
+                                        <input class="form-input__input" type="text" value="" />
+                                        <label class="form-input__label">Введите сумму</label>
+                                    </div>
+                                    <div class="tariff-refill__btns">
+                                        <button type="submit" class="btn btn-lg btn-one">
+                                            Пополнить
+                                        </button>
+                                        <a href="javascript:;" class="btn-clear js-refill-reset">
+                                            <span class="btn-clear__icon font-md"></span>
+                                            Очистить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
                     <!-- Нижний банер -->

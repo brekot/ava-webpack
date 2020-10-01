@@ -57,4 +57,6 @@ $(function() {
     require('./filter/reset');
 
     require('./page/tariff/calc');
+
+    require('./page/tariff/refill');
 });

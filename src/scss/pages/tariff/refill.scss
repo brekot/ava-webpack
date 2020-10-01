@@ -1,0 +1,138 @@
+.tariff-refill {
+    margin: 0 0 50px;
+
+    &__inner {
+        display: flex;
+        padding: 35px 60px 40px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 200px;
+        position: relative;
+        cursor: pointer;
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__bg {
+        color: var(--tabs-link);
+        fill: var(--tabs-link);
+        background-color: var(--blue-hover);
+        transition: all .5s;
+        height: 100%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px 0;
+    }
+    &__item:hover &__bg,
+    &__input:checked + &__bg {
+        color: var(--white);
+        fill: var(--white-opacity);
+        background-color: var(--blue);
+    }
+    &__pict {
+        height: 71px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 20px;
+    }
+    &__icon {
+        position: relative;
+        z-index: 2;
+
+        &1 {
+            width: 71px;
+            height: 57px;
+        }
+        &2 {
+            width: 61px;
+            height: 71px;
+        }
+    }
+    &__name {
+        position: relative;
+        z-index: 2;
+    }
+
+    @include media-breakpoint-up(md)
+    {
+        &__left {
+            width: 50%;
+            padding: 0 80px 0 0;
+            border-right: 1px solid var(--grey9);
+        }
+        &__right {
+            width: 50%;
+            padding: 0 0 0 80px;
+        }
+    }
+    @include media-breakpoint-only(lg)
+    {
+        &__inner {
+            padding: 30px;
+        }
+        &__left {
+            padding: 0 20px 0 0;
+        }
+        &__right {
+            padding: 0 0 0 20px;
+        }
+    }
+    @include media-breakpoint-down(md)
+    {
+        &__inner {
+            padding: 30px 20px;
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        &__left {
+            padding: 0 20px 0 0;
+        }
+        &__right {
+            padding: 0 0 0 20px;
+        }
+        &__item {
+            width: 155px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0 0 30px;
+
+            &__inner {
+                flex-direction: column;
+            }
+            &__items {
+                margin: 0 0 20px;
+            }
+            &__item {
+                width: calc(50% - 10px);
+            }
+            &__bg {
+                padding: 15px 10px;
+            }
+            &__pict {
+                height: 47px;
+                margin: 0 0 10px;
+            }
+            &__icon {
+
+                &1 {
+                    width: 52px;
+                    height: 42px;
+                }
+                &2 {
+                    width: 42px;
+                    height: 47px;
+                }
+            }
+        }
+    }
+}

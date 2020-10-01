@@ -52,28 +52,6 @@
     &__right {
         margin: 0 0 0 auto;
     }
-    &__clear {
-        margin: 0 0 0 15px;
-        font-size: 13px;
-        color: var(--tabs-link);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-
-        &:hover {
-            text-decoration: none;
-            color: var(--blue-bright);
-        }
-        &-icon {
-            font-size: 18px;
-            color: var(--grey5);
-            margin: 0 2px 0 0;
-            transition: all .3s;
-        }
-        &:hover &-icon {
-            color: var(--blue-bright);
-        }
-    }
 
     @include media-breakpoint-only(lg)
     {
