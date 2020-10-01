@@ -76,26 +76,47 @@
             </a>
         </div>
 
-        <div class="block-white">
-            <div class="tariff-calc">
-                <div class="tariff-calc__left">
-                    <div class="tariff-calc__item tariff-calc__item_input">
-                        <div class="form-input form-input_border-fix  form-input_big-text">
-                            <input class="form-input__input" type="text" value="">
-                        </div>
+        <!-- Расчет стоимости -->
+        <div class="tariff-calc block-white">
+            <div class="tariff-calc__left">
+                <div class="tariff-calc__item tariff-calc__item_input">
+                    <div class="form-input form-input_border-fix form-input_big-text">
+                        <input class="form-input__input js-calc-input" type="text" value="" placeholder="">
+                        <label class="form-input__label d-md-none">Введите количество часов</label>
                     </div>
-                    <div class="tariff-calc__item tariff-calc__item_center">
-                        <span class="tariff-calc__font-middle tariff-calc__font-bold">*</span>
-                        <span class="tariff-calc__font-medium">1 000</span>
-                        <span class="tariff-calc__font-medium tariff-calc__font-sub">руб.</span>
-                        <span class="tariff-calc__font-middle tariff-calc__font-bold">=</span>
-                    </div>
-                    <div class="tariff-calc__item tariff-calc__item_right">
-                        <span class="tariff-calc__font-bold">45 000</span>
-                        <span class="tariff-calc__font-bold tariff-calc__font-sub">руб.</span>
+                    <div class="tariff-calc__label d-none d-md-block">Введите количество часов</div>
+                </div>
+                <div class="tariff-calc__item_sep d-md-none"></div>
+                <div class="tariff-calc__item tariff-calc__item_left d-md-none">
+                    <span class="tariff-calc__font-medium js-calc-count">0</span>
+                    <span class="tariff-calc__font-medium tariff-calc__font-sub">ч</span>
+                    <div class="tariff-calc__label">Часов</div>
+                </div>
+                <div class="tariff-calc__item tariff-calc__item_center">
+                    <input type="hidden" value="1000" class="js-calc-price">
+                    <span class="tariff-calc__font-middle tariff-calc__font-bold">*</span>
+                    <span class="tariff-calc__font-medium">1 000</span>
+                    <span class="tariff-calc__font-medium tariff-calc__font-sub">руб.</span>
+                    <span class="tariff-calc__font-middle tariff-calc__font-bold">=</span>
+                    <div class="tariff-calc__label">
+                        <span class="d-none d-md-block">Стоимость нормочаса</span>
+                        <span class="d-md-none">Нормочас</span>
                     </div>
                 </div>
-                <div class="tariff-calc__right"></div>
+                <div class="tariff-calc__item tariff-calc__item_right">
+                    <span class="tariff-calc__font-bold js-calc-summ">0</span>
+                    <span class="tariff-calc__font-bold tariff-calc__font-sub">руб.</span>
+                    <div class="tariff-calc__label">Итоговая сумма</div>
+                </div>
+            </div>
+            <div class="tariff-calc__right">
+                <a href="javascript:;" class="btn btn-lg btn-one">
+                    Купить<span class="d-none d-sm-inline">&nbsp;часы</span>
+                </a>
+                <a href="javascript:;" class="tariff-calc__clear js-calc-clear d-none d-sm-inline-flex">
+                    <span class="tariff-calc__clear-icon font-md"></span>
+                    Очистить
+                </a>
             </div>
         </div>
 

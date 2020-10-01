@@ -32,5 +32,6 @@
 	<li>.d-*-flex</li>
     <li>.d-*-block</li>
     <li>.d-*-inline</li>
-    <li>.d-*-inline-block</li>
+    <li>.d-*-inline-flex</li>
+	<li>.d-*-inline-block</li>
 </ul>

@@ -1,20 +1,27 @@
 .tariff-calc {
-    padding: 40px 45px;
+    padding: 40px 50px;
     display: flex;
+    margin: 0 0 45px;
 
     &__left {
         display: flex;
-        align-items: center;
         font-size: 42px;
     }
     &__item {
+        position: relative;
+        line-height: 56px;
+        height: 56px;
+        margin: 0 0 20px;
 
         &_input {
             width: 200px;
         }
         &_center {
             color: var(--tabs-link);
-            margin: 0 15px;
+            margin: 0 20px;
+        }
+        &_right {
+            min-width: 100px;
         }
     }
     &__font {
@@ -32,6 +39,124 @@
             font-size: 24px;
         }
     }
+    &__label {
+        font-size: 12px;
+        color: var(--tabs-link);
+        position: absolute;
+        bottom: -20px;
+        line-height: 1;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
     &__right {
+        margin: 0 0 0 auto;
+    }
+    &__clear {
+        margin: 0 0 0 15px;
+        font-size: 13px;
+        color: var(--tabs-link);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--blue-bright);
+        }
+        &-icon {
+            font-size: 18px;
+            color: var(--grey5);
+            margin: 0 2px 0 0;
+            transition: all .3s;
+        }
+        &:hover &-icon {
+            color: var(--blue-bright);
+        }
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 40px 20px;
+
+            &__item {
+
+                &_input {
+                    width: 160px;
+                }
+                &_center {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-only(md)
+    {
+        & {
+            padding: 30px;
+            flex-direction: column;
+
+            &__left {
+                justify-content: center;
+            }
+            &__item {
+
+                &_center {
+                    margin: 0 15px;
+                }
+            }
+            &__right {
+                margin: 30px 0 0;
+                text-align: center;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            padding: 20px;
+            flex-direction: column;
+            margin: 0 0 25px;
+
+            &__left {
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 20px;
+            }
+            &__item {
+                margin: 0 0 15px;
+                line-height: 1;
+                height: auto;
+
+                &_input {
+                    font-size: 12px;
+                    width: 190px;
+                    height: auto;
+                }
+                &_sep {
+                    width: 100%;
+                }
+                &_center {
+                    margin: 0 10px 15px;
+                }
+                &_right {
+                    min-width: 95px;
+                }
+            }
+            &__font {
+
+                &-middle {
+                    font-size: 15px;
+                }
+                &-sub {
+                    font-size: 15px;
+                }
+            }
+            &__right {
+                margin: 20px 0 0;
+                text-align: center;
+            }
+        }
     }
 }

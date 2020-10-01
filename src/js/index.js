@@ -55,4 +55,6 @@ $(function() {
     require('./filter/show');
 
     require('./filter/reset');
+
+    require('./page/tariff/calc');
 });
