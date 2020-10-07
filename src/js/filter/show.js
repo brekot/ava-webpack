@@ -8,7 +8,9 @@ $(document).mouseup(function (e){
 
     var div = $('.search-line__panel');
 
-    if (!div.is(e.target) && div.has(e.target).length === 0)
+    var datapic = $('#datepickers-container');
+
+    if (!div.is(e.target) && div.has(e.target).length === 0 && !datapic.is(e.target) &&  datapic.has(e.target).length === 0)
     {
         $('.filter-block').removeClass('filter-block_open');
     }
