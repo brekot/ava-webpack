@@ -75,7 +75,8 @@
                 <a href="javascript:;" class="btn btn-lg btn-one" data-fancybox data-src="#w1">Кнопка</a>
                 <a href="javascript:;" class="btn btn-lg btn-two" data-fancybox data-src="#w2">Кнопка</a>
                 <a href="javascript:;" class="btn btn-lg btn-three" data-fancybox data-src="#w3">Отмена</a>
-                <a href="javascript:;" class="btn-clear">
+                <a href="javascript:;" class="btn btn-lg btn-three" data-fancybox data-src="#w4">Ещё</a>
+                <a href="javascript:;" class="btn-clear" data-fancybox data-src="#w5">
                     <span class="btn-clear__icon font-md"></span>Сбросить
                 </a>
             </div>
@@ -141,6 +142,40 @@
     <div class="window-one__body">
         <p>
             Описание выполненного действия. Описание выполненного действия. Описание выполненного действия.
+        </p>
+    </div>
+</div>
+
+<div class="window-one window-one_short" id="w4">
+    <div class="window-one__head">
+        <a href="javascript:;" class="window-one__head-back font-md" data-fancybox-close></a>
+    </div>
+    <div class="window-one__body text-center">
+        <div class="window-icon">
+            <svg class="window-icon__attention">
+                <use xlink:href="./local/img/sprite.svg#a"></use>
+            </svg>
+        </div>
+        <div class="h1 mb-20">Какая-то ошибка</div>
+        <p>
+            Какое-то действие не удалось выполнить или выполнено действие по удалению чего-то, например.
+        </p>
+    </div>
+</div>
+
+<div class="window-one window-one_short" id="w5">
+    <div class="window-one__head">
+        <a href="javascript:;" class="window-one__head-back font-md" data-fancybox-close></a>
+    </div>
+    <div class="window-one__body text-center">
+        <div class="window-icon">
+            <svg class="window-icon__correct">
+                <use xlink:href="./local/img/sprite.svg#с"></use>
+            </svg>
+        </div>
+        <div class="h1 mb-20">Что-то успешно добавлено</div>
+        <p>
+            Какое-то действие успешно удалось выполнить, например, успешно добавить или сохранить правило и т.д.
         </p>
     </div>
 </div>
