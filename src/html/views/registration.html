@@ -1,0 +1,149 @@
+<% var data = {
+    title: "Registration",
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="mb-15"></div>
+
+<!-- Серая область -->
+<div class="bg-grey">
+    <div class="container">
+
+        <h1>Регистрация</h1>
+
+        <div class="block-white block-white_padding mb-30">
+            <form>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-input mb-10">
+                            <input class="form-input__input" type="text" value="">
+                            <label class="form-input__label">Ваш телефон</label>
+                        </div>
+                        <div class="form-input form-input_border-fix mb-10">
+                            <input class="form-input__input" type="password" value="123">
+                            <label class="form-input__label">Ваш пароль</label>
+                            <span class="password-icon font-md">
+                                <span class="password-icon__show"></span>
+                                <span class="password-icon__hide"></span>
+                            </span>
+                        </div>
+                        <div class="form-input is-invalid mb-20">
+                            <input class="form-input__input" type="text" value="123">
+                            <label class="form-input__label">Повторите пароль</label>
+                            <span class="password-icon password-icon_active font-md">
+                                <span class="password-icon__show"></span>
+                                <span class="password-icon__hide"></span>
+                            </span>
+                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                        </div>
+                        <div class="form-select mb-20">
+                            <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select"></div>
+                            <div class="form-select__line">
+                                <div class="form-select__label">Выпадающий список</div>
+                                <span class="form-select__str font-md"></span>
+                            </div>
+                            <div id="jq-dropdown-select" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                <label class="form-select-dropdown__item">
+                                    <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                    <span class="form-select-dropdown__name">Пункт №1</span>
+                                </label>
+                                <label class="form-select-dropdown__item">
+                                    <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                    <span class="form-select-dropdown__name">Пункт №2</span>
+                                </label>
+                                <label class="form-select-dropdown__item">
+                                    <input class="form-select-dropdown__checkbox" type="checkbox" value="">
+                                    <span class="form-select-dropdown__name">Пункт №3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-select mb-20">
+                            <a href="javascript:;" class="blue-link">Восстановить пароль</a>
+                        </div>
+                        <div class="form-select mb-20">
+                            <label class="checkbox-radio mb-10">
+                                <input class="checkbox-radio__input" type="checkbox" value="">
+                                <span class="checkbox-radio__set font-md"></span>
+                                <span class="checkbox-radio__unset font-md"></span>
+                                <span class="checkbox-radio__label">Даю согласие на <a href="javascript:;" class="blue-link">хранение и обработку</a> персональных данных</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="checkbox" value="">
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Невыбранный чекбокс</span>
+                        </label>
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="checkbox" value="" disabled>
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Невыбранный неактивный чекбокс</span>
+                        </label>
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="checkbox" value="" checked>
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Выбранный чекбокс</span>
+                        </label>
+                        <label class="checkbox-radio mb-30">
+                            <input class="checkbox-radio__input" type="checkbox" value="" checked disabled>
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Выбранный неактивный чекбокс</span>
+                        </label>
+                        <div class="form-file mb-20" id="js-file-drag">
+                            <svg class="form-file__icon">
+                                <use xlink:href="./local/img/sprite.svg#f"></use>
+                            </svg>
+                            <div class="form-file__info" id="js-file-messages">
+                                <a href="javascript:;" class="form-file__link blue-link">
+                                    Загрузите <span class="d-sm-none">файл</span>
+                                    <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple">
+                                </a> <span class="d-none d-sm-inline">или перетащите файл</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="radio" value="">
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Невыбранный радиобатн</span>
+                        </label>
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="radio" value="" disabled>
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Невыбранный неактивный радиобатн</span>
+                        </label>
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="radio" value="" checked>
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Выбранный радиобатн</span>
+                        </label>
+                        <label class="checkbox-radio mb-10">
+                            <input class="checkbox-radio__input" type="radio" value="" checked disabled>
+                            <span class="checkbox-radio__set font-md"></span>
+                            <span class="checkbox-radio__unset font-md"></span>
+                            <span class="checkbox-radio__label">Выбранный неактивный радиобатн</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-panel">
+                    <a href="javascript:;" class="btn btn-lg btn-one">Зарегистрироваться</a>
+                    <a href="javascript:;" class="btn btn-lg btn-three">Отмена</a>
+                </div>
+            </form>
+        </div>
+
+        <%= _.template(require('./../includes/banner.bottom.html'))() %>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

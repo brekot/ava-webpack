@@ -6,7 +6,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-        <title>Avancut | Tariff Refill</title>
+        <title>Avancut | Registration</title>
 
         <link href="./local/template_styles.css?4b93587e686b6b5841cb" rel="stylesheet" />
     </head>
@@ -100,130 +100,139 @@
                 </div>
             </div>
 
-            <!-- Вкладки -->
-            <div class="tabs-block">
-                <div class="container">
-                    <div class="tabs-block__inner">
-                        <a href="javascript:;" class="tabs-block__link">Мой профиль</a>
-                        <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Мой тариф</a>
-                        <a href="javascript:;" class="tabs-block__link">Мое оборудование</a>
-                    </div>
-                </div>
-            </div>
+            <div class="mb-15"></div>
 
             <!-- Серая область -->
             <div class="bg-grey">
                 <div class="container">
-                    <h1 class="d-none d-lg-block">Мой тариф</h1>
+                    <h1>Регистрация</h1>
 
-                    <!-- Информация о тарифе -->
-                    <div class="tariff-info">
-                        <div class="tariff-info__block tariff-info__block_border">
-                            <svg class="tariff-info__icon tariff-info__icon1">
-                                <use xlink:href="./local/img/icon.tariff.svg#icon1"></use>
-                            </svg>
-                            <div class="tariff-info__inner">
-                                <div class="tariff-info__line">
-                                    <div class="tariff-info__label">Текущий тариф:</div>
-                                    <div class="tariff-info__value">Стартовый</div>
-                                </div>
-                                <a href="javascript:;" class="tariff-info__btn">Изменить</a>
-                            </div>
-                        </div>
-                        <div class="tariff-info__block tariff-info__block_border">
-                            <svg class="tariff-info__icon tariff-info__icon2">
-                                <use xlink:href="./local/img/icon.tariff.svg#icon2"></use>
-                            </svg>
-                            <div class="tariff-info__inner">
-                                <div class="tariff-info__line">
-                                    <div class="tariff-info__label">Остаток часов:</div>
-                                    <div class="tariff-info__value">100 ч</div>
-                                </div>
-                                <a href="javascript:;" class="tariff-info__btn">Купить</a>
-                            </div>
-                        </div>
-                        <div class="tariff-info__block">
-                            <svg class="tariff-info__icon tariff-info__icon3">
-                                <use xlink:href="./local/img/icon.tariff.svg#icon3"></use>
-                            </svg>
-                            <div class="tariff-info__inner">
-                                <div class="tariff-info__line">
-                                    <div class="tariff-info__label">На счету:</div>
-                                    <div class="tariff-info__value">0 руб.</div>
-                                </div>
-                                <a href="javascript:;" class="tariff-info__btn">Пополнить</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="h1 d-lg-none">Мой тариф</div>
-
-                    <!-- Вкладки -->
-                    <div class="tabs-panel">
-                        <a href="javascript:;" class="tabs-panel__link">Тарифы</a>
-                        <a href="javascript:;" class="tabs-panel__link">Часы</a>
-                        <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Пополнить счет</a>
-                        <a href="javascript:;" class="tabs-panel__link">
-                            <span class="d-none d-md-block">История (пополнения)</span>
-                            <span class="d-md-none">Пополнения</span>
-                        </a>
-                        <a href="javascript:;" class="tabs-panel__link">
-                            <span class="d-none d-md-block">История (списания)</span>
-                            <span class="d-md-none">Списания</span>
-                        </a>
-                    </div>
-
-                    <!-- Пополнить счет -->
-                    <div class="tariff-refill block-white">
-                        <form class="js-refill-block">
-                            <div class="tariff-refill__inner">
-                                <div class="tariff-refill__left">
-                                    <div class="h3">Выберите удобный способ оплаты</div>
-                                    <div class="tariff-refill__items">
-                                        <label class="tariff-refill__item">
-                                            <input class="tariff-refill__input" type="radio" value="" name="radio" checked="checked" />
-                                            <div class="tariff-refill__bg">
-                                                <div class="tariff-refill__pict">
-                                                    <svg class="tariff-refill__icon tariff-refill__icon1">
-                                                        <use xlink:href="./local/img/icon.tariff.svg#icon4"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="tariff-refill__name">Банковской картой</div>
-                                            </div>
-                                        </label>
-                                        <label class="tariff-refill__item">
-                                            <input class="tariff-refill__input" type="radio" value="" name="radio" />
-                                            <div class="tariff-refill__bg">
-                                                <div class="tariff-refill__pict">
-                                                    <svg class="tariff-refill__icon tariff-refill__icon2">
-                                                        <use xlink:href="./local/img/icon.tariff.svg#icon5"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="tariff-refill__name">Выставить счет</div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="tariff-refill__right">
-                                    <div class="h3 d-none d-md-block">Заполните данные</div>
+                    <div class="block-white block-white_padding mb-30">
+                        <form>
+                            <div class="row">
+                                <div class="col-4">
                                     <div class="form-input mb-10">
                                         <input class="form-input__input" type="text" value="" />
-                                        <label class="form-input__label">Введите ИНН</label>
+                                        <label class="form-input__label">Ваш телефон</label>
                                     </div>
-                                    <div class="form-input mb-20">
-                                        <input class="form-input__input" type="text" value="" />
-                                        <label class="form-input__label">Введите сумму</label>
+                                    <div class="form-input form-input_border-fix mb-10">
+                                        <input class="form-input__input" type="password" value="123" />
+                                        <label class="form-input__label">Ваш пароль</label>
+                                        <span class="password-icon font-md">
+                                            <span class="password-icon__show"></span>
+                                            <span class="password-icon__hide"></span>
+                                        </span>
                                     </div>
-                                    <div class="tariff-refill__btns">
-                                        <button type="submit" class="btn btn-lg btn-one">
-                                            Пополнить
-                                        </button>
-                                        <a href="javascript:;" class="btn-clear js-refill-reset">
-                                            <span class="btn-clear__icon font-md"></span>
-                                            Очистить
-                                        </a>
+                                    <div class="form-input is-invalid mb-20">
+                                        <input class="form-input__input" type="text" value="123" />
+                                        <label class="form-input__label">Повторите пароль</label>
+                                        <span class="password-icon password-icon_active font-md">
+                                            <span class="password-icon__show"></span>
+                                            <span class="password-icon__hide"></span>
+                                        </span>
+                                        <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                                    </div>
+                                    <div class="form-select mb-20">
+                                        <div class="form-select__clicker" data-jq-dropdown="#jq-dropdown-select"></div>
+                                        <div class="form-select__line">
+                                            <div class="form-select__label">Выпадающий список</div>
+                                            <span class="form-select__str font-md"></span>
+                                        </div>
+                                        <div id="jq-dropdown-select" class="form-select-dropdown jq-dropdown jq-dropdown-relative">
+                                            <label class="form-select-dropdown__item">
+                                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                                <span class="form-select-dropdown__name">Пункт №1</span>
+                                            </label>
+                                            <label class="form-select-dropdown__item">
+                                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                                <span class="form-select-dropdown__name">Пункт №2</span>
+                                            </label>
+                                            <label class="form-select-dropdown__item">
+                                                <input class="form-select-dropdown__checkbox" type="checkbox" value="" />
+                                                <span class="form-select-dropdown__name">Пункт №3</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-select mb-20">
+                                        <a href="javascript:;" class="blue-link">Восстановить пароль</a>
+                                    </div>
+                                    <div class="form-select mb-20">
+                                        <label class="checkbox-radio mb-10">
+                                            <input class="checkbox-radio__input" type="checkbox" value="" />
+                                            <span class="checkbox-radio__set font-md"></span>
+                                            <span class="checkbox-radio__unset font-md"></span>
+                                            <span class="checkbox-radio__label">Даю согласие на <a href="javascript:;" class="blue-link">хранение и обработку</a> персональных данных</span>
+                                        </label>
                                     </div>
                                 </div>
+                                <div class="col-4">
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="checkbox" value="" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Невыбранный чекбокс</span>
+                                    </label>
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="checkbox" value="" disabled="disabled" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Невыбранный неактивный чекбокс</span>
+                                    </label>
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="checkbox" value="" checked="checked" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Выбранный чекбокс</span>
+                                    </label>
+                                    <label class="checkbox-radio mb-30">
+                                        <input class="checkbox-radio__input" type="checkbox" value="" checked="checked" disabled="disabled" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Выбранный неактивный чекбокс</span>
+                                    </label>
+                                    <div class="form-file mb-20" id="js-file-drag">
+                                        <svg class="form-file__icon">
+                                            <use xlink:href="./local/img/sprite.svg#f"></use>
+                                        </svg>
+                                        <div class="form-file__info" id="js-file-messages">
+                                            <a href="javascript:;" class="form-file__link blue-link">
+                                                Загрузите <span class="d-sm-none">файл</span>
+                                                <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple" />
+                                            </a>
+                                            <span class="d-none d-sm-inline">или перетащите файл</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="radio" value="" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Невыбранный радиобатн</span>
+                                    </label>
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="radio" value="" disabled="disabled" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Невыбранный неактивный радиобатн</span>
+                                    </label>
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="radio" value="" checked="checked" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Выбранный радиобатн</span>
+                                    </label>
+                                    <label class="checkbox-radio mb-10">
+                                        <input class="checkbox-radio__input" type="radio" value="" checked="checked" disabled="disabled" />
+                                        <span class="checkbox-radio__set font-md"></span>
+                                        <span class="checkbox-radio__unset font-md"></span>
+                                        <span class="checkbox-radio__label">Выбранный неактивный радиобатн</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn-panel">
+                                <a href="javascript:;" class="btn btn-lg btn-one">Зарегистрироваться</a>
+                                <a href="javascript:;" class="btn btn-lg btn-three">Отмена</a>
                             </div>
                         </form>
                     </div>

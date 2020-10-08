@@ -1,0 +1,37 @@
+.checkbox-radio {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: var(--tabs-link);
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+    &__input:not(:disabled),
+    &__input:not(:disabled) ~ * {
+        cursor: pointer;
+    }
+    &__set,
+    &__unset {
+        font-size: 24px;
+        transition: .3s;
+    }
+    &__input:not(:checked) ~ &__set,
+    &__input:checked ~ &__unset {
+        display: none;
+    }
+    &__input:checked ~ &__set {
+        color: var(--blue);
+    }
+    &:hover &__input:not(:disabled) ~ &__unset {
+        color: var(--blue-bright);
+    }
+    &__input:disabled ~ &__set,
+    &__input:disabled ~ &__unset {
+        color: var(--grey5);
+    }
+    &__label {
+        width: calc(100% - 30px);
+    }
+}

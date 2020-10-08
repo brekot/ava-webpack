@@ -52,6 +52,8 @@ $(function() {
 
     require('./form/date');
 
+    require('./form/password');
+
     require('./filter/show');
 
     require('./filter/reset');
