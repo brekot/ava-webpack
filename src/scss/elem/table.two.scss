@@ -1,0 +1,29 @@
+.table-two-wrapper {
+    overflow-x: auto;
+}
+
+.table-two {
+    min-width: 100%;
+
+    th, td {
+        padding: 17px 20px;
+    }
+    th {
+        height: 60px;
+        font-weight: 500;
+        font-size: 13px;
+        color: var(--tabs-link);
+        white-space: nowrap;
+        background-color: var(--blue-hover);
+
+        &:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+        &:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+    }
+    td {
+        border-bottom: 1px solid var(--grey2);
+    }
+}

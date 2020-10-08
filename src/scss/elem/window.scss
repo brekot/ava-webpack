@@ -6,6 +6,9 @@
     max-width: 760px;
     overflow: visible;
 
+    &_short {
+        max-width: 500px;
+    }
     &__head {
         display: flex;
         align-items: center;

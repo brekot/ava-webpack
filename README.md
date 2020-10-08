@@ -6,6 +6,7 @@
 <a href="./docs/tariff-payment.html">Списания</a><br>
 <a href="./docs/tariff-hours.html">Часы</a><br>
 <a href="./docs/tariff-refill.html">Пополнить счет</a><br>
+<a href="./docs/text.html">Текстовая страница</a><br>
 
 <hr>
 
