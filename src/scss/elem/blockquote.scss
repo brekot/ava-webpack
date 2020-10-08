@@ -1,10 +1,24 @@
 blockquote {
-    font-size: 17px;
     font-weight: 500;
-    margin: 0 0 1rem 35px;
-    line-height: 24px;
-    padding: 0 0 0 20px;
     border-left: 5px solid var(--yellow);
+
+    @include media-breakpoint-up(sm)
+    {
+        & {
+            font-size: 17px;
+            margin: 0 0 1rem 35px;
+            line-height: 24px;
+            padding: 0 0 0 20px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            margin: 0 0 1rem;
+            padding: 0 0 0 10px;
+            border-width: 3px;
+        }
+    }
 }
 
 .blockquote {

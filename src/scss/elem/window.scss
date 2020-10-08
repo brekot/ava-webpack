@@ -47,6 +47,9 @@
                     display: block;
                     margin: 0 35px 0 0;
                 }
+                &-title {
+                    max-width: calc(100% - 60px);
+                }
             }
             &__xs-full {
                 margin: 25px 0 0;

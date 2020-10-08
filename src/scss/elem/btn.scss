@@ -98,7 +98,34 @@
     margin: 0 0 0 -15px;
     align-items: center;
 
-    & > .btn {
+    &__item {
         margin: 0 0 0 15px;
+    }
+
+    @include media-breakpoint-down(sm)
+    {
+        &_sm-wrap {
+            flex-wrap: wrap;
+            margin: 0 0 0 -10px;
+        }
+        &_sm-wrap &__item {
+            margin: 0 0 10px 10px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &_xs-line {
+            margin: 0;
+            justify-content: space-between;
+        }
+        &_xs-line &__item {
+            margin: 0;
+        }
+        &_xs-line &__left {
+            width: calc(100% - 110px);
+        }
+        &_xs-line &__right {
+            width: 100px;
+        }
     }
 }

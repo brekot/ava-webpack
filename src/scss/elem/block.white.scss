@@ -37,4 +37,10 @@
             }
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        &_padding {
+            padding: 20px;
+        }
+    }
 }
