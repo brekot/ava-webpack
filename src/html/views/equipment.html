@@ -471,11 +471,13 @@
             <svg class="form-file__icon">
                 <use xlink:href="./local/img/sprite.svg#f"></use>
             </svg>
-            <div class="form-file__info" id="js-file-messages">
-                <a href="javascript:;" class="form-file__link blue-link">
-                    Загрузите <span class="d-sm-none">файл</span>
-                    <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple">
-                </a> <span class="d-none d-sm-inline">или перетащите файл</span>
+            <div class="form-file__info">
+                <div id="js-file-messages">
+                    <a href="javascript:;" class="form-file__link blue-link">
+                        Загрузите <span class="d-sm-none">файл</span>
+                    </a> <span class="d-none d-sm-inline">или перетащите файл</span>
+                </div>
+                <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple">
             </div>
         </div>
 
