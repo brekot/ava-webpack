@@ -20,6 +20,7 @@
     &__input {
         position: absolute;
         opacity: 0;
+        cursor: pointer;
     }
     &__circle {
         position: absolute;
@@ -28,11 +29,11 @@
         background-color: var(--tabs-link);
         border-radius: 50%;
         top: -2px;
-        left: 18px;
+        left: -2px;
         transition: all .5s;
     }
     &__input:checked + &__circle {
-        left: -2px;
+        left: 18px;
         background-color: var(--yellow);
     }
 
