@@ -1,32 +1,26 @@
 (function() {
 
-	// getElementById
-	function $id(id) {
-		return document.getElementById(id);
+    var fileselect = document.getElementById("js-file-select"),
+        filedrag = document.getElementById("js-file-drag");
+
+	function Output(msg)
+    {
+		document.getElementById("js-file-messages").innerHTML = msg;
 	}
 
-	// output information
-	function Output(msg) {
-
-		var m = $id("js-file-messages");
-		m.innerHTML = msg;
-	}
-
-	// file drag hover
-	function FileDragHover(e) {
+	function FileDragHover(e)
+    {
 		e.stopPropagation();
 		e.preventDefault();
-		//e.target.className = (e.type == "dragover" ? "hover" : "");
 	}
 
-	// file selection
-	function FileSelectHandler(e) {
-
-		// cancel event and hover styling
+	function FileSelectHandler(e)
+    {
 		FileDragHover(e);
 
-		// fetch FileList object
-		var files = e.target.files || e.dataTransfer.files;
+		if (e.dataTransfer && e.dataTransfer.files) fileselect.files = e.dataTransfer.files;
+
+        var files = fileselect.files;
 
 		if (files.length == 1)
         {
@@ -38,37 +32,18 @@
         }
 	}
 
-	// initialize
-	function Init() {
-
-		var fileselect = $id("js-file-select"),
-			filedrag = $id("js-file-drag");
-			//submitbutton = $id("submitbutton");
-
+	function Init()
+    {
         if (!fileselect || !filedrag) return;
 
-		// file select
-		fileselect.addEventListener("change", FileSelectHandler, false);
-
-		// is XHR2 available?
-		var xhr = new XMLHttpRequest();
-
-		if (xhr.upload) {
-
-			// file drop
-			filedrag.addEventListener("dragover", FileDragHover, false);
-			filedrag.addEventListener("dragleave", FileDragHover, false);
-			filedrag.addEventListener("drop", FileSelectHandler, false);
-			//filedrag.style.display = "block";
-
-			// remove submit button
-			//submitbutton.style.display = "none";
-		}
-
+        filedrag.addEventListener("dragover", FileDragHover, false);
+        filedrag.addEventListener("dragleave", FileDragHover, false);
+        filedrag.addEventListener("drop", FileSelectHandler, false);
+        fileselect.addEventListener("change", FileSelectHandler, false);
 	}
 
-	// call initialization file
-	if (window.File && window.FileList && window.FileReader) {
+	if (window.File && window.FileList && window.FileReader)
+    {
 		Init();
 	}
 
