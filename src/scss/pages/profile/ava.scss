@@ -10,6 +10,19 @@
         height: 100%;
         widows: 100%;
         display: block;
+
+        &-no {
+            height: 100%;
+            width: 100%;
+            background-color: var(--yellow);
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 44px;
+            font-weight: 500;
+        }
     }
     &__delete {
         color: var(--grey8);
@@ -38,6 +51,26 @@
     }
     &__link {
         text-decoration: none;
+    }
+    &__file {
+        position: relative;
+        overflow: hidden;
+        color: var(--blue-bright);
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+        &-input {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
     }
 
     @include media-breakpoint-down(md)
