@@ -38,3 +38,21 @@
     <li>.d-*-inline-flex</li>
 	<li>.d-*-inline-block</li>
 </ul>
+
+<hr>
+
+<pre>
+$(function(){
+
+    $.fancybox.open({
+        src: '#w1',
+        type : 'inline',
+        opts : {
+            beforeShow : function( instance, current ) {
+
+                $(current.src).find('.window-one__head-title').text('Новый Заголовок окна большого');
+            }
+        }
+    });
+});
+</pre>
