@@ -9,6 +9,7 @@
     --blue-bright: #0071C7;
     --blue-light: #DCECF8;
     --blue-hover: #F3F7F8;
+    --blue-tar: #88B0CE;
 
     --yellow: #F39100;
     --yellow-light: #FFA726;
@@ -34,6 +35,9 @@
     --shadow: rgba(4, 50, 88, .05);
     --shadow-dark: rgba(4,50,88,0.15);
     --grey-opacity: rgba(231, 231, 231, .2);
+    --blue-opacity: rgba(17, 96, 156, .1);
+    --yellow-opacity: rgba(243, 145, 0, .1);
+    --white-opacity: rgba(255, 255, 255, .1);
 }
 
 $grid-breakpoints: (

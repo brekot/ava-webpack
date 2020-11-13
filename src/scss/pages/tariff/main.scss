@@ -1,0 +1,97 @@
+.tariff-main {
+    padding: 20px 20px 30px;
+    text-align: center;
+
+    &__round {
+        background-color: var(--blue-opacity);
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 75px;
+        margin: 0 0 20px;
+        padding: 0 0 5px;
+        position: relative;
+
+        &_yellow {
+            background-color: var(--yellow-opacity);
+        }
+    }
+    &__price {
+
+        &-big {
+            font-size: 44px;
+            font-weight: bold;
+            line-height: 58px;
+        }
+        &-comment {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1;
+        }
+        &-text {
+            color: var(--tabs-link);
+        }
+        &-small {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1;
+            margin: 0 0 30px;
+        }
+    }
+    &__bottom {
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__optimal {
+        height: 30px;
+        padding: 0 15px;
+        background-color: var(--yellow);
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        border-radius: 15px;
+        position: absolute;
+        bottom: -15px;
+        font-size: 20px;
+        font-weight: 500;
+
+        &-text {
+            margin: 0 0 0 5px;
+        }
+    }
+
+    &_selected {
+        background-color: var(--blue);
+        color: var(--white);
+    }
+    &_selected &__round {
+        background-color: var(--white-opacity);
+    }
+    &_selected &__price-comment,
+    &_selected &__price-text,
+    &_selected &__bottom-text {
+        color: var(--blue-tar);
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__price {
+
+            &-big {
+                font-size: 34px;
+                line-height: 46px;
+            }
+            &-comment {
+                font-size: 18px;
+            }
+        }
+        &__optimal {
+            font-size: 16px;
+        }
+    }
+}

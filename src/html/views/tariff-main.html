@@ -1,0 +1,148 @@
+<% var data = {
+    title: "Tariff Refill",
+}; %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<!-- Вкладки -->
+<div class="tabs-block">
+    <div class="container">
+        <div class="tabs-block__inner">
+            <a href="javascript:;" class="tabs-block__link">Мой профиль</a>
+            <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Мой тариф</a>
+            <a href="javascript:;" class="tabs-block__link">Мое оборудование</a>
+        </div>
+    </div>
+</div>
+
+<!-- Серая область -->
+<div class="bg-grey">
+    <div class="container">
+
+        <h1 class="d-none d-lg-block">Мой тариф</h1>
+
+        <!-- Информация о тарифе -->
+        <div class="tariff-info">
+            <div class="tariff-info__block tariff-info__block_border">
+                <svg class="tariff-info__icon tariff-info__icon1">
+                    <use xlink:href="./local/img/icon.tariff.svg#icon1"></use>
+                </svg>
+                <div class="tariff-info__inner">
+                    <div class="tariff-info__line">
+                        <div class="tariff-info__label">Текущий тариф:</div>
+                        <div class="tariff-info__value">Стартовый</div>
+                    </div>
+                    <a href="javascript:;" class="tariff-info__btn">Изменить</a>
+                </div>
+            </div>
+            <div class="tariff-info__block tariff-info__block_border">
+                <svg class="tariff-info__icon tariff-info__icon2">
+                    <use xlink:href="./local/img/icon.tariff.svg#icon2"></use>
+                </svg>
+                <div class="tariff-info__inner">
+                    <div class="tariff-info__line">
+                        <div class="tariff-info__label">Остаток часов:</div>
+                        <div class="tariff-info__value">100 ч</div>
+                    </div>
+                    <a href="javascript:;" class="tariff-info__btn">Купить</a>
+                </div>
+            </div>
+            <div class="tariff-info__block">
+                <svg class="tariff-info__icon tariff-info__icon3">
+                    <use xlink:href="./local/img/icon.tariff.svg#icon3"></use>
+                </svg>
+                <div class="tariff-info__inner">
+                    <div class="tariff-info__line">
+                        <div class="tariff-info__label">На счету:</div>
+                        <div class="tariff-info__value">0 руб.</div>
+                    </div>
+                    <a href="javascript:;" class="tariff-info__btn">Пополнить</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="h1 d-lg-none">Мой тариф</div>
+
+        <!-- Вкладки -->
+        <div class="tabs-panel">
+            <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Тарифы</a>
+            <a href="javascript:;" class="tabs-panel__link">Часы</a>
+            <a href="javascript:;" class="tabs-panel__link">Пополнить счет</a>
+            <a href="javascript:;" class="tabs-panel__link">
+                <span class="d-none d-md-block">История (пополнения)</span>
+                <span class="d-md-none">Пополнения</span>
+            </a>
+            <a href="javascript:;" class="tabs-panel__link">
+                <span class="d-none d-md-block">История (списания)</span>
+                <span class="d-md-none">Списания</span>
+            </a>
+        </div>
+
+        <!-- Тарифы -->
+        <div class="mb-30">
+            <div class="row">
+                <div class="col-lg-4">
+
+                    <div class="tariff-main tariff-main_selected block-white">
+                        <div class="h1">Стартовый</div>
+                        <div class="tariff-main__round">
+                            <div class="tariff-main__price-big">120 000 руб.</div>
+                            <div class="tariff-main__price-comment">на месяц / 100 часов</div>
+                        </div>
+                        <div class="tariff-main__price-text">Стоимость часа</div>
+                        <div class="tariff-main__price-small">1 200 руб.</div>
+                        <div class="tariff-main__bottom">
+                            <div class="tariff-main__bottom-text">Ваш тариф до 30.11.2020</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="tariff-main block-white">
+                        <div class="h1">Оптимальный</div>
+                        <div class="tariff-main__round tariff-main__round_yellow">
+                            <div class="tariff-main__price-big">160 000 руб.</div>
+                            <div class="tariff-main__price-comment">на месяц / 200 часов</div>
+                            <div class="tariff-main__optimal">
+                                <div class="font-md"></div>
+                                <div class="tariff-main__optimal-text">Оптимальный выбор</div>
+                            </div>
+                        </div>
+                        <div class="tariff-main__price-text">Стоимость часа</div>
+                        <div class="tariff-main__price-small">800 руб.</div>
+                        <div class="tariff-main__bottom">
+                            <a href="javascript:;" class="btn btn-one btn-md btn-md_round">
+                                Выбрать
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="tariff-main block-white">
+                        <div class="h1">Премиум</div>
+                        <div class="tariff-main__round">
+                            <div class="tariff-main__price-big">360 000 руб.</div>
+                            <div class="tariff-main__price-comment">бессрочно / 360 часов</div>
+                        </div>
+                        <div class="tariff-main__price-text">Стоимость часа</div>
+                        <div class="tariff-main__price-small">1 000 руб.</div>
+                        <div class="tariff-main__bottom">
+                            <a href="javascript:;" class="btn btn-one btn-md btn-md_round">
+                                Выбрать
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <%= _.template(require('./../includes/banner.bottom.html'))() %>
+
+    </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))() %>

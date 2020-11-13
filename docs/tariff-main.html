@@ -6,7 +6,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-        <title>Avancut | Profile</title>
+        <title>Avancut | Tariff Refill</title>
 
         <link href="./local/template_styles.css?dbedf3a2468dd6706368" rel="stylesheet" />
     </head>
@@ -100,97 +100,128 @@
                 </div>
             </div>
 
-            <div class="mb-15"></div>
+            <!-- Вкладки -->
+            <div class="tabs-block">
+                <div class="container">
+                    <div class="tabs-block__inner">
+                        <a href="javascript:;" class="tabs-block__link">Мой профиль</a>
+                        <a href="javascript:;" class="tabs-block__link tabs-block__link_active">Мой тариф</a>
+                        <a href="javascript:;" class="tabs-block__link">Мое оборудование</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Серая область -->
             <div class="bg-grey">
                 <div class="container">
-                    <h1>Мой профиль</h1>
+                    <h1 class="d-none d-lg-block">Мой тариф</h1>
 
-                    <div class="block-white mb-30">
-                        <div class="profile-page">
-                            <div class="profile-page__left">
-                                <div class="profile-ava">
-                                    <div class="profile-ava__pict">
-                                        <img class="profile-ava__img" src="./local/uploads/profile.ava.png" alt="" />
-                                        <a href="javascript:;" class="profile-ava__delete font-md"></a>
+                    <!-- Информация о тарифе -->
+                    <div class="tariff-info">
+                        <div class="tariff-info__block tariff-info__block_border">
+                            <svg class="tariff-info__icon tariff-info__icon1">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon1"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">Текущий тариф:</div>
+                                    <div class="tariff-info__value">Стартовый</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Изменить</a>
+                            </div>
+                        </div>
+                        <div class="tariff-info__block tariff-info__block_border">
+                            <svg class="tariff-info__icon tariff-info__icon2">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon2"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">Остаток часов:</div>
+                                    <div class="tariff-info__value">100 ч</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Купить</a>
+                            </div>
+                        </div>
+                        <div class="tariff-info__block">
+                            <svg class="tariff-info__icon tariff-info__icon3">
+                                <use xlink:href="./local/img/icon.tariff.svg#icon3"></use>
+                            </svg>
+                            <div class="tariff-info__inner">
+                                <div class="tariff-info__line">
+                                    <div class="tariff-info__label">На счету:</div>
+                                    <div class="tariff-info__value">0 руб.</div>
+                                </div>
+                                <a href="javascript:;" class="tariff-info__btn">Пополнить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h1 d-lg-none">Мой тариф</div>
+
+                    <!-- Вкладки -->
+                    <div class="tabs-panel">
+                        <a href="javascript:;" class="tabs-panel__link tabs-panel__link_active">Тарифы</a>
+                        <a href="javascript:;" class="tabs-panel__link">Часы</a>
+                        <a href="javascript:;" class="tabs-panel__link">Пополнить счет</a>
+                        <a href="javascript:;" class="tabs-panel__link">
+                            <span class="d-none d-md-block">История (пополнения)</span>
+                            <span class="d-md-none">Пополнения</span>
+                        </a>
+                        <a href="javascript:;" class="tabs-panel__link">
+                            <span class="d-none d-md-block">История (списания)</span>
+                            <span class="d-md-none">Списания</span>
+                        </a>
+                    </div>
+
+                    <!-- Тарифы -->
+                    <div class="mb-30">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="tariff-main tariff-main_selected block-white">
+                                    <div class="h1">Стартовый</div>
+                                    <div class="tariff-main__round">
+                                        <div class="tariff-main__price-big">120 000 руб.</div>
+                                        <div class="tariff-main__price-comment">на месяц / 100 часов</div>
                                     </div>
-                                    <!-- Нет фото -->
-                                    <div class="profile-ava__pict d-none">
-                                        <div class="profile-ava__img-no">ЕГ</div>
-                                    </div>
-                                    <div class="profile-ava__links">
-                                        <div class="profile-ava__file">
-                                            <input class="profile-ava__file-input" type="file" value="" />
-                                            Загрузить
-                                        </div>
-                                        <a href="javascript:;" class="profile-ava__link">Сделать фото</a>
+                                    <div class="tariff-main__price-text">Стоимость часа</div>
+                                    <div class="tariff-main__price-small">1 200 руб.</div>
+                                    <div class="tariff-main__bottom">
+                                        <div class="tariff-main__bottom-text">Ваш тариф до 30.11.2020</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-page__right">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-input form-input_border-fix mb-20">
-                                            <input class="form-input__input" type="text" value="Елена" />
-                                            <label class="form-input__label"> Имя <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                        <div class="form-input form-input_border-fix mb-20">
-                                            <input class="form-input__input" type="text" value="Гайнуллова" />
-                                            <label class="form-input__label"> Фамилия <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
+                            <div class="col-lg-4">
+                                <div class="tariff-main block-white">
+                                    <div class="h1">Оптимальный</div>
+                                    <div class="tariff-main__round tariff-main__round_yellow">
+                                        <div class="tariff-main__price-big">160 000 руб.</div>
+                                        <div class="tariff-main__price-comment">на месяц / 200 часов</div>
+                                        <div class="tariff-main__optimal">
+                                            <div class="font-md"></div>
+                                            <div class="tariff-main__optimal-text">Оптимальный выбор</div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-input form-input_border-fix mb-20">
-                                            <input class="form-input__input" type="tel" value="+ 7 900 222 30 30" />
-                                            <label class="form-input__label"> Телефон <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                        <div class="form-input form-input_border-fix mb-20 is-invalid">
-                                            <input class="form-input__input" type="email" value="" />
-                                            <label class="form-input__label"> E-mail <span class="form-input__label-star">*</span> </label>
-                                            <span class="form-input__required-text">Поле обязательно для заполнения</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-25"></div>
-                                <div class="form-input form-input_border-fix mb-30">
-                                    <input class="form-input__input" type="text" value='ООО "Ромашка"' />
-                                    <label class="form-input__label">
-                                        Компания
-                                    </label>
-                                </div>
-                                <div class="h3">Смена пароля</div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-input mb-20">
-                                            <input class="form-input__input" type="password" value="" />
-                                            <label class="form-input__label">
-                                                Старый пароль
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-input mb-20">
-                                            <input class="form-input__input" type="password" value="" />
-                                            <label class="form-input__label">
-                                                Новый пароль
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-15"></div>
-                                <div class="profile-page__btns">
-                                    <div class="profile-page__btn">
-                                        <a href="javascript:;" class="btn btn-lg btn-one btn_xs-full-width">
-                                            Сохранить
+                                    <div class="tariff-main__price-text">Стоимость часа</div>
+                                    <div class="tariff-main__price-small">800 руб.</div>
+                                    <div class="tariff-main__bottom">
+                                        <a href="javascript:;" class="btn btn-one btn-md btn-md_round">
+                                            Выбрать
                                         </a>
                                     </div>
-                                    <div class="profile-page__btn">
-                                        <a href="javascript:;" class="btn btn-lg btn-three btn_xs-full-width">
-                                            Отмена
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="tariff-main block-white">
+                                    <div class="h1">Премиум</div>
+                                    <div class="tariff-main__round">
+                                        <div class="tariff-main__price-big">360 000 руб.</div>
+                                        <div class="tariff-main__price-comment">бессрочно / 360 часов</div>
+                                    </div>
+                                    <div class="tariff-main__price-text">Стоимость часа</div>
+                                    <div class="tariff-main__price-small">1 000 руб.</div>
+                                    <div class="tariff-main__bottom">
+                                        <a href="javascript:;" class="btn btn-one btn-md btn-md_round">
+                                            Выбрать
                                         </a>
                                     </div>
                                 </div>
