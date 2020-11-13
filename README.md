@@ -42,17 +42,16 @@
 <hr>
 
 <pre>
-$(function(){
+// Открыть окно
+$.fancybox.open({
+    src: '#w1', // id окна
+    type : 'inline',
+    opts : {
+        beforeShow : function( instance, current ) {
 
-    $.fancybox.open({
-        src: '#w1',
-        type : 'inline',
-        opts : {
-            beforeShow : function( instance, current ) {
-
-                $(current.src).find('.window-one__head-title').text('Новый Заголовок окна большого');
-            }
+            // Перед открытием обращаемся к этому окну (current.src) находим в нем заголовок (window-one__head-title) и заменем текст
+            $(current.src).find('.window-one__head-title').text('Новый Заголовок окна большого');
         }
-    });
+    }
 });
 </pre>
