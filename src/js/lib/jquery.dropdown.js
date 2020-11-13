@@ -1,12 +1,17 @@
-/*
- * jQuery Dropdown: A simple dropdown plugin
- *
- * Contribute: https://github.com/claviska/jquery-dropdown
- *
- * @license: MIT license: http://opensource.org/licenses/MIT
- *
- */
-if (jQuery) (function ($) {
+(function (factory) {
+    if ( typeof define === 'function' && define.amd ) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // Node/CommonJS style for Browserify
+        module.exports = factory;
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
+
+if ($) (function ($) {
 
     $.extend($.fn, {
         jqDropdown: function (method, data) {
@@ -149,4 +154,6 @@ if (jQuery) (function ($) {
     $(document).on('click.jq-dropdown', hide);
     $(window).on('resize', position);
 
-})(jQuery);
+})($);
+
+}));

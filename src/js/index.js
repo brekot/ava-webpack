@@ -1,3 +1,8 @@
+import $ from "jquery";
+
+window.jQuery = $;
+window.$ = $;
+
 import dropdown from './lib/jquery.dropdown';
 import mousewheel from './lib/jquery.mousewheel';
 import jscrollpane from './lib/jquery.jscrollpane.min';
