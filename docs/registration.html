@@ -8,7 +8,7 @@
 
         <title>Avancut | Registration</title>
 
-        <link href="./local/template_styles.css?df4bb836dd5d15d88139" rel="stylesheet" />
+        <link href="./local/template_styles.css?e72a29825d2a01aa2149" rel="stylesheet" />
     </head>
 
     <body>
@@ -190,15 +190,28 @@
                                         <span class="checkbox-radio__unset font-md"></span>
                                         <span class="checkbox-radio__label">Выбранный неактивный чекбокс</span>
                                     </label>
-                                    <div class="form-file mb-20" id="js-file-drag">
+
+                                    <div class="form-file mb-20 js-file-drag">
                                         <svg class="form-file__icon">
                                             <use xlink:href="./local/img/sprite.svg#f"></use>
                                         </svg>
                                         <div class="form-file__info">
-                                            <div id="js-file-messages">
+                                            <div class="js-file-messages">
                                                 <a href="javascript:;" class="form-file__link blue-link"> Загрузите <span class="d-sm-none">файл</span> </a> <span class="d-none d-sm-inline">или перетащите файл</span>
                                             </div>
-                                            <input class="form-file__input" type="file" id="js-file-select" name="fileselect[]" multiple="multiple" />
+                                            <input class="form-file__input js-file-select" type="file" name="fileselect[]" multiple="multiple" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-file mb-20 js-file-drag">
+                                        <svg class="form-file__icon">
+                                            <use xlink:href="./local/img/sprite.svg#f"></use>
+                                        </svg>
+                                        <div class="form-file__info">
+                                            <div class="js-file-messages">
+                                                <a href="javascript:;" class="form-file__link blue-link"> Загрузите <span class="d-sm-none">файл</span> </a> <span class="d-none d-sm-inline">или перетащите файл</span>
+                                            </div>
+                                            <input class="form-file__input js-file-select" type="file" name="fileedit[]" multiple="multiple" />
                                         </div>
                                     </div>
                                 </div>
@@ -340,6 +353,6 @@
             </div>
         </nav>
 
-        <script type="text/javascript" src="./local/js/script.js?df4bb836dd5d15d88139"></script>
+        <script type="text/javascript" src="./local/js/script.js?e72a29825d2a01aa2149"></script>
     </body>
 </html>

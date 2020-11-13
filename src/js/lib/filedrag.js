@@ -1,11 +1,18 @@
 (function() {
 
-    var fileselect = document.getElementById("js-file-select"),
-        filedrag = document.getElementById("js-file-drag");
-
-	function Output(msg)
+    function Parents(elem, selector)
     {
-		document.getElementById("js-file-messages").innerHTML = msg;
+        for ( ; elem && elem !== document; elem = elem.parentNode )
+        {
+            if ( elem.matches( selector ) ) return elem;
+        }
+
+        return null;
+    };
+
+	function Output(block, msg)
+    {
+		block.querySelector(".js-file-messages").innerHTML = msg;
 	}
 
 	function FileDragHover(e)
@@ -18,28 +25,36 @@
     {
 		FileDragHover(e);
 
+        var filedrag = e.target.classList.contains("js-file-drag") ? e.target : Parents(e.target, ".js-file-drag");
+
+        var fileselect = filedrag.querySelector(".js-file-select");
+
 		if (e.dataTransfer && e.dataTransfer.files) fileselect.files = e.dataTransfer.files;
 
         var files = fileselect.files;
 
 		if (files.length == 1)
         {
-            Output(files[0].name);
+            Output(filedrag, files[0].name);
         }
         else
         {
-            Output('Выбранно файлов: ' + files.length);
+            Output(filedrag, 'Выбранно файлов: ' + files.length);
         }
 	}
 
 	function Init()
     {
-        if (!fileselect || !filedrag) return;
+        document.querySelectorAll(".js-file-drag").forEach(function(e){
 
-        filedrag.addEventListener("dragover", FileDragHover, false);
-        filedrag.addEventListener("dragleave", FileDragHover, false);
-        filedrag.addEventListener("drop", FileSelectHandler, false);
-        fileselect.addEventListener("change", FileSelectHandler, false);
+            if (!e.querySelector(".js-file-select")) return;
+
+            e.addEventListener("dragover", FileDragHover, false);
+            e.addEventListener("dragleave", FileDragHover, false);
+            e.addEventListener("drop", FileSelectHandler, false);
+
+            e.querySelector(".js-file-select").addEventListener("change", FileSelectHandler, false);
+        });
 	}
 
 	if (window.File && window.FileList && window.FileReader)
