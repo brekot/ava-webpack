@@ -1,7 +1,6 @@
 :root {
     --black: #000;
     --white: #FFF;
-    --white-opacity: rgba(255, 255, 255, .5);
 
     --green-light: #E6F3DD;
 
@@ -37,7 +36,8 @@
     --grey-opacity: rgba(231, 231, 231, .2);
     --blue-opacity: rgba(17, 96, 156, .1);
     --yellow-opacity: rgba(243, 145, 0, .1);
-    --white-opacity: rgba(255, 255, 255, .1);
+    --white-opacity: rgba(255, 255, 255, .5);
+    --white-l-opacity: rgba(255, 255, 255, .1);
 }
 
 $grid-breakpoints: (
