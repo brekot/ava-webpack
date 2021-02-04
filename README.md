@@ -1,14 +1,14 @@
-<a href="./docs/tasks.html">Список задач</a><br>
-<a href="./docs/task.html">Карточка задачи</a><br>
-<a href="./docs/equipment.html">Оборудование</a><br>
-<a href="./docs/profile.html">Профиль</a><br>
-<a href="./docs/tariff-main.html">Тариф</a><br>
-<a href="./docs/tariff-income.html">Пополнения</a><br>
-<a href="./docs/tariff-payment.html">Списания</a><br>
-<a href="./docs/tariff-hours.html">Часы</a><br>
-<a href="./docs/tariff-refill.html">Пополнить счет</a><br>
-<a href="./docs/text.html">Текстовая страница</a><br>
-<a href="./docs/registration.html">Регистрация</a><br>
+<a href="https://brekot.github.io/ava-webpack/tasks.html">Список задач</a><br>
+<a href="https://brekot.github.io/ava-webpack/task.html">Карточка задачи</a><br>
+<a href="https://brekot.github.io/ava-webpack/equipment.html">Оборудование</a><br>
+<a href="https://brekot.github.io/ava-webpack/profile.html">Профиль</a><br>
+<a href="https://brekot.github.io/ava-webpack/tariff-main.html">Тариф</a><br>
+<a href="https://brekot.github.io/ava-webpack/tariff-income.html">Пополнения</a><br>
+<a href="https://brekot.github.io/ava-webpack/tariff-payment.html">Списания</a><br>
+<a href="https://brekot.github.io/ava-webpack/tariff-hours.html">Часы</a><br>
+<a href="https://brekot.github.io/ava-webpack/tariff-refill.html">Пополнить счет</a><br>
+<a href="https://brekot.github.io/ava-webpack/text.html">Текстовая страница</a><br>
+<a href="https://brekot.github.io/ava-webpack/registration.html">Регистрация</a><br>
 
 <hr>
 
